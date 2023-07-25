@@ -1,0 +1,41 @@
+.footer{
+    width: 100%;
+    height: 75px;
+    box-sizing: border-box;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 5;
+
+    display: flex;
+    
+    background-color: #000;
+
+    cursor: pointer;
+}
+
+.channel_list{
+    height: 75px;
+    width: 90px;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #dc2525;
+    color: #fff;
+    text-align: center;
+    font-family: "BPG Square Banner Caps";
+}
+
+.channel_logos{
+    height: 100%;
+    width: calc(100% - 90px);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+
+}
