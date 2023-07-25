@@ -3,6 +3,7 @@ import {Routes,Route} from "react-router-dom";
 import Main from "./pages/main/main";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
+import ChannelsModal from "./components/channelsModal/channelsModal";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route exact path="*" element={<Main/>} />
       </Routes>
 
+      <ChannelsModal />
       <Footer />
     </>
   );

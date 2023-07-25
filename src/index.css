@@ -20,6 +20,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  overflow-x: hidden;
 }
 
 code {
@@ -45,3 +47,50 @@ a{
     width: 166px;
     height: 150px;
   }
+
+  .channels_modal_closed{
+    height: 0px;
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
+
+    background-color: #000;
+
+    position: absolute;
+    bottom: 0;
+    z-index: 6;
+
+    overflow: hidden;
+
+    padding-left: 85px;
+    padding-right: 85px;
+
+    transition: all 0.2s ease;
+
+}
+
+.channels_modal_opened{
+  height: calc(100vh - 100px);
+  width: 100%;
+
+  -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
+
+  position: absolute;
+  bottom: 0;
+  z-index: 6;
+
+  overflow: hidden;
+
+
+  background-color: #000;
+
+  padding-top: 20px;
+  padding-left: 85px;
+  padding-right: 85px;
+
+  transition: all 0.2s ease;
+}

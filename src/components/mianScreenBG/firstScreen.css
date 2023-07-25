@@ -32,4 +32,17 @@
 .main_title p{
     font-family: "BPG Arial";
     font-size: 17px;
+    margin-top: 30px;
+}
+
+@media (max-width:800px) {
+    .firsrScreen_inner{
+        padding-top: 20px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main_title h1{
+        font-size: 26px
+    }
 }

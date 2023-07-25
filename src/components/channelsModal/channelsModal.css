@@ -1,0 +1,122 @@
+.close_icon{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+
+    width: 27px;
+    height: 27px;
+
+    cursor: pointer;
+}
+
+.subscribe_prices{
+    width: 100%;
+    height: 135px;
+}
+
+.subscribe_prices{
+    display: flex;
+    justify-content: space-between;
+}
+
+.price_block{
+    width: 395px;
+    height: 100%;
+}
+
+.price_block_upper{
+    box-sizing: border-box;
+
+    width: 100%;
+    height: 45px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "BPG Square Banner Caps";
+    font-size: 20px;
+    color: #fff;
+    background-color: #373534;
+}
+
+.price_block_below{
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 395px;
+    height: 90px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    background-color: #272523;
+}
+
+.channels_and_title{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.channel_number{
+    font-family: "BPG Square Banner Caps";
+    font-size: 37px;
+
+    color: #fff;
+
+}
+
+.channels_name{
+    font-family: "BPG Square Banner Caps";
+    font-size: 18px;
+
+    color: #fff;
+}
+
+.channels_function{
+    font-family: "BPG Square Banner Caps";
+    font-size: 13px;
+
+    color: #8d8d8d;
+}
+
+
+
+/* *************************** */
+
+.channels_price_perMonth{
+    display: flex;
+    align-items: end;
+    gap: 8px;
+}
+
+.price_inGel{
+    display: flex;
+    align-items: end;
+}
+
+.gel{
+    font-family: "BPG Square Banner Caps";
+    font-size: 30px;
+
+    color: #fff;
+}
+
+.gel_symbol{
+    font-family: "BPG Square Banner Caps";
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: #fff;
+}
+
+.per_month{
+    font-family: "BPG Square Banner Caps";
+    font-size: 18px;
+    margin-bottom: 3px;
+    color: #A9A8A8;
+}
+

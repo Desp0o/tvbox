@@ -11,13 +11,23 @@ import tnt from "../images/channels/tnt.webp"
 import tvpirveli from "../images/channels/tvpirveli.webp"
 import setanta from "../images/channels/setanta.webp"
 
+import { ModalContext } from "../modalContext"
+import { useContext, useEffect } from "react"
+
 export default function Footer(){
 
     const channelArray = [imedi, rustavi, ntv, pervi, maestro, gds, tabula, tnt, tvpirveli, setanta]
 
+    const [modalClass, setModalClass] = useContext(ModalContext)
+
+    const modalHandler = ()=> {
+        setModalClass('channels_modal_opened')
+    }
+
+
     return(
         <>
-            <div className="footer">
+            <div className="footer" onClick={modalHandler}>
                 <div className="channel_list">
                     <p>არხების სია</p>
                 </div>
