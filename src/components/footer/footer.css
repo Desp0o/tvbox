@@ -8,6 +8,7 @@
     z-index: 5;
 
     display: flex;
+    overflow: hidden;
     
     background-color: #000;
 

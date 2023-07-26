@@ -86,17 +86,16 @@
 
 
 
-/* *************************** */
 
 .channels_price_perMonth{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     gap: 8px;
 }
 
 .price_inGel{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .gel{
