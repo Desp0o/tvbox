@@ -6,6 +6,7 @@ export default function Main(){
     return(
         <>
         <FirstScreen />
+        <div className="black"></div>
         </>
     )
 }
