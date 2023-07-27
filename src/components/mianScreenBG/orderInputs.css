@@ -1,0 +1,32 @@
+.orderInputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.orderInner{
+    width: calc(100% - 200px);
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+.inputMainStyle{
+    width: 380px;
+    height: 60px;
+
+    font-family: "BPG Square Banner Caps";
+    font-size: 16px;
+    line-height: 58px;
+    color: #000;
+}
+
+.optionStyle{
+    background-color: aqua;
+    border: 1px solid black;
+    height: 50px !important;
+}
+

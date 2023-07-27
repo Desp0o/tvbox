@@ -1,5 +1,6 @@
 import TvboxSVG  from '../TvboxSVG'
 import './firstScreen.css'
+import OrderInputs from './orderInput'
 
 export default function FirstScreen(){
     return(
@@ -14,6 +15,7 @@ export default function FirstScreen(){
                 </div>
 
                 < TvboxSVG  />
+                <OrderInputs />
             </div>
         </div>
     </>
