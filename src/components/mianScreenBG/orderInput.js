@@ -33,8 +33,9 @@ export default function OrderInputs(){
     const [inputInner, setInputInner] = useState('inputsInner')
 
     const [deliveryPrice, setDeliveryPrice] = useState('--')
-    const [boxPrice, setBoxPrice] = useState(159)
-    const [montlyPrice, setMonthlyPrice] = useState(0)
+    const [boxPrice, setBoxPrice] = useState('--')
+    const [montlyPrice, setMonthlyPrice] = useState('--')
+    const [sumClass, setSumClass] = useState('sumWhite')
     
     const handleValues = (e)=> {
         setValues({...values, [e.target.name]:e.target.value})
@@ -43,13 +44,50 @@ export default function OrderInputs(){
     useEffect(()=>{
         if(values.location === 'თბილისი' && values.package !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
+            setSumClass('')
         }else if(values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
+            setSumClass('')
         }else if(values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
+            setSumClass('')
         }else{
             setInputInner('inputsInner') 
+            setSumClass('sumWhite')
         }
+
+
+        // *****მიტანის ფასი ******
+        if(values.location === 'თბილისი'){
+            setDeliveryPrice(0)
+        }else if(values.location === 'სხვაგან საქართველოში'){
+            setDeliveryPrice(0)
+        }else if(values.location === 'საზღვარგარეთ'){
+            setDeliveryPrice(50)
+        }else{
+            setDeliveryPrice("--")
+        }
+
+        // *****ბოქსის ფასი ******
+        if(values.location !== ''){
+            setBoxPrice(159)
+        }else{
+            setBoxPrice('--')
+        }
+
+        // *****პაკეტის ფასი ******
+        if(values.package === 'საბაზისო'){
+            setMonthlyPrice(0)
+        }else if(values.package === 'ქართული არხები'){
+            setMonthlyPrice(3)
+        }else if(values.package === 'ულტრა პაკეტი'){
+            setMonthlyPrice(20)
+        }else if(values.package === 'ქართული არხები საზღვარგარეთ'){
+            setMonthlyPrice(20)
+        }else{
+            setMonthlyPrice('--')
+        }
+
     },[values])
 
     useEffect(()=>{
@@ -57,13 +95,18 @@ export default function OrderInputs(){
         if(values.location === 'სხვაგან საქართველოში'){
             setCityClass('inputMainStyle')
             setCountryClass('displayNone')
+            setValues(prevValues => ({...prevValues, package: ''}));
         }else if(values.location === 'საზღვარგარეთ'){
             setCountryClass('inputMainStyle')
             setCityClass('displayNone')
+            setValues(prevValues => ({...prevValues, package: ''}));
         }else{
             setCityClass('displayNone')
             setCountryClass('displayNone')
+            setValues(prevValues => ({...prevValues, package: ''}));
         }
+
+        
 
     },[values.location])
 
@@ -128,9 +171,11 @@ export default function OrderInputs(){
                             </div>
 
                             <div className="priceTable">
-                                <PriceTableComponent price={deliveryPrice} title="მიტანა"/>
-                                <PriceTableComponent price={boxPrice} title="ღირებულება"/>
-                                <PriceTableComponent price={montlyPrice}  title="თვეში"/>
+                                <PriceTableComponent classColor={sumClass} price={deliveryPrice} title="მიტანა"/>
+                                <p className="sumPlus">+</p>
+                                <PriceTableComponent classColor={sumClass} price={boxPrice} title="ღირებულება"/>
+                                <p className="sumPlus">+</p>
+                                <PriceTableComponent classColor={sumClass} price={montlyPrice}  title="თვეში"/>
                             </div>
 
                             <div className="secondForm">
