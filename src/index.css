@@ -58,7 +58,7 @@ a{
 
     background-color: #000;
 
-    position: absolute;
+    position: fixed;
     bottom: 0;
     z-index: 6;
 
@@ -79,7 +79,7 @@ a{
     -moz-box-sizing: border-box;
     box-sizing: border-box !important;
 
-  position: absolute;
+  position: fixed;
   bottom: 0;
   z-index: 6;
 
