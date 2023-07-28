@@ -1,0 +1,16 @@
+
+
+.fiveReasons_title{
+    font-family: "BPG Square Banner Caps";
+    font-size: 27px;
+
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.titleImage{
+    width: 113px;
+    height: 90px;
+}

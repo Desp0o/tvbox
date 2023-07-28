@@ -193,6 +193,17 @@ export default function OrderInputs(){
 
                                 </div>
                             </div>
+
+                            <div className="rulesAndBtn">
+                                <input type="checkbox" className="checkBox" />
+                                <p className="rules">გავეცანი და ვეთანხმები <span>პირობებს</span></p>
+                            </div>
+
+                            <div className="btn">
+                                <div className="agreeBtn">
+                                    <p>შეკვეთის გაფორმება</p>
+                                </div>
+                            </div>
                         
                     </div>
 
