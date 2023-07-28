@@ -83,6 +83,7 @@
     margin-top: 35px;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 25px;
 }
 
@@ -102,10 +103,16 @@
 }
 
 .sumWhite{
-    color: #fff !important;
+    font-family: "BPG Square Banner Caps";
+    color: #fff;
+}
+
+.sumBlack{
+    font-family: "BPG Square Banner Caps";
+    color: #000;
 }
 
 .sumPlus{
-    font-family: "BPG Square Banner Caps";
-    font-size: 40px;
+    width: 16px;
+    height: 16px;
 }

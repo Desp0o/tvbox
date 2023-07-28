@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import "./orderInputs.css"
 import PriceTableComponent from "./priceTableBlock"
+import plusIcon from '../images/plus.webp'
 
 export default function OrderInputs(){
 
@@ -44,13 +45,13 @@ export default function OrderInputs(){
     useEffect(()=>{
         if(values.location === 'თბილისი' && values.package !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
-            setSumClass('')
+            setSumClass('sumBlack')
         }else if(values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
-            setSumClass('')
+            setSumClass('sumBlack')
         }else if(values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
-            setSumClass('')
+            setSumClass('sumBlack')
         }else{
             setInputInner('inputsInner') 
             setSumClass('sumWhite')
@@ -172,9 +173,9 @@ export default function OrderInputs(){
 
                             <div className="priceTable">
                                 <PriceTableComponent classColor={sumClass} price={deliveryPrice} title="მიტანა"/>
-                                <p className="sumPlus">+</p>
+                                <img src={plusIcon} alt="sum plus icon" className="sumPlus" />
                                 <PriceTableComponent classColor={sumClass} price={boxPrice} title="ღირებულება"/>
-                                <p className="sumPlus">+</p>
+                                <img src={plusIcon} alt="sum plus icon" className="sumPlus" />
                                 <PriceTableComponent classColor={sumClass} price={montlyPrice}  title="თვეში"/>
                             </div>
 
