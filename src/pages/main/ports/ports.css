@@ -1,0 +1,25 @@
+.ports{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+
+    background-color: #f3f3f3;
+}
+
+.mowyobiloba{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mowyobiloba_image{
+    max-width: 90%;
+}
+
+@media (max-width:800px) {
+    .mowyobiloba{
+        margin-top: 40px;
+
+    }
+}

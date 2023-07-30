@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "bebas";
+  src: url('./components/fonts/bebas.ttf');
+}
+
+@font-face {
   font-family: "BPG Arial";
   src: url("./components/fonts/BPG\ Arial.ttf");
 }
