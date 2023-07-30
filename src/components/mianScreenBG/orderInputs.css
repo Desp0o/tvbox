@@ -223,6 +223,28 @@
         padding-left: 10px;
     }
 
+    .secondForm_below{
+        flex-direction: column;
+    }
+
+    .rules{
+        font-family: "BPG Square Banner Caps";
+        font-size: 14px;
+        color: #000;
+    }
+
+    .phone_email{
+        width: 280px;
+    }
+
+    .adress{
+        width: 280px;
+    }
+
+    .agreeBtn{
+        font-size: 20px;
+    }
+
     .priceTable{
         margin-top: 35px;
         display: flex;

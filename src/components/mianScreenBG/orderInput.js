@@ -226,7 +226,7 @@ export default function OrderInputs(){
                                 </div>
 
                                 <div className="secondForm_below">
-                                <input type="text" name="pone_number" placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows"/>
+                                <input type="text" name="phone_number" placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows"/>
                                 <input type="email" name="email" placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email"/>
                                 <input type="text" name="adress" placeholder="მისამართ *" className="inputMainStyle adress"/>
 
