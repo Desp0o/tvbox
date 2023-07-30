@@ -59,7 +59,7 @@ export default function Navbar(){
 
                         <Link onClick={modalHandler}><p>არხები</p></Link>
 
-                        <Link><p>გადახდის მეთოდები</p></Link>
+                        <Link to='/pages/payment'><p>გადახდის მეთოდები</p></Link>
 
                         <Link><p>კითხვები</p></Link>
 
@@ -83,7 +83,7 @@ export default function Navbar(){
 
                         <Link onClick={modalHandler}><p>არხები</p></Link>
 
-                        <Link><p>გადახდის მეთოდები</p></Link>
+                        <Link to='/pages/payment'><p>გადახდის მეთოდები</p></Link>
 
                         <Link><p>კითხვები</p></Link>
 
