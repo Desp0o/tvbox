@@ -116,3 +116,24 @@ a{
 .sumWhite{
   columns: #fff;
 }
+
+option{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+
+.mySelect{
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.mySelect::-ms-expand {
+  display: none;
+}
+
+
+
+

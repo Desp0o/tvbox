@@ -2,12 +2,20 @@
     width: 100%;
     height: 100vh;
 
+    position: relative;
+
     background-image: url("../images/tvbox_back.jpg");
     background-size: cover;
     background-position: center;
 
     padding-top: 40px;
     padding-bottom: 40px;
+
+    transition: all 0.3s ease;
+}
+
+.firstScreen_FitContent{
+    height: fit-content;
 }
 
 .firsrScreen_inner{
@@ -44,5 +52,20 @@
 
     .main_title h1{
         font-size: 26px
+    }
+
+    .firstScreen{
+        width: 100%;
+    
+        position: relative;
+    
+        background-image: url("../images/tvbox_back.jpg");
+        background-size: cover;
+        background-position: center;
+    
+        padding-top: 40px;
+        padding-bottom: 100px;
+    
+        transition: all 0.3s ease;
     }
 }

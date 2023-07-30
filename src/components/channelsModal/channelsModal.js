@@ -7,7 +7,7 @@ import ChannelsModalComponent from "./channelsModalComponent"
 
 export default function ChannelsModal(){
 
-        const [modalClass, setModalClass] = useContext(ModalContext)
+        const {modalClass, setModalClass} = useContext(ModalContext)
 
         const modalHandler = ()=> {
             setModalClass('channels_modal_closed')

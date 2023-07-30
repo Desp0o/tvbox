@@ -1,4 +1,5 @@
-import { useState, useEffect } from "react"
+import { useState, useEffect, useContext } from "react"
+import { ModalContext } from "../modalContext"
 import "./orderInputs.css"
 import PriceTableComponent from "./priceTableBlock"
 import plusIcon from '../images/plus.webp'
@@ -37,7 +38,11 @@ export default function OrderInputs(){
     const [boxPrice, setBoxPrice] = useState('--')
     const [montlyPrice, setMonthlyPrice] = useState('--')
     const [sumClass, setSumClass] = useState('sumWhite')
+
+    const [priceTable, setPriceTable] = useState('priceTable')
     
+    const {setFirstScreenClass} = useContext(ModalContext)
+
     const handleValues = (e)=> {
         setValues({...values, [e.target.name]:e.target.value})
     }
@@ -45,16 +50,20 @@ export default function OrderInputs(){
     useEffect(()=>{
         if(values.location === 'თბილისი' && values.package !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
+            setFirstScreenClass('firstScreen firstScreen_FitContent')
             setSumClass('sumBlack')
         }else if(values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
+            setFirstScreenClass('firstScreen firstScreen_FitContent')
             setSumClass('sumBlack')
         }else if(values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== ''){
             setInputInner('inputsInner inputsInner_Extended') 
-            setSumClass('sumBlack')
+            setFirstScreenClass('firstScreen firstScreen_FitContent')
+            setSumClass('sumBlack') 
         }else{
             setInputInner('inputsInner') 
             setSumClass('sumWhite')
+            setFirstScreenClass('firstScreen')
         }
 
 
@@ -111,6 +120,35 @@ export default function OrderInputs(){
 
     },[values.location])
 
+    useEffect(()=>{
+        if(window.innerWidth < 801){
+
+            if(values.location === 'თბილისი' && values.package === ''){
+                setPriceTable('priceTableRes')
+            }
+            
+
+            if(values.location === 'თბილისი' && values.package !== ''){
+                setPriceTable('priceTable')
+
+            }else if(values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== ''){
+                setPriceTable('priceTable')
+
+            }else if(values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== ''){
+                setPriceTable('priceTable')
+
+            }else{
+                
+
+            }
+
+            if(values.location === ''){
+                setPriceTable('priceTableRes')
+            }
+        }
+    },[values])
+
+    
     
 
     useEffect(()=>{
@@ -125,14 +163,15 @@ export default function OrderInputs(){
                     <div className={inputInner}>
 
                             <div className="firstForm">
-                                <select value={values.location} name="location" onChange={handleValues} className="inputMainStyle">
+                                <select value={values.location} name="location" onInput={handleValues} className="inputMainStyle">
+                                    
                                     <option value="" disabled hidden>სად გსურთ გამოყენება</option>
                                     <option>თბილისი</option>
                                     <option>სხვაგან საქართველოში</option>
                                     <option>საზღვარგარეთ</option>
                                 </select>
 
-                                <select value={values.package} name="package" onChange={handleValues} className="inputMainStyle">
+                                <select value={values.package} name="package" onInput={handleValues} className="inputMainStyle">
                                     <option value="" disabled hidden>აირჩიეთ არხების პაკეტი</option>
                                     <option hidden={values.location === "საზღვარგარეთ" ? true : false}>საბაზისო</option>
                                     <option hidden={values.location === "საზღვარგარეთ" ? true : false}>ქართული არხები</option>
@@ -140,7 +179,7 @@ export default function OrderInputs(){
                                     <option hidden={values.location === "საზღვარგარეთ" ? false : true}>ქართული არხები საზღვარგარეთ</option>
                                 </select>
 
-                                <select  value={values.city} name="city" onChange={handleValues} className={cityClass}>
+                                <select  value={values.city} name="city" onInput={handleValues} className={cityClass}>
                                     <option value="" disabled hidden>აირჩიეთ ქალაქი</option>
                                     {cityArray.map((city, index) => {
                                         return(
@@ -171,7 +210,7 @@ export default function OrderInputs(){
                                 </select>
                             </div>
 
-                            <div className="priceTable">
+                            <div className={priceTable}>
                                 <PriceTableComponent classColor={sumClass} price={deliveryPrice} title="მიტანა"/>
                                 <img src={plusIcon} alt="sum plus icon" className="sumPlus" />
                                 <PriceTableComponent classColor={sumClass} price={boxPrice} title="ღირებულება"/>

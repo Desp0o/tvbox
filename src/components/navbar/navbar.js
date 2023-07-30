@@ -12,7 +12,7 @@ import menuX from "../images/closeX.webp"
 
 export default function Navbar(){
 
-    const [modalClass, setModalClass] = useContext(ModalContext)
+    const {setModalClass} = useContext(ModalContext)
     const [hamburgerMenu, setHamburgerMenu] = useState(menuBars)
     const [burgerBoolean, setBurgerBoolean] = useState(false)
     const [dashboard, setDashboard] = useState('dashboard_closed')

@@ -8,7 +8,6 @@ export default function Main(){
         <>
         <FirstScreen />
         <FiveReasons />
-        <div className="black"></div>
         </>
     )
 }
