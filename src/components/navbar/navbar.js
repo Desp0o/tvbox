@@ -53,9 +53,9 @@ export default function Navbar(){
 
                 <div className="navbar_Right">
                     <div className="navbar_menu">
-                        <Link><p>მთავარი</p></Link>
+                        <Link to='/'><p>მთავარი</p></Link>
 
-                        <Link><p>მოწყობილობა</p></Link>
+                        <Link to='/pages/devicePage'><p>მოწყობილობა</p></Link>
 
                         <Link onClick={modalHandler}><p>არხები</p></Link>
 
@@ -77,9 +77,9 @@ export default function Navbar(){
 
             <div className={dashboard}>
             <div className="menu_responsive">
-                        <Link><p>მთავარი</p></Link>
+                        <Link to='/'><p>მთავარი</p></Link>
 
-                        <Link><p>მოწყობილობა</p></Link>
+                        <Link to='/pages/devicePage'><p>მოწყობილობა</p></Link>
 
                         <Link onClick={modalHandler}><p>არხები</p></Link>
 

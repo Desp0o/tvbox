@@ -29,13 +29,13 @@ const hardwareArr = [
 
 ]
 
-export default function Device() {
+export default function Device(props) {
 
     return(
         <>
             <div className="device">
                 <div className="device_inner">
-                    <div className="device_first_txt">
+                    <div className={props.class ? props.class : 'device_first_txt'}>
                         <p className="device_title">მოწყობილობა</p>
                         <p className="device_desc">MYVIDEO TV BOX არის მოწყობილობა, რომლის მეშვეობითაც ნებისმიერ ტელევიზორში შეგიძლიათ მიიღოთ myvideo.ge-ზე არსებული სერვისები: ქართული და უცხოური სატელევიზიო არხები გადახვევა-დაპაუზების ფუნქციით, ვიდეოები, ახალი ამბები და მრავალი სხვა.</p>
                         <p className="device_desc">სერვისის გამართული მუშაობისათვის საჭიროა სტაბილური ინტერნეტს შეერთება.</p>
