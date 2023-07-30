@@ -1,0 +1,114 @@
+.device{
+    margin-top: 80px;
+}
+
+.device_inner{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    padding: 0 140px 0 140px;
+}
+
+.device_first_txt{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.device_title{
+    text-align: center;
+    font-family: "BPG Square Banner Caps";
+    color: #dc2525;
+    font-size: 30px;
+}
+
+.device_desc{
+    font-family: "BPG Arial";
+    font-size: 18px;
+}
+
+.device_sec_txt{
+    margin-top: 80px;
+}
+
+.device_images{
+    margin-top: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 85px; 
+    flex-wrap: wrap;
+}
+
+.device_img_block {
+    position: relative;
+    font-family: "BPG Square Banner Caps";
+    font-size: 18px;
+  }
+  
+  .device_img_block::after {
+    position: absolute;
+    width: 155px;
+    text-align: center;
+    content: attr(data-title); /* Retrieve the value of the 'data-title' attribute */
+    top: -85px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .device_img_block::before {
+    position: absolute;
+    content: "";
+    height: 39px;
+    width: 1px;
+    border-right: 1px dashed #000; /* Retrieve the value of the 'data-title' attribute */
+    top: -55px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+  .device_img_block_power {
+    position: relative;
+    font-family: "BPG Square Banner Caps";
+    font-size: 18px;
+  }
+
+  .device_img_block_power::after {
+    position: absolute;
+    width: 155px;
+    text-align: center;
+    content: attr(data-title); /* Retrieve the value of the 'data-title' attribute */
+    top: -55px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .device_img_block_power::before {
+    position: absolute;
+    content: "";
+    height: 39px;
+    width: 1px;
+    border-right: 1px dashed #000; /* Retrieve the value of the 'data-title' attribute */
+    top: -25px;
+    left: 50%;
+    transform: translate(-50%);
+  }
+
+
+  @media (max-width:800px) {
+
+    .device_inner{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    
+        padding: 0 20px 0 20px;
+    }
+
+    .device_images{
+        flex-direction: column;
+        align-items: center;
+        gap: 120px;
+    }
+  }
