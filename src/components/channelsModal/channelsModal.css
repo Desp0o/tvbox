@@ -9,19 +9,34 @@
     cursor: pointer;
 }
 
+
 .subscribe_prices{
     width: 100%;
     height: 135px;
-}
-
-.subscribe_prices{
     display: flex;
     justify-content: space-between;
+
+    width: 100%;
+    height: calc(100% - 40px);
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.subscribe_prices::-webkit-scrollbar{
+    padding-top: 50px;
+    width: 5px;
+    background-color: red;
+}
+
+.subscribe_prices::-webkit-scrollbar-track{
+    padding-top: 100px;
 }
 
 .price_block{
     width: 395px;
-    height: 100%;
+    position: fixed;
+    z-index: 2;
 }
 
 .price_block_upper{
@@ -119,3 +134,69 @@
     color: #A9A8A8;
 }
 
+
+.channel_list_inModal{
+    margin-top: 135px;
+    color: white;
+    font-family: "BPG Square Banner Caps";
+}
+
+
+.item_outter{
+    border-bottom: 1px solid #a9a8a84b;
+    
+}
+
+.channelColumn{
+    position: relative;
+    width: 395px;
+}
+
+.channel_list_item{
+
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+
+    padding: 0 10px 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.channel_list_item_faded{
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+
+    padding: 0 10px 0 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    opacity: 0.3;
+}
+
+.channel_item_name_cover{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channel_item_devices{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.device_little_block{
+    height: 100%;
+    width: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

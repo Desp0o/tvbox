@@ -1,7 +1,7 @@
 export default function ChannelsModalComponent(props){
     return(
         <>
-            <div>
+            
                             <div className="price_block">
                                 <div className="price_block_upper">
                                     <p>საბაზისო პაკეტი</p>
@@ -30,7 +30,7 @@ export default function ChannelsModalComponent(props){
                                 </div>
                             </div>
                         
-        </div>
+        
         </>
     )
 }

@@ -4,6 +4,7 @@ import { useContext, useEffect } from "react"
 
 import close from "../images/close.webp"
 import ChannelsModalComponent from "./channelsModalComponent"
+import { channelsDB } from "./channelDB"
 
 export default function ChannelsModal(){
 
@@ -19,23 +20,132 @@ export default function ChannelsModal(){
                 <img src={close} alt="close icon" className="close_icon" onClick={modalHandler}/>
 
             <div  className="subscribe_prices">
-                <ChannelsModalComponent 
-                    channelNumber="100"
-                    channelName="ქართული არხი"
-                    subscribePrice="0"
-                />
+                <div className="channelColumn">
+                    <ChannelsModalComponent 
+                        channelNumber="100"
+                        channelName="ქართული არხი"
+                        subscribePrice="0"
+                    />
 
-                <ChannelsModalComponent 
-                    channelNumber="105"
-                    channelName="ქართული არხი"
-                    subscribePrice="3"
-                />
+                    <div className="channel_list_inModal">
 
-                <ChannelsModalComponent 
-                    channelNumber="235"
-                    channelName="ქართული არხი"
-                    subscribePrice="20"
-                />
+                        {channelsDB.map((channel, index) => {
+                            return(
+                                <div className="item_outter" key={index}>
+                                    <div className={channel.isFaded === false ? 'channel_list_item' : 'channel_list_item_faded'}>
+                                        {/* არხის სახელი და იქონი */}
+                                        <div className="channel_item_name_cover">
+                                            <img src={channel.icon} alt='' className="" />
+                                            <p>{channel.name}</p>
+                                        </div>
+
+                                        {/* თავსებადობა */}
+                                        <div className="channel_item_devices">
+                                            <div className="device_little_block">
+                                                {channel.tv ? <img src={channel.tv} alt="tv" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.desktop ? <img src={channel.desktop} alt="desktop" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.mobile ? <img src={channel.mobile} alt="mobile" className="" /> : ''}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        {/* ერთი ცალი არხი */}
+                        
+                    </div>
+                </div>
+                
+
+                <div className="channelColumn">
+                    <ChannelsModalComponent 
+                        channelNumber="100"
+                        channelName="ქართული არხი"
+                        subscribePrice="0"
+                    />
+
+                    <div className="channel_list_inModal">
+
+                        {channelsDB.map((channel, index) => {
+                            return(
+                                <div className="item_outter" key={index}>
+                                    <div className={channel.isBasePack === true ? 'channel_list_item' : 'channel_list_item_faded'}>
+                                        {/* არხის სახელი და იქონი */}
+                                        <div className="channel_item_name_cover">
+                                            <img src={channel.icon} alt='' className="" />
+                                            <p>{channel.name}</p>
+                                        </div>
+
+                                        {/* თავსებადობა */}
+                                        <div className="channel_item_devices">
+                                            <div className="device_little_block">
+                                                {channel.tv ? <img src={channel.tv} alt="tv" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.desktop ? <img src={channel.desktop} alt="desktop" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.mobile ? <img src={channel.mobile} alt="mobile" className="" /> : ''}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        {/* ერთი ცალი არხი */}
+                        
+                    </div>
+                </div>
+
+                <div className="channelColumn">
+                    <ChannelsModalComponent 
+                        channelNumber="100"
+                        channelName="ულტრა პაკეტი"
+                        subscribePrice="20"
+                    />
+
+                    <div className="channel_list_inModal">
+
+                        {channelsDB.map((channel, index) => {
+                            return(
+                                <div className="item_outter" key={index}>
+                                    <div className='channel_list_item'>
+                                        {/* არხის სახელი და იქონი */}
+                                        <div className="channel_item_name_cover">
+                                            <img src={channel.icon} alt='' className="" />
+                                            <p>{channel.name}</p>
+                                        </div>
+
+                                        {/* თავსებადობა */}
+                                        <div className="channel_item_devices">
+                                            <div className="device_little_block">
+                                                {channel.tv ? <img src={channel.tv} alt="tv" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.desktop ? <img src={channel.desktop} alt="desktop" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.mobile ? <img src={channel.mobile} alt="mobile" className="" /> : ''}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        {/* ერთი ცალი არხი */}
+                        
+                    </div>
+                </div>
             </div>
 
             </div>
