@@ -61,6 +61,7 @@
 
 
 .inputMainStyle{
+    position: relative;
     box-sizing: border-box;
     width: 380px;
     height: 60px;
@@ -72,6 +73,24 @@
     color: #000;
     padding-left: 10px;
 
+}
+
+.selectOutter{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    background-color: red;
+    background-color: #dc2525;
+}
+
+.dropDawn_arrow{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 14px;
+    height: 14px;
 }
 
 .phone_email{

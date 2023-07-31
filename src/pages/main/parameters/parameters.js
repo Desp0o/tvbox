@@ -18,9 +18,9 @@ export default function Parameters(){
 
                         { sysArr.map((item, index) => {
                             return(
-                                <>
-                                    <p className='system_preference'>{item}</p>
-                                </>
+                                
+                                    <p key={index} className='system_preference'>{item}</p>
+                                
                             )
                         })}
                     </div>

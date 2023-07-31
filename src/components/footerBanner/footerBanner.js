@@ -19,12 +19,12 @@ export default function FooterBanner(){
                     <img src={fbIcon} alt="banner block icon" className="banner_icons" />
 
                     <div className="banner_links">
-                        <a href="" className="banner_links_inner">
+                        <a href="https://www.facebook.com/groups/MYVIDEOTVBOX/" className="banner_links_inner" target="_blank">
                             <img src={fbGroup} alt="facebook group" />
                             <p>შემოგვიერთდი FB ჯგუფში</p>
                         </a>
 
-                        <a href="" className="banner_links_inner">
+                        <a href="https://www.facebook.com/MyvideoTVBOX/" className="banner_links_inner" target="_blank">
                             <img src={fbLike} alt="facebook group" />
                             <p>მოიწონე ჩვენი გვერდი</p>
                         </a>

@@ -141,4 +141,41 @@ option{
 
 
 
+/* Reset styles for the <select> element */
+select {
+  /* Reset box-sizing to content-box (optional) */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 
+  /* Remove default styling */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  /* Add a transparent background image to show a custom arrow icon */
+  background-image: url('./components/images/arrow-down.png');
+  background-position: 97% center;
+  background-repeat: no-repeat;
+  background-size: 12px;
+  /* Set the width to fit the custom arrow icon and padding */
+  
+  /* Style other properties like font, padding, border, etc. as desired */
+  /* font-family: Arial, sans-serif;
+  font-size: 14px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px; */
+  
+}
+
+input{
+/* Reset box-sizing to content-box (optional) */
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+
+  /* Remove default styling */
+  outline: none;
+}

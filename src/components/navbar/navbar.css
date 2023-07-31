@@ -4,13 +4,20 @@
 
     box-sizing: border-box;
 
-    position: absolute;
+    position: fixed;
     top: 0;
     z-index: 5;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    transition: all 0.4s ease;
+}
+
+.navbarBG{
+    background-color: #000;
+    transition: all 0.4s ease;
 }
 
 .navbar_Left{
@@ -19,7 +26,7 @@
     display: flex;
     align-items: center;
 
-    padding-left: 15px;
+    padding-left: 60px;
 }
 
 .navbar_Right{
@@ -29,7 +36,7 @@
     align-items: center;
     justify-content: flex-end;
 
-    padding-right: 15px;
+    padding-right: 40px;
 }
 
 .navbar_menu{
@@ -73,13 +80,14 @@
 /* ******************************************** */
 
 .dashboard_closed{
-    height: 100vh;
+    height: 100%;
     width: 0;
     background-color: #000;
 
     position: fixed;
-    z-index: 6;
+    z-index: 4;
     right: 0;
+    top: 0;
 
     transition: all 0.3s ease;
 
@@ -87,13 +95,14 @@
 }
 
 .dashboard_opened{
-    height: 100vh;
+    height: 100%;
     width: 60%;
     background-color: #000;
 
     position: fixed;
-    z-index: 6;
+    z-index: 4;
     right: 0;
+    top: o;
 
     transition: all 0.3s ease;
 
@@ -107,6 +116,15 @@
 
     .navbar_menu{
         display: none;
+    }
+
+    .navbar_Left{
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+    
+        padding-left: 20px;
     }
 
     .hamburgerMenu{
