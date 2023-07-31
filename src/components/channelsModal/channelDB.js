@@ -721,12 +721,801 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+    {
+        icon: '',
+        name: 'აგროგარემო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: '',
+        name: 'სამეფო არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat Sport',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat 1000',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat Action',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat Explorer',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat History',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Viasat Nature',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Киномикс',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Киносвидание',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Кинохит',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Киносемья',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Кинопремьера',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Кинокомедия',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Киносерия',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Amedia 1',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Amedia 2',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Amedia HIT',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Amedia Premium HD',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Авто 24',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Авто плюс',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '365 дней',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Мужское кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Наше Новое кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Детский Мир',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Da Vinci Learning',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Deutsche Welle',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Домашний',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Настоящее время',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ЛяМинор',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Кухня',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'КВАРТАЛ 95',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'KHL',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'KHL Prime',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Иллюзион+',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Т24',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'HD Life',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Индийское Кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Оружие',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Bollywood HD',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Ностальгия',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Перец',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Mezzo',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Espresso TV',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ARIRANG',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '1+1',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Родное Кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ФЕНИКС+КИНО',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Первый Вегетарианский',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ПЯТНИЦА',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Red',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Ru TV',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Русский Иллюзион',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Sci-Fi',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'TV1000 Русское кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'TV Monitoring',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'У​с​п​е​х',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Уникум',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Кто есть Кто',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Киноужас',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Мир',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Мир 24',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+
+    {
+        icon: '',
+        name: 'NIKI Junior',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'NIKI KIDS',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+
+    {
+        icon: '',
+        name: 'Мужской',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+
+    {
+        icon: '',
+        name: 'OCE',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'CTC',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Тайны Галактики HD',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'M 1',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'M 2',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Малиш',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'МатчПланета',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+
+    {
+        icon: '',
+        name: 'метео 24',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: '',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    
+
+    
+
+    
+
 
 
     
     
 ]
-
+	
 
 // {
 //     icon: '',
