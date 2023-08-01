@@ -5,13 +5,16 @@
 }
 
 .orderInner{
-    width: calc(100% - 200px);
     margin-top: 75px;
+    display: flex;
+    justify-content: center;
 }
 
 .firstForm{
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -20,18 +23,22 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
 .secondForm_upper{
     width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
 .secondForm_below{
     width: 100%;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
@@ -40,7 +47,7 @@
 }
 
 .inputsInner{
-    width: 100%;
+    width:fit-content;
     height: 160px;
     box-sizing: border-box;
     padding: 0 20px 0 20px;
@@ -52,8 +59,8 @@
 .inputsInner_Extended{
     position: relative;
     height: fit-content ;
-    padding: 45px 20px 30px 20px ;
-
+    padding: 45px 45px 45px 45px ;
+    
     background-color: #F3F3F3;
 
     transition: all 0.4s ease;
@@ -293,4 +300,11 @@
         gap: 10px;
     }
     
+}
+
+
+@media (min-width:1900px) {
+    .adress{
+        width: 710px;
+    }
 }

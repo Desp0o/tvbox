@@ -176,3 +176,10 @@
         justify-content: center;
     }
 }
+
+@media (min-width:1900px) {
+    .features{
+        padding-left: 290px ;
+        padding-right: 290px;
+    }
+}

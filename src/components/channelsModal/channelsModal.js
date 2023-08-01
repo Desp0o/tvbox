@@ -20,11 +20,13 @@ export default function ChannelsModal(){
                 <img src={close} alt="close icon" className="close_icon" onClick={modalHandler}/>
 
             <div  className="subscribe_prices">
+
                 <div className="channelColumn">
                     <ChannelsModalComponent 
                         channelNumber="100"
-                        channelName="ქართული არხი"
+                        channelName="არხი"
                         subscribePrice="0"
+                        title='საბაზისო პაკეტი'
                     />
 
                     <div className="channel_list_inModal">
@@ -62,12 +64,12 @@ export default function ChannelsModal(){
                     </div>
                 </div>
                 
-
                 <div className="channelColumn">
                     <ChannelsModalComponent 
                         channelNumber="100"
-                        channelName="ქართული არხი"
+                        channelName="არხი"
                         subscribePrice="0"
+                        title='ქართული არხები'
                     />
 
                     <div className="channel_list_inModal">
@@ -108,8 +110,9 @@ export default function ChannelsModal(){
                 <div className="channelColumn">
                     <ChannelsModalComponent 
                         channelNumber="100"
-                        channelName="ულტრა პაკეტი"
+                        channelName="არხი"
                         subscribePrice="20"
+                        title='ულტრა პაკეტი'
                     />
 
                     <div className="channel_list_inModal">
@@ -146,6 +149,50 @@ export default function ChannelsModal(){
                         
                     </div>
                 </div>
+
+                <div className="channelColumn">
+                    <ChannelsModalComponent 
+                        channelNumber="100"
+                        channelName="არხი"
+                        subscribePrice="20"
+                        title="საზღვარგარეთ"
+                    />
+
+                    <div className="channel_list_inModal">
+
+                        {channelsDB.map((channel, index) => {
+                            return(
+                                <div className="item_outter" key={index}>
+                                    <div className='channel_list_item'>
+                                        {/* არხის სახელი და იქონი */}
+                                        <div className="channel_item_name_cover">
+                                            <img src={channel.icon} alt='' className="" />
+                                            <p>{channel.name}</p>
+                                        </div>
+
+                                        {/* თავსებადობა */}
+                                        <div className="channel_item_devices">
+                                            <div className="device_little_block">
+                                                {channel.tv ? <img src={channel.tv} alt="tv" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.desktop ? <img src={channel.desktop} alt="desktop" className="" /> : ''}
+                                            </div>
+
+                                            <div className="device_little_block">
+                                                {channel.mobile ? <img src={channel.mobile} alt="mobile" className="" /> : ''}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            )
+                        })}
+                        {/* ერთი ცალი არხი */}
+                        
+                    </div>
+                </div>
+
             </div>
 
             </div>

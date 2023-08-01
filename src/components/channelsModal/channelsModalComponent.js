@@ -4,7 +4,7 @@ export default function ChannelsModalComponent(props){
             
                             <div className="price_block">
                                 <div className="price_block_upper">
-                                    <p>საბაზისო პაკეტი</p>
+                                    <p>{props.title}</p>
                                 </div>
 
                                 <div className="price_block_below">

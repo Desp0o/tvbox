@@ -5,9 +5,20 @@ import mobile from '../images/mobile.png'
 
 
 export const channelsDB = [
+
     {
         icon: '',
-        name: 'პირველი TV',
+        name: 'პირველი არხი',
+        isBasePack: true,
+        isFaded: false,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: '',
+        name: 'პირველი არხი HD',
         isBasePack: true,
         isFaded: false,
         tv: `${tv}`,
@@ -35,15 +46,6 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
-    {
-        icon: '',
-        name: 'პირველი არხი HD',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
 
     {
         icon: '',
@@ -247,10 +249,30 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
-
     {
         icon: '',
         name: 'Adjara TV HD',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: '',
+        name: 'BMG',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: '',
+        name: 'GMC',
         isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
@@ -269,6 +291,15 @@ export const channelsDB = [
         mobile: `${''}`
     },
 
+    {
+        icon: '',
+        name: '1 სტერეო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
 
     {
         icon: '',
@@ -593,7 +624,7 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: 'Georgian Chess TV',
+        name: 'ჭადრაკი TV',
         isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
@@ -1362,6 +1393,15 @@ export const channelsDB = [
         mobile: `${''}`
     },
 
+    {
+        icon: '',
+        name: 'Ictimai TV',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
 
     {
         icon: '',
@@ -1387,6 +1427,56 @@ export const channelsDB = [
     {
         icon: '',
         name: 'CTC',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ICTV',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ICTV2',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ЖИВИ!',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'КВН ТВ',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'NEW Channel',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1457,7 +1547,7 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: '',
+        name: 'BBC World News',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1467,7 +1557,7 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: '',
+        name: 'Бокс ТВ',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1477,7 +1567,7 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: '',
+        name: 'CCTV 4',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1487,7 +1577,7 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: '',
+        name: 'Black',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1497,7 +1587,17 @@ export const channelsDB = [
 
     {
         icon: '',
-        name: '',
+        name: 'Еврокино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'зоопарк',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1506,14 +1606,533 @@ export const channelsDB = [
     },
     
 
+
+    {
+        icon: '',
+        name: 'Загородная Жизнь',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
     
 
+
+    {
+        icon: '',
+        name: 'STB',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
     
 
-
-
+    {
+        icon: '',
+        name: 'Voice of Abkhazia',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
     
-    
+
+    {
+        icon: '',
+        name: 'Zee TV',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    }
+]
+
+export const abroadChannelsDB = [
+    {
+        icon: '',
+        name: 'Adjara TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'Adjara TV HD',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'არგო TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ალტ-ინფო',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'არტარეა',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'ბათუმი TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'BBB',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'BMG',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'მეხუთე არხი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'კომედი არხი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'დარდიმანდი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: '',
+        name: 'დია TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ერთსულოვნება',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'Euronews Georgia',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ტელესკოლა',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'პირველი არხი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'პირველი არხი HD',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ფორმულა',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'GDS',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ქართული არხი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ჭადრაკი TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'ჯორჯიან თაიმსი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'გირჩი TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'GMC',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'GMTV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'Green TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'გურია TV',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: 'გურჯაანი',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+    {
+        icon: '',
+        name: '',
+        isFaded: false,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
 ]
 	
 

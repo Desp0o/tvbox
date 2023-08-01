@@ -11,6 +11,7 @@
 
 
 .subscribe_prices{
+    box-sizing: border-box;
     width: 100%;
     height: 135px;
     display: flex;
@@ -19,18 +20,23 @@
     width: 100%;
     height: calc(100% - 40px);
 
+    padding-right: 10px;
+    padding-left: 10px;
+
     overflow-y: scroll;
     overflow-x: hidden;
 }
 
 .subscribe_prices::-webkit-scrollbar{
-    padding-top: 50px;
     width: 5px;
-    background-color: red;
+    background-color: #A9A8A8;
 }
 
-.subscribe_prices::-webkit-scrollbar-track{
-    padding-top: 100px;
+.subscribe_prices::-webkit-scrollbar-thumb{
+    width: 10px;
+    height: 1px;
+    border-radius: 10px;
+    background-color: #272523;
 }
 
 .price_block{

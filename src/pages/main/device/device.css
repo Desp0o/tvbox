@@ -6,9 +6,7 @@
 .device_inner{
     display: flex;
     align-items: center;
-    flex-direction: column;
-
-    
+    flex-direction: column;    
 }
 
 .device_first_txt{
@@ -18,7 +16,7 @@
 }
 
 .device_first_txt_bg{
-  margin-top: -80px;
+    margin-top: -80px;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -34,7 +32,7 @@
 }
 
 .device_desc{
-  padding: 0 140px 0 140px;
+    padding: 0 140px 0 140px;
     font-family: "BPG Arial";
     font-size: 18px;
 }
@@ -127,4 +125,12 @@
       padding: 0 20px 0 20px;
       font-size: 16px;
     }
+  }
+
+  @media (min-width:1900px) {
+    .device_desc{
+      padding: 0 300px 0 300px;
+      font-family: "BPG Arial";
+      font-size: 18px;
+  }
   }
