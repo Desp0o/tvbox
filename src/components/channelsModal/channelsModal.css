@@ -25,7 +25,7 @@
     overflow: hidden;
   
   
-    background-color: #000;
+    background-color: #191918;
   
     padding-top: 20px;
     padding-left: 85px;
@@ -92,7 +92,6 @@
     -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
       box-sizing: border-box !important;
-      overflow: hidden;
 }
 
 .channel_list_inModal{
@@ -312,4 +311,7 @@
             transition: all 0.2s ease;
     }
     
+    .channel_list_inModal{
+        margin-top: 0px;
+    }
 }

@@ -19,13 +19,14 @@ export default function Navbar(){
     const [dashboard, setDashboard] = useState('dashboard_closed')
     const [scrollY, setScrollY] = useState(window.scrollY)
 
-
     useEffect(() => {
         const handleScroll = () => {
           setScrollY(window.scrollY);
         };
     
         window.addEventListener('scroll', handleScroll);
+
+        document.body.style.overflow='auto'
 
         return () => {
           window.removeEventListener('scroll', handleScroll);
@@ -46,16 +47,21 @@ export default function Navbar(){
             setBurgerBoolean(true)
             setHamburgerMenu(menuX)
             setDashboard('dashboard_opened')
+            document.body.style.overflow='hidden'
         }else{
             setBurgerBoolean(false)
             setHamburgerMenu(menuBars)
             setDashboard('dashboard_closed')
+            document.body.style.overflow='auto'
         }
+
+        
     }
 
     const closeDashboard = ()=> {
         setDashboard('dashboard_closed')
         setHamburgerMenu(menuBars)
+        document.body.style.overflow='auto'
     }
 
     const handleButtonClick = () => {

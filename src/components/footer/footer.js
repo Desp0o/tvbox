@@ -22,6 +22,7 @@ export default function Footer(){
 
     const modalHandler = ()=> {
         setModalClass('channels_modal_opened')
+            document.body.style.overflow='hidden'
     }
 
 

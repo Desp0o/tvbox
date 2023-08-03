@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import './payment.css'
 
 import FooterBanner from '../components/footerBanner/footerBanner'
@@ -35,6 +36,11 @@ const paymentArr = [
 ]
 
 export default function Payment(){
+
+    useEffect(()=>{
+        document.body.style.overflow='auto'
+    },[])
+
     return(
         <>
             <div className='payment'>
