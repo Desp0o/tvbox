@@ -3,10 +3,27 @@ import desktop from '../images/desktop.png'
 import mobile from '../images/mobile.png'
 
 
+import gpb from "../../components/images/channels/ChannelLogos/pirveliarkhi.png"
+import gpbhd from "../../components/images/channels/ChannelLogos/pirveliarkhihd.png"
+import teleskola from "../../components/images/channels/ChannelLogos/teleskola.png"
+import rustavi2 from "../../components/images/channels/ChannelLogos/rustavi2.png"
+import mtavariArkhi from "../../components/images/channels/ChannelLogos/mtavari.png"
+import tvpirveli from "../../components/images/channels/ChannelLogos/tvpirveli.png"
+import silkUniversal from "../../components/images/channels/ChannelLogos/silk_universal.png"
+import silkDocu from "../../components/images/channels/ChannelLogos/silkdocu.png"
+import silkholywood from "../../components/images/channels/ChannelLogos/silkholywood.png"
+import silkkids from "../../components/images/channels/ChannelLogos/silkkids.png"
+import silkcollection from "../../components/images/channels/ChannelLogos/silkcollection.png"
+import silk1 from "../../components/images/channels/ChannelLogos/silk1.png"
+import silk2 from "../../components/images/channels/ChannelLogos/silk2.png"
+import silk3 from "../../components/images/channels/ChannelLogos/silk3.png"
+
+
+
 export const channelsDB = [
 
     {
-        icon: './images/channels/tv_gpbhd.png',
+        icon: `${gpb}`,
         name: 'პირველი არხი',
         isBasePack: true,
         isFaded: false,
@@ -16,7 +33,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/tv_gpbhd.png',
+        icon: `${gpbhd}`,
         name: 'პირველი არხი HD',
         isBasePack: true,
         isFaded: false,
@@ -25,9 +42,8 @@ export const channelsDB = [
         mobile: mobile
     },
 
-
     {
-        icon: './images/channels/teleskola.png',
+        icon: `${teleskola}`,
         name: 'ტელესკოლა',
         isFaded: false,
         isBasePack: true,
@@ -37,7 +53,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/tv_pirvelitv.png',
+        icon: `${tvpirveli}`,
         name: 'პირველი TV',
         isFaded: false,
         isBasePack: true,
@@ -47,7 +63,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/rustavi2.png',
+        icon: `${rustavi2}`,
         name: 'რუსთავი 2',
         isFaded: true,
         isBasePack: true,
@@ -57,7 +73,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/mtavari.png',
+        icon: `${mtavariArkhi}`,
         name: 'მთავარი არხი',
         isFaded: false,
         isBasePack: true,
@@ -67,7 +83,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silkuniversal.png',
+        icon: `${silkUniversal}`,
         name: 'Silk უნივერსალი',
         isFaded: true,
         isBasePack: false,
@@ -77,7 +93,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silkdocu.png',
+        icon: `${silkDocu}`,
         name: 'Silk დოკუმენტური',
         isFaded: true,
         isBasePack: false,
@@ -87,7 +103,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silkholywood.png',
+        icon: `${silkholywood}`,
         name: 'Silk კინო ჰოლივუდი',
         isFaded: true,
         isBasePack: false,
@@ -97,7 +113,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silkkids.png',
+        icon: `${silkkids}`,
         name: 'Silk ქიდს',
         isFaded: true,
         isBasePack: false,
@@ -107,7 +123,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silkcollection.png',
+        icon: `${silkcollection}`,
         name: 'Silk კინო კოლექცია',
         isFaded: true,
         isBasePack: false,
@@ -117,7 +133,7 @@ export const channelsDB = [
     },
 
     {
-        icon: './images/channels/silk1.png',
+        icon: `${silk1}`,
         name: 'Silk Sport HD 1',
         isFaded: true,
         isBasePack: false,
@@ -126,9 +142,8 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
     
-
     {
-        icon: './images/channels/silk2.png',
+        icon: `${silk2}`,
         name: 'Silk Sport HD 2',
         isFaded: true,
         isBasePack: false,
@@ -137,9 +152,8 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
-
     {
-        icon: './images/channels/silk3.png',
+        icon: `${silk3}`,
         name: 'Silk Sport HD 3',
         isFaded: true,
         isBasePack: false,

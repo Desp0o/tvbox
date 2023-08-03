@@ -1,3 +1,5 @@
+import "./channelsModal.css"
+
 export default function ChannelsModalComponent(props){
     return(
         <>

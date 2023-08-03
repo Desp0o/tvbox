@@ -2,7 +2,7 @@ import "./channelsModal.css"
 import { ModalContext } from "../modalContext"
 import { useContext, useEffect } from "react"
 
-import close from "../images/close.webp"
+import close from "../images/closeX.webp"
 import ChannelsModalComponent from "./channelsModalComponent"
 import { channelsDB } from "./channelDB"
 
@@ -37,7 +37,7 @@ export default function ChannelsModal(){
                                     <div className={channel.isFaded === false ? 'channel_list_item' : 'channel_list_item_faded'}>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="" />
+                                            <img src={channel.icon} alt='' className="channelLogo" loading="lazy" />
                                             <p>{channel.name}</p>
                                         </div>
 
@@ -80,7 +80,7 @@ export default function ChannelsModal(){
                                     <div className={channel.isBasePack === true ? 'channel_list_item' : 'channel_list_item_faded'}>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="" />
+                                            <img src={channel.icon} alt='' className="channelLogo" />
                                             <p>{channel.name}</p>
                                         </div>
 
@@ -123,7 +123,7 @@ export default function ChannelsModal(){
                                     <div className='channel_list_item'>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="" />
+                                            <img src={channel.icon} alt='' className="channelLogo" />
                                             <p>{channel.name}</p>
                                         </div>
 
@@ -166,7 +166,7 @@ export default function ChannelsModal(){
                                     <div className='channel_list_item'>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="" />
+                                            <img src={channel.icon} alt='' className="channelLogo" />
                                             <p>{channel.name}</p>
                                         </div>
 

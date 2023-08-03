@@ -1,5 +1,6 @@
 .close_icon{
     position: absolute;
+    z-index: 2;
     right: 20px;
     top: 20px;
 
@@ -9,13 +10,59 @@
     cursor: pointer;
 }
 
+.channels_modal_opened{
+    height: calc(100vh - 100px);
+    width: 100%;
+  
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box !important;
+  
+    position: fixed;
+    bottom: 0;
+    z-index: 6;
+  
+    overflow: hidden;
+  
+  
+    background-color: #000;
+  
+    padding-top: 20px;
+    padding-left: 85px;
+    padding-right: 85px;
+  
+    transition: all 0.2s ease;
+  }
+
+  .channels_modal_closed{
+    height: 0px;
+    width: 100%;
+
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
+
+    background-color: #000;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 6;
+
+    overflow: hidden;
+
+    padding-left: 85px;
+    padding-right: 85px;
+
+    transition: all 0.2s ease;
+
+}
 
 .subscribe_prices{
+    position: relative;
     box-sizing: border-box;
-    width: 100%;
-    height: 135px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
 
     width: 100%;
     height: calc(100% - 40px);
@@ -39,15 +86,35 @@
     background-color: #272523;
 }
 
+.channelColumn{
+    position: relative;
+    width: 290px;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box !important;
+      overflow: hidden;
+}
+
+.channel_list_inModal{
+    margin-top: 115px;
+    color: white;
+    font-family: "BPG Square Banner Caps";
+    overflow: hidden;
+    position: relative;
+}
+
 .price_block{
-    width: 395px;
+    width: 290px;
     position: fixed;
     z-index: 2;
+    background-color: #373534;
+    -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box !important;
 }
 
 .price_block_upper{
     box-sizing: border-box;
-
     width: 100%;
     height: 45px;
 
@@ -63,18 +130,22 @@
 
 .price_block_below{
     box-sizing: border-box;
-
+    font-family: 'BPG Arial';
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 395px;
-    height: 90px;
+    width: 100%;
+    height: 70px;
 
     padding-left: 10px;
     padding-right: 10px;
 
     background-color: #272523;
+}
+
+.gap{
+    gap:10px
 }
 
 .channels_and_title{
@@ -85,7 +156,7 @@
 
 .channel_number{
     font-family: "BPG Square Banner Caps";
-    font-size: 37px;
+    font-size: 28px;
 
     color: #fff;
 
@@ -93,20 +164,17 @@
 
 .channels_name{
     font-family: "BPG Square Banner Caps";
-    font-size: 18px;
+    font-size: 16px;
 
     color: #fff;
 }
 
 .channels_function{
     font-family: "BPG Square Banner Caps";
-    font-size: 13px;
+    font-size: 11px;
 
     color: #8d8d8d;
 }
-
-
-
 
 .channels_price_perMonth{
     display: flex;
@@ -121,14 +189,14 @@
 
 .gel{
     font-family: "BPG Square Banner Caps";
-    font-size: 30px;
+    font-size: 28px;
 
     color: #fff;
 }
 
 .gel_symbol{
     font-family: "BPG Square Banner Caps";
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 3px;
     color: #fff;
 }
@@ -140,22 +208,9 @@
     color: #A9A8A8;
 }
 
-
-.channel_list_inModal{
-    margin-top: 135px;
-    color: white;
-    font-family: "BPG Square Banner Caps";
-}
-
-
 .item_outter{
     border-bottom: 1px solid #a9a8a84b;
     
-}
-
-.channelColumn{
-    position: relative;
-    width: 395px;
 }
 
 .channel_list_item{
@@ -191,6 +246,10 @@
     gap: 10px;
 }
 
+.channelLogo{
+    width: 20px ;
+}
+
 .channel_item_devices{
     height: 100%;
     display: flex;
@@ -205,4 +264,52 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:1200px) {
+    
+    .subscribe_prices{
+        flex-wrap: wrap;
+        justify-content: unset;
+        gap: 20px;
+    }
+    .price_block{
+        position: absolute;
+    }
+
+    .channelColumn{
+        margin: 0 auto 50px auto;
+    }
+}
+
+@media (max-width:800px) {
+    .subscribe_prices{
+        display: block;
+        padding: 5px;
+        margin-top: 80px;
+    }
+
+    .channelColumn{
+        position: relative;
+        width: 100%; 
+        box-sizing: border-box;
+        padding: 0 10px 0 10px;
+    }
+
+    .price_block{
+        width: calc(100% - 20px);
+        position: absolute;
+        z-index: 2;
+        background-color: #373534;
+    }
+
+    .channels_modal_opened{
+          
+            padding-top: 0px;
+            padding-left: 10px;
+            padding-right: 10px;
+          
+            transition: all 0.2s ease;
+    }
+    
 }

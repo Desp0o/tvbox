@@ -109,6 +109,20 @@
     overflow: hidden;
 }
 
+.dashboard_footer{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    margin-top: 80px;
+    gap: 10px;
+}
+
+.dashboard_footer p{
+    font-family: "bebas";
+    font-size: 34px;
+    color: #fff;
+}
+
 @media (max-width:800px) {
     .navbar{
         height: 70px;
@@ -151,5 +165,9 @@
 
         font-family: "BPG Square Banner Caps";
         color: #fff;
+    }
+
+    .call_block{
+        padding: 0px;
     }
 }

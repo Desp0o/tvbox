@@ -55,6 +55,7 @@ export default function Navbar(){
 
     const closeDashboard = ()=> {
         setDashboard('dashboard_closed')
+        setHamburgerMenu(menuBars)
     }
 
     const handleButtonClick = () => {
@@ -98,12 +99,12 @@ export default function Navbar(){
             </div>
 
             <div className={dashboard}>
-            <div className="menu_responsive">
+                <div className="menu_responsive">
                         <Link to='/' onClick={closeDashboard}><p>მთავარი</p></Link>
 
                         <Link to='/pages/devicePage' onClick={closeDashboard}><p>მოწყობილობა</p></Link>
 
-                        <Link onClick={modalHandler}><p>არხები</p></Link>
+                        <Link onClick={()=> {modalHandler(); closeDashboard()}}><p>არხები</p></Link>
 
                         <Link to='/pages/payment' onClick={closeDashboard}><p>გადახდის მეთოდები</p></Link>
 
@@ -115,7 +116,12 @@ export default function Navbar(){
                             <img src={callIcon} alt="call icon" className="call_icon" />
                             <p>322 490049</p>
                         </div>
-                    </div>
+                </div>
+
+                <div className="dashboard_footer">
+                    <img src={myVideoLogo} alt="dashboard footer" />
+                    <p>MyVideo</p>
+                </div>
             </div>
         </>
     )
