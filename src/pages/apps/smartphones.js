@@ -1,5 +1,5 @@
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import "./smartphones.css"
 import FooterBanner from '../../components/footerBanner/footerBanner'
 
@@ -53,6 +53,10 @@ const iosDB = [
 ]
 
 export default function SmartPhonesApp(){
+
+    useEffect(()=>{
+        document.body.style.overflow='auto'
+    },[])
 
     const appleRef = useRef()
 

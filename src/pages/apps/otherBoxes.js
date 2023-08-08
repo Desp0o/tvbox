@@ -1,5 +1,5 @@
 
-import { useRef, useState } from "react"
+import { useRef, useState, useEffect } from "react"
 import "./smartphones.css"
 import './otherBoxes.css'
 import FooterBanner from '../../components/footerBanner/footerBanner'
@@ -38,6 +38,10 @@ const iosDB = [
 ]
 
 export default function OtherTvBoxes(){
+
+    useEffect(()=>{
+        document.body.style.overflow='auto'
+    },[])
 
     const appleRef = useRef()
 
@@ -82,7 +86,7 @@ export default function OtherTvBoxes(){
         <>
             <div className="smartphones">
 
-                <div className="firstSection_smartPhones">
+                <div className="firstSection_otherBox">
                     
                     <p className="smartPhone_Title">აპლიკაცია სხვა ბოქსებისთვის</p>
 

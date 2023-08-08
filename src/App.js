@@ -9,6 +9,7 @@ import Payment from "./pages/payment";
 import Application from "./pages/application";
 import SmartPhonesApp from "./pages/apps/smartphones";
 import OtherTvBoxes from "./pages/apps/otherBoxes";
+import SmartTvApp from "./pages/apps/smartTvApp";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route exact path="/pages/application" element={<Application />} />
         <Route exact path="/pages/apps/smartphones" element={<SmartPhonesApp />} />
         <Route exact path="/pages/apps/otherBoxes" element={<OtherTvBoxes />} />
+        <Route exact path="/pages/apps/smartTvApp" element={<SmartTvApp />} />
       </Routes>
 
       <ChannelsModal />

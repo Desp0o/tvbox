@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 
 import "./application.css"
 
@@ -19,7 +20,7 @@ const devicesDB = [
         title: 'აპლიკაცია SMART ტელევიზორებისთვის',
         desc: 'Sony, Samsung, Hisense და სხვა smart ტელევიზორებისთვის',
         image: `${smartTv}`,
-        link: '/'
+        link: '/pages/apps/smartTvApp'
     },
 
     {
@@ -31,6 +32,11 @@ const devicesDB = [
 ]
 
 export default function Application(){
+
+    useEffect(()=>{
+        document.body.style.overflow='auto'
+    },[])
+
     return(
         <>
             <div className="application">
