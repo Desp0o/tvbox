@@ -8,6 +8,7 @@ import ChannelsModal from "./components/channelsModal/channelsModal";
 import Payment from "./pages/payment";
 import Application from "./pages/application";
 import SmartPhonesApp from "./pages/apps/smartphones";
+import OtherTvBoxes from "./pages/apps/otherBoxes";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path="/pages/payment" element={<Payment />} />
         <Route exact path="/pages/application" element={<Application />} />
         <Route exact path="/pages/apps/smartphones" element={<SmartPhonesApp />} />
+        <Route exact path="/pages/apps/otherBoxes" element={<OtherTvBoxes />} />
       </Routes>
 
       <ChannelsModal />

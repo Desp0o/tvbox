@@ -26,7 +26,7 @@ const devicesDB = [
         title: 'აპლიკაცია სხვა ბოქსებისთვის',
         desc: 'სხვადასხვა მწარმოებლის Android ბოქსებისთვის',
         image: `${otherBox}`,
-        link: '/'
+        link: '/pages/apps/otherBoxes'
     },
 ]
 
