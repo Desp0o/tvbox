@@ -1,5 +1,5 @@
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import "./smartphones.css"
 import FooterBanner from '../../components/footerBanner/footerBanner'
 
@@ -12,7 +12,6 @@ import windowsPhone from '../../components/images/windows.png'
 import playStore from '../../components/images/playstore_icon.png'
 import appStore from '../../components/images/appstore.png'
 import windowsStore from '../../components/images/windows_phone_store.png'
-import { Link } from "react-router-dom"
 
 const iosDB = [
     {
@@ -41,7 +40,7 @@ const iosDB = [
 
     {
         index: 2,
-        title:'MYVIDEO TV აპლიკაცია ANDROID-ის ტელეფონებისათვის',
+        title:'MYVIDEO TV აპლიკაცია WINDOWS-ის ტელეფონებისათვის',
         question :'როგორ დავაყენოთ აპლიკაცია',
         answer:'თქვენი ტელეფონის მენიუდან შედით Phone Store-ში, მოძებნეთ MYVIDEO-ს აპლიკაცია და დააინსტალირეთ',
         image: `${windowsPhone}`,
@@ -54,8 +53,30 @@ const iosDB = [
 
 export default function SmartPhonesApp(){
 
-    const scrollToRef = (refname) => {
-        refname.current?.scrollIntoView({behavior: 'smooth'});
+    const appleRef = useRef()
+
+    const scrollToRef1 = () => {
+        appleRef.current?.scrollIntoView({behavior: 'smooth'});
+        setBlock1('ios_block active_block')
+        setBlock2('ios_block')
+        setBlock3('ios_block')
+        setNum(0)
+    };
+
+    const scrollToRef2 = () => {
+        appleRef.current?.scrollIntoView({behavior: 'smooth'});
+        setBlock1('ios_block')
+        setBlock2('ios_block active_block')
+        setBlock3('ios_block')
+        setNum(1)
+    };
+
+    const scrollToRef3 = () => {
+        appleRef.current?.scrollIntoView({behavior: 'smooth'});
+        setBlock1('ios_block')
+        setBlock2('ios_block')
+        setBlock3('ios_block active_block')
+        setNum(2)
     };
 
     const [block1, setBlock1] = useState('ios_block active_block')
@@ -97,15 +118,15 @@ export default function SmartPhonesApp(){
 
                     <div className="iosType">
                         
-                        <div className="ios_item">
+                        <div className="ios_item" onClick={scrollToRef1}>
                             <img src={android} className="ios_item_img" alt="smartphone logo" />
                         </div>
 
-                        <div className="ios_item">
+                        <div className="ios_item" onClick={scrollToRef2}>
                             <img src={apple} className="ios_item_img" alt="smartphone logo" />
                         </div>
 
-                        <div className="ios_item">
+                        <div className="ios_item" onClick={scrollToRef3}>
                             <img src={windows} className="ios_item_img" alt="smartphone logo" />
                         </div>
 
@@ -131,7 +152,7 @@ export default function SmartPhonesApp(){
 
                     <div className={num === 1 ? 'sectionThird_smartPhones_inner rowReverse' : 'sectionThird_smartPhones_inner'}>
 
-                        <div className="sectionThird_smartPhones_inner_leftSide">
+                        <div ref={appleRef} className="sectionThird_smartPhones_inner_leftSide">
                             <p className="os_title">{isoDbItem.title}</p>
 
                             <div className="os_second_title_text">
@@ -140,17 +161,17 @@ export default function SmartPhonesApp(){
                             </div>
 
                             <>
-                                <a href={isoDbItem.link1} target="_blank">
+                                <a href={isoDbItem.link1} target="_blank" rel="noreferrer">
                                     <div className="smartPhones_btn">
                                         <p>{isoDbItem.download}</p>
-                                        <img src={isoDbItem.store} alt="store icon" />
+                                        <img src={isoDbItem.store} alt="store icon" className="storeImage"/>
                                     </div>
 
                                     {
                                         isoDbItem.link2 !== '' ?
                                             <div className="smartPhones_btn btn_second">
                                                 <p>გადმოწერე iPad-ისთვის</p>
-                                                <img src={isoDbItem.store} alt="store icon" />
+                                                <img src={isoDbItem.store} alt="store icon" className="storeImage"/>
                                             </div>
                                         : ''    
                                     }

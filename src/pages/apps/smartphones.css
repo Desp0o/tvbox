@@ -11,6 +11,7 @@
     justify-content: center;
     flex-direction: column;
     gap: 130px;
+    overflow-x: hidden;
 }
 
 .smartPhone_Title{
@@ -162,6 +163,7 @@
     color: rgb(237,0,0);
     font-weight: 600;
     width: 350px;
+    max-width: 100%;
 }
 
 .os_second_title{
@@ -173,4 +175,51 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+}
+
+@media (max-width:800px) {
+    .sectionThird_smartPhones_inner{
+        flex-direction: column;
+        scroll-padding-top: 290px;
+    }
+
+    .sectionThird_smartPhones_inner_leftSide{
+        width: 80%;
+    }
+
+    .sectionThird_smartPhones_inner_rightSide{
+        display: none;
+    }
+
+    .secondSection_smartPhones{
+        flex-direction: column;
+        padding-bottom: 10px;
+        display: none;
+    }
+
+    .iosType{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+    }
+
+    .storeImage{
+        display: none;
+    }
+
+    .smartPhones_btn{
+        width: 100%;
+        height: 55px;
+        box-sizing: border-box;
+    
+        background-color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+        padding-right: 0px;
+        gap:40px;
+    }
 }

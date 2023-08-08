@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html{
+  scroll-padding-top: 190px !important;
+}
+
 @font-face {
   font-family: "bebas";
   src: url('./components/fonts/bebas.ttf');
@@ -135,4 +139,12 @@ input{
 
   /* Remove default styling */
   outline: none;
+}
+
+
+@media (max-width:800px) {
+  
+html{
+  scroll-padding-top: 20px !important;
+}
 }
