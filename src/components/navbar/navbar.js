@@ -93,7 +93,7 @@ export default function Navbar(){
 
                         <Link><p>კითხვები</p></Link>
 
-                        <Link><p>აპლიკაცია</p></Link>
+                        <Link to='/pages/application'><p>აპლიკაცია</p></Link>
 
                         <div className="call_block" onClick={handleButtonClick}>
                             <img src={callIcon} alt="call icon" className="call_icon" />
@@ -117,7 +117,7 @@ export default function Navbar(){
 
                         <Link onClick={closeDashboard}><p>კითხვები</p></Link>
 
-                        <Link onClick={closeDashboard}><p>აპლიკაცია</p></Link>
+                        <Link to='/pages/application' onClick={closeDashboard}><p>აპლიკაცია</p></Link>
 
                         <div className="call_block" onClick={handleButtonClick}>
                             <img src={callIcon} alt="call icon" className="call_icon" />
