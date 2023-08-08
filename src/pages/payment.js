@@ -58,12 +58,12 @@ export default function Payment(){
                         {
                             paymentArr.map((method, index) => {
                                 return(
-                                    <>
+                                    
                                      <div className='payment_methods_block' key={index}>
                                         <img src={method.img} alt='payment method' />
                                         <p>{method.text}</p>
                                     </div>
-                                    </>
+                                    
                                 )
                             })
                         }

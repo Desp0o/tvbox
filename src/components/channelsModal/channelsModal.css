@@ -32,9 +32,9 @@
     padding-right: 85px;
   
     transition: all 0.2s ease;
-  }
+}
 
-  .channels_modal_closed{
+.channels_modal_closed{
     height: 0px;
     width: 100%;
 
@@ -65,13 +65,42 @@
     gap: 10px;
 
     width: 100%;
-    height: calc(100% - 40px);
+    height: calc(100% - 48px);
 
     padding-right: 10px;
     padding-left: 10px;
 
     overflow-y: scroll;
     overflow-x: hidden;
+}
+
+.subscribe_prices_addon{
+    justify-content: flex-start;
+}
+
+.choosePackage{
+    font-family: "bpg square banner caps";
+    color: #fff;
+    text-align: center;
+    font-size: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+
+    margin-bottom: 20px;
+}
+
+.packageName1,
+.packageName2{
+    cursor: pointer;
+    color: rgb(237, 0, 0);
+}
+
+.inactive{
+    opacity: 0.4;
+    color: #fff;
 }
 
 .subscribe_prices::-webkit-scrollbar{
@@ -265,7 +294,7 @@
     justify-content: center;
 }
 
-@media (max-width:1200px) {
+@media (max-width:1250px) {
     
     .subscribe_prices{
         flex-wrap: wrap;
@@ -314,4 +343,8 @@
     .channel_list_inModal{
         margin-top: 0px;
     }
+}
+
+.displayNone{
+    display: none;
 }
