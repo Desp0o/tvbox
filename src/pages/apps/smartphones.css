@@ -1,0 +1,176 @@
+.firstSection_smartPhones{
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../../components/images/smartphone_back.jpeg");
+    background-position: center;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 130px;
+}
+
+.smartPhone_Title{
+    font-size: 38px;
+    text-align: center;
+    font-family: "BPG Square Banner Caps";
+    color: #fff;
+}
+
+.iosType{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 130px;
+}
+
+.ios_item{
+    position: relative;
+    width: 190px;
+    height: 70px;
+
+    background-color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ios_item::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    right: -10px;
+    top:-10px;
+    background-color: #fff;
+}
+
+.ios_item::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    right: -10px;
+    top:-10px;
+    background-color: #fff;
+}
+
+.secondSection_smartPhones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:5px;
+
+    padding-top: 40px;
+}
+
+.ios_block{
+    width: 300px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.active_block{
+    position: relative;
+    background-color: rgb(238, 238, 238);
+}
+
+.active_block::after{
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 1px;
+    right: -10px;
+    top:-10px;
+    background-color: rgb(238, 238, 238);
+}
+
+.active_block::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 90%;
+    right: -10px;
+    top:-10px;
+    background-color: rgb(238, 238, 238);
+}
+
+.sectionThird_smartPhones_inner{
+    background-color: rgb(238, 238, 238);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    font-family: "BPG Square Banner Caps";
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.rowReverse{
+    flex-direction: row-reverse;
+}
+
+.smartPhones_btn{
+    width: 100%;
+    height: 55px;
+    box-sizing: border-box;
+
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    gap:40px;
+}
+
+.btn_second{
+    margin-top: 10px;
+}
+
+.smartPhones_btn p{
+    color: #fff;
+    font-size: 18px;
+}
+
+.sectionThird_smartPhones_inner_leftSide{
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.mobilePhone_type{
+    height: 400px;
+    width: auto;
+}
+
+.os_title{
+    font-size: 30px;
+    color: rgb(237,0,0);
+    font-weight: 600;
+    width: 350px;
+}
+
+.os_second_title{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.os_second_title_text{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}

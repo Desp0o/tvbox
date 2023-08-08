@@ -11,19 +11,22 @@ const devicesDB = [
     {
         title: 'აპლიკაცია SMART ტელეფონებისთვის',
         desc: 'მოწყობილობა ნებისმიერი ტელეფონებისთვის',
-        image: `${smartPhone}`
+        image: `${smartPhone}`,
+        link: '/pages/apps/smartphones'
     },
 
     {
         title: 'აპლიკაცია SMART ტელევიზორებისთვის',
         desc: 'Sony, Samsung, Hisense და სხვა smart ტელევიზორებისთვის',
-        image: `${smartTv}`
+        image: `${smartTv}`,
+        link: '/'
     },
 
     {
         title: 'აპლიკაცია სხვა ბოქსებისთვის',
         desc: 'სხვადასხვა მწარმოებლის Android ბოქსებისთვის',
-        image: `${otherBox}`
+        image: `${otherBox}`,
+        link: '/'
     },
 ]
 
@@ -37,7 +40,7 @@ export default function Application(){
                 <div className="appsForDevices">
                     {devicesDB.map((item,index)=>{
                         return(
-                            <Link to='/' key={index}>
+                            <Link to={item.link} key={index}>
                                 <div className="forDeivceItem">
                                     <p className="deviceItemTitle">{item.title}</p>
                                     <p className="deviceItemDesc">{item.desc}</p>
