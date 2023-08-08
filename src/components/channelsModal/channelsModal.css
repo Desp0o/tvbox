@@ -294,6 +294,13 @@
     justify-content: center;
 }
 
+@media (min-width: 1500px) {
+
+    .addonColumn{
+        margin-left: 300px;
+    }
+}
+
 @media (max-width:1250px) {
     
     .subscribe_prices{
@@ -314,7 +321,13 @@
     .subscribe_prices{
         display: block;
         padding: 5px;
-        margin-top: 80px;
+        margin-top: 25px;
+    }
+
+    .choosePackage{
+        margin-bottom: 0px;
+        font-size: 18px;
+        margin-top: 25px;
     }
 
     .channelColumn{

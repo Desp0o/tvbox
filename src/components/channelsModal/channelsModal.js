@@ -28,7 +28,7 @@ export default function ChannelsModal(){
             setPackageName1('packageName1 inactive')
             setPackageName2('packageName2')    
             setMainPackages('displayNone')
-            setAddon('channelColumn')
+            setAddon('channelColumn addonColumn')
             setSubscripePrices('subscribe_prices subscribe_prices_addon')
         }
 
