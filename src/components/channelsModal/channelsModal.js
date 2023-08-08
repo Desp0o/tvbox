@@ -33,6 +33,8 @@ export default function ChannelsModal(){
         }
 
         const modalHandler = ()=> {
+            document.body.style.overflow='auto'
+
             setModalClass('channels_modal_closed')
                 document.body.style.overflow='auto'
         }

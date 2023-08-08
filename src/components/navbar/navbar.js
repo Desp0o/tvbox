@@ -69,6 +69,7 @@ export default function Navbar(){
     };
 
     const modalHandler = ()=> {
+        document.body.style.overflow='hidden'
         setModalClass('channels_modal_opened')
     }
 
@@ -110,7 +111,7 @@ export default function Navbar(){
 
                         <Link to='/pages/devicePage' onClick={closeDashboard}><p>მოწყობილობა</p></Link>
 
-                        <Link onClick={()=> {modalHandler(); closeDashboard()}}><p>არხები</p></Link>
+                        <Link onClick={()=> {closeDashboard(); modalHandler()}}><p>არხები</p></Link>
 
                         <Link to='/pages/payment' onClick={closeDashboard}><p>გადახდის მეთოდები</p></Link>
 
