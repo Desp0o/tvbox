@@ -14,6 +14,7 @@ import appStore from '../../components/images/appstore.png'
 import windowsStore from '../../components/images/windows_phone_store.png'
 
 const iosDB = [
+
     {
         index: 0,
         title:'MYVIDEO TV აპლიკაცია ANDROID-ის ტელეფონებისათვის',
@@ -160,23 +161,26 @@ export default function SmartPhonesApp(){
                                 <p className="os_second_text">{isoDbItem.answer}</p>
                             </div>
 
-                            <>
+                            <div>
                                 <a href={isoDbItem.link1} target="_blank" rel="noreferrer">
                                     <div className="smartPhones_btn">
                                         <p>{isoDbItem.download}</p>
                                         <img src={isoDbItem.store} alt="store icon" className="storeImage"/>
                                     </div>
+                                </a>    
 
                                     {
                                         isoDbItem.link2 !== '' ?
-                                            <div className="smartPhones_btn btn_second">
-                                                <p>გადმოწერე iPad-ისთვის</p>
-                                                <img src={isoDbItem.store} alt="store icon" className="storeImage"/>
-                                            </div>
+                                            <a href={isoDbItem.link2} target="_blank" rel="noreferrero">
+                                                <div className="smartPhones_btn btn_second">
+                                                    <p>გადმოწერე iPad-ისთვის</p>
+                                                    <img src={isoDbItem.store} alt="store icon" className="storeImage"/>
+                                                </div>
+                                            </a>
                                         : ''    
                                     }
-                                </a>
-                            </>
+                                
+                            </div>
 
                         </div>
 
