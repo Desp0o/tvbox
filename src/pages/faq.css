@@ -1,0 +1,132 @@
+.faq{
+    padding-bottom: 100px;
+}
+
+.faq_cover{
+    width: 100%;
+    height: 330px;
+
+    background-image: url('../components//images/box_devicePage.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+.faq_title{
+    font-family: "BPG Square Banner Caps";
+    color: rgb(237,0,0);
+    font-size: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.faq_questions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.question_title{
+    position: relative;
+    width: 700px;
+    max-width: 90%;
+    overflow: hidden;
+    font-family: "BPG Square Banner Caps";
+    border-top: 1px solid #0000004b;
+}
+
+.question{
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 70px;
+    font-size: 17px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.faqBorderBottom{
+    border-bottom:1px solid #0000004b;
+}
+
+.answer{
+    font-family: "BPG Arial";
+    box-sizing: border-box;
+    font-size: 15px;
+    width: 100%;
+    max-height: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    overflow: hidden;
+
+    transition: all 0.5s ease ;
+}
+
+.answer_extended{
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-height: 350px;
+    transition: all 0.5s ease ;
+}
+
+.features1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.features1_item{
+    position: relative;
+}
+.features1_item::after{
+    content: '';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    left: -15px;
+    width: 10px;
+    height: 2px;
+    background-color: rgb(237,0,0);
+}
+
+.faq3_titles{
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.noMarginTop{
+    margin-top: 0;
+}
+
+.faq3feature{
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.faqArrow{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%) rotate(-90deg);
+    transition: all 0.5s ease ;
+}
+
+.faqArrowOpened{
+    transform: rotate(0deg);
+    transition: all 0.5s ease ;
+}
+
+
+@media (max-width:800px) {
+    .question5title{
+        padding-right: 50px;
+    }
+    
+}

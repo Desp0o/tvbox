@@ -91,7 +91,7 @@ export default function Navbar(){
 
                         <Link to='/pages/payment'><p>გადახდის მეთოდები</p></Link>
 
-                        <Link><p>კითხვები</p></Link>
+                        <Link to='/pages/faq'><p>კითხვები</p></Link>
 
                         <Link to='/pages/application'><p>აპლიკაცია</p></Link>
 
@@ -115,7 +115,7 @@ export default function Navbar(){
 
                         <Link to='/pages/payment' onClick={closeDashboard}><p>გადახდის მეთოდები</p></Link>
 
-                        <Link onClick={closeDashboard}><p>კითხვები</p></Link>
+                        <Link to='/pages/faq' onClick={closeDashboard}><p>კითხვები</p></Link>
 
                         <Link to='/pages/application' onClick={closeDashboard}><p>აპლიკაცია</p></Link>
 
