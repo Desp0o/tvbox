@@ -60,6 +60,7 @@ export default function Navbar(){
 
     const closeDashboard = ()=> {
         setDashboard('dashboard_closed')
+        setBurgerBoolean(false)
         setHamburgerMenu(menuBars)
         document.body.style.overflow='auto'
     }
