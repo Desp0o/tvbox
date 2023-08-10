@@ -2462,5 +2462,3 @@ export const silkDb = [
 ]
 
 
-console.log(channelsDB.length);
-console.log(abroadChannelsDB.length + "საზღვარ გარეთ");

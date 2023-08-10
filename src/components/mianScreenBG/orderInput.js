@@ -3,8 +3,11 @@ import { ModalContext } from "../modalContext"
 import "./orderInputs.css"
 import PriceTableComponent from "./priceTableBlock"
 import plusIcon from '../images/plus.webp'
+import Rules from "../rules/rules"
 
 export default function OrderInputs() {
+
+    const { setRulesBackGround} = useContext(ModalContext)
 
     const cityArray = [
         'ქუთაისი', 'ბათუმი', 'ახალციხე', 'გორი', 'ამბროლაური', 'თელავი', 'ზუგდიდი', 'ფოთი',
@@ -47,6 +50,11 @@ export default function OrderInputs() {
 
     const handleValues = (e) => {
         setValues({ ...values, [e.target.name]: e.target.value })
+    }
+
+    const rulesHandler = ()=>{
+        document.body.style.overflow='hidden'
+        setRulesBackGround('rulesOutter rulesOutter_active')
     }
 
     useEffect(() => {
@@ -150,15 +158,13 @@ export default function OrderInputs() {
         }
     }, [values])
 
-
-
-
     useEffect(() => {
         console.log(values);
     }, [values])
 
     return (
-        <>
+        <>  
+            <Rules />
             <div className="orderInputs">
                 <div className="orderInner">
 
@@ -245,7 +251,7 @@ export default function OrderInputs() {
 
                         <div className="rulesAndBtn">
                             <input type="checkbox" className="checkBox" />
-                            <p className="rules">გავეცანი და ვეთანხმები <span>პირობებს</span></p>
+                            <p className="rules">გავეცანი და ვეთანხმები <span onClick={rulesHandler}>პირობებს</span></p>
                         </div>
 
                         <div className="btn">
