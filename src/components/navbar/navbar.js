@@ -79,7 +79,9 @@ export default function Navbar(){
             <div className={navClass}>
 
                 <div className="navbar_Left">
-                    <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo"/>
+                    <Link to="/">
+                        <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo"/>
+                    </Link>
                 </div>
 
                 <div className="navbar_Right">

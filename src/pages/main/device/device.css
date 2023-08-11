@@ -127,10 +127,10 @@
     }
   }
 
-  @media (min-width:1900px) {
+  @media (min-width:1600px) {
     .device_desc{
-      padding: 0 300px 0 300px;
+      padding: 0 250px 0 250px;
       font-family: "BPG Arial";
       font-size: 18px;
-  }
+    }
   }

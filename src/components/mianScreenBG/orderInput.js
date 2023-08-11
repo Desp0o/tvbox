@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext } from "react"
+import { useState, useEffect, useContext, useRef } from "react"
 import { ModalContext } from "../modalContext"
 import "./orderInputs.css"
 import PriceTableComponent from "./priceTableBlock"
@@ -6,6 +6,17 @@ import plusIcon from '../images/plus.webp'
 import Rules from "../rules/rules"
 
 export default function OrderInputs() {
+
+    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    const regex = /[0-9!@#$%^&*()_+{}\[\]:;<>,./?~]/;
+    const numberRegex = /^\s*[0-9]+\s*$/
+
+    const nameRef     = useRef()
+    const lastNameRef = useRef()
+    const idNumRef    = useRef()
+    const phoneRef    = useRef()
+    const emailRef    = useRef()
+    const adressRef   = useRef()
 
     const { setRulesBackGround} = useContext(ModalContext)
 
@@ -33,8 +44,24 @@ export default function OrderInputs() {
         location: "",
         package: "",
         city: "",
-        country: ""
+        country: "",
+        name: "",
+        surname: "",
+        idnumber: "",
+        phoneNumber: "",
+        email: "",
+        adress: ""
     })
+
+    const [valuesBoolean, setValuesBoolean] = useState({
+        fisrtName: false,
+        lastName: false,
+        idNumber: false,
+        phoneNum: false,
+        email: false,
+        adress: false
+    })
+
     const [cityClass, setCityClass] = useState('displayNone')
     const [countryClass, setCountryClass] = useState('displayNone')
     const [inputInner, setInputInner] = useState('inputsInner')
@@ -126,7 +153,18 @@ export default function OrderInputs() {
             setValues(prevValues => ({ ...prevValues, package: '' }));
         }
 
+        if(values.location === "თბილისი"){
+            setValues(prevValues => ({ ...prevValues, city: 'თბილისი', country: 'საქართველო' }));
+        
+        }
 
+        if (values.location === 'საზღვარგარეთ'){
+            setValues(prevValues => ({ ...prevValues, city: '' }));
+        }
+
+        if (values.location === 'სხვაგან საქართველოში'){
+            setValues(prevValues => ({ ...prevValues, country: 'საქართველო' }));
+        }
 
     }, [values.location])
 
@@ -161,6 +199,106 @@ export default function OrderInputs() {
     useEffect(() => {
         console.log(values);
     }, [values])
+
+    useEffect(()=>{
+    
+        if(nameRef.current.value.length > 0 && !regex.test(nameRef.current.value)){
+            nameRef.current.style.border = "solid 1px green"
+        }else if(nameRef.current.value.length === 0){
+            nameRef.current.style.border = "unset"
+        }
+
+    },[values.name])
+
+    useEffect(()=>{
+    
+        if(lastNameRef.current.value.length > 0 && !regex.test(lastNameRef.current.value)){
+            lastNameRef.current.style.border = "solid 1px green"
+        }else if(lastNameRef.current.value.length === 0){
+            lastNameRef.current.style.border = "unset"
+        }
+
+    },[values.surname])
+
+    useEffect(()=>{
+        if(idNumRef.current.value.length > 0 && numberRegex.test(idNumRef.current.value)){
+           
+                idNumRef.current.style.border = "solid 1px green"
+            
+        }else if(idNumRef.current.value.length === 0){
+            idNumRef.current.style.border = "unset"
+        }
+    },[values.idnumber])
+
+    useEffect(()=>{
+        if(phoneRef.current.value.length > 0 && numberRegex.test(phoneRef.current.value)){
+           
+                phoneRef.current.style.border = "solid 1px green"
+            
+        }else if(phoneRef.current.value.length === 0){
+            phoneRef.current.style.border = "unset"
+        }
+    },[values.phoneNumber])
+
+    useEffect(()=>{
+        if(emailRef.current.value.length > 0 ){
+           
+                emailRef.current.style.border = "solid 1px green"
+            
+        }else if(emailRef.current.value.length === 0){
+            emailRef.current.style.border = "unset"
+        }
+    },[values.email])
+
+    useEffect(()=>{
+        if(adressRef.current.value.length > 5){
+            adressRef.current.style.border = "solid 1px green"
+        }else if(adressRef.current.value.length === 0){
+            adressRef.current.style.border = "unset"
+        }
+    },[values.adress])
+
+
+    const checkForms = ()=> {
+
+        if(!nameRef.current.value.length > 0 || regex.test(nameRef.current.value)){
+            nameRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, fisrtName: true}))
+        }
+
+        if(!lastNameRef.current.value.length > 0 || regex.test(lastNameRef.current.value)){
+            lastNameRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, lastName: true}))
+        }
+
+        if(!idNumRef.current.value.length > 0 || !numberRegex.test(idNumRef.current.value)){
+            idNumRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, idNumber: true}))
+        }
+
+        if(phoneRef.current.value.length < 9 || !numberRegex.test(phoneRef.current.value)){
+            phoneRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, phoneNum: true}))
+        }
+
+        if(!emailRegex.test(emailRef.current.value)){
+            emailRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, email: true}))
+        }
+
+        if(!adressRef.current.value.length > 0){
+            adressRef.current.style.border = "solid 1px red"
+        }else{
+            setValuesBoolean(prevValues=>({...prevValues, adress: true}))
+        }
+        
+        console.log(valuesBoolean);
+    }
 
     return (
         <>  
@@ -236,15 +374,15 @@ export default function OrderInputs() {
 
                         <div className="secondForm">
                             <div className="secondForm_upper">
-                                <input type="text" name="name" placeholder="სახელი *" className="inputMainStyle" />
-                                <input type="text" name="surname" placeholder="გვარი *" className="inputMainStyle" />
-                                <input type="text" name="idnumber" placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" />
+                                <input ref={nameRef} type="text" name="name" value={values.name} placeholder="სახელი *" className="inputMainStyle" onChange={handleValues} />
+                                <input ref={lastNameRef} type="text" name="surname" value={values.surname} placeholder="გვარი *" className="inputMainStyle" onChange={handleValues} />
+                                <input ref={idNumRef} type="text" name="idnumber" value={values.idnumber} placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" onChange={handleValues} />
                             </div>
 
                             <div className="secondForm_below">
-                                <input type="text" name="phone_number" placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" />
-                                <input type="email" name="email" placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" />
-                                <input type="text" name="adress" placeholder="მისამართ *" className="inputMainStyle adress" />
+                                <input ref={phoneRef} type="text" name="phoneNumber" value={values.phoneNumber} placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" onChange={handleValues} />
+                                <input ref={emailRef} type="email" name="email" value={values.email} placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" onChange={handleValues} />
+                                <input ref={adressRef} type="text" name="adress" value={values.adress} placeholder="მისამართ *" className="inputMainStyle adress" onChange={handleValues} />
 
                             </div>
                         </div>
@@ -254,7 +392,7 @@ export default function OrderInputs() {
                             <p className="rules">გავეცანი და ვეთანხმები <span onClick={rulesHandler}>პირობებს</span></p>
                         </div>
 
-                        <div className="btn">
+                        <div className="btn" onClick={checkForms}>
                             <div className="agreeBtn">
                                 <p>შეკვეთის გაფორმება</p>
                             </div>

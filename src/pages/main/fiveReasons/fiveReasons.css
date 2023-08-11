@@ -177,9 +177,9 @@
     }
 }
 
-@media (min-width:1900px) {
+@media (min-width:1600px) {
     .features{
-        padding-left: 290px ;
-        padding-right: 290px;
+        padding-left: 250px ;
+        padding-right: 250px;
     }
 }
