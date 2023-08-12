@@ -196,14 +196,15 @@ export default function OrderInputs() {
         }
     }, [values])
 
-    useEffect(() => {
-        console.log(values);
-    }, [values])
+    // useEffect(() => {
+    //     console.log(values);
+    // }, [values])
 
     useEffect(()=>{
     
         if(nameRef.current.value.length > 0 && !regex.test(nameRef.current.value)){
             nameRef.current.style.border = "solid 1px green"
+            setValuesBoolean(prevValues=>({...prevValues, fisrtName: true}))
         }else if(nameRef.current.value.length === 0){
             nameRef.current.style.border = "unset"
         }
@@ -214,6 +215,7 @@ export default function OrderInputs() {
     
         if(lastNameRef.current.value.length > 0 && !regex.test(lastNameRef.current.value)){
             lastNameRef.current.style.border = "solid 1px green"
+            setValuesBoolean(prevValues=>({...prevValues, lastName: true}))
         }else if(lastNameRef.current.value.length === 0){
             lastNameRef.current.style.border = "unset"
         }
@@ -222,8 +224,10 @@ export default function OrderInputs() {
 
     useEffect(()=>{
         if(idNumRef.current.value.length > 0 && numberRegex.test(idNumRef.current.value)){
-           
-                idNumRef.current.style.border = "solid 1px green"
+            if(idNumRef.current.value.length > 10){
+                setValuesBoolean(prevValues=>({...prevValues, idNumber: true}))
+            }
+            idNumRef.current.style.border = "solid 1px green"
             
         }else if(idNumRef.current.value.length === 0){
             idNumRef.current.style.border = "unset"
@@ -232,8 +236,11 @@ export default function OrderInputs() {
 
     useEffect(()=>{
         if(phoneRef.current.value.length > 0 && numberRegex.test(phoneRef.current.value)){
-           
-                phoneRef.current.style.border = "solid 1px green"
+            if(phoneRef.current.value.length > 8){
+                setValuesBoolean(prevValues=>({...prevValues, phoneNum: true}))
+            }
+            
+            phoneRef.current.style.border = "solid 1px green"
             
         }else if(phoneRef.current.value.length === 0){
             phoneRef.current.style.border = "unset"
@@ -242,8 +249,8 @@ export default function OrderInputs() {
 
     useEffect(()=>{
         if(emailRef.current.value.length > 0 ){
-           
-                emailRef.current.style.border = "solid 1px green"
+            setValuesBoolean(prevValues=>({...prevValues, email: true}))
+            emailRef.current.style.border = "solid 1px green"
             
         }else if(emailRef.current.value.length === 0){
             emailRef.current.style.border = "unset"
@@ -252,6 +259,7 @@ export default function OrderInputs() {
 
     useEffect(()=>{
         if(adressRef.current.value.length > 5){
+            setValuesBoolean(prevValues=>({...prevValues, adress: true}))
             adressRef.current.style.border = "solid 1px green"
         }else if(adressRef.current.value.length === 0){
             adressRef.current.style.border = "unset"
@@ -263,42 +271,67 @@ export default function OrderInputs() {
 
         if(!nameRef.current.value.length > 0 || regex.test(nameRef.current.value)){
             nameRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, fisrtName: true}))
+            setValuesBoolean(prevValues=>({...prevValues, fisrtName: false}))
         }
 
         if(!lastNameRef.current.value.length > 0 || regex.test(lastNameRef.current.value)){
             lastNameRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, lastName: true}))
+            setValuesBoolean(prevValues=>({...prevValues, lastName: false}))
         }
 
-        if(!idNumRef.current.value.length > 0 || !numberRegex.test(idNumRef.current.value)){
+        if(idNumRef.current.value.length < 11 || !numberRegex.test(idNumRef.current.value)){
             idNumRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, idNumber: true}))
+            setValuesBoolean(prevValues=>({...prevValues, idNumber: false}))
         }
 
         if(phoneRef.current.value.length < 9 || !numberRegex.test(phoneRef.current.value)){
             phoneRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, phoneNum: true}))
+            setValuesBoolean(prevValues=>({...prevValues, phoneNum: false}))
         }
 
         if(!emailRegex.test(emailRef.current.value)){
             emailRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, email: true}))
+            setValuesBoolean(prevValues=>({...prevValues, email: false}))
         }
 
         if(!adressRef.current.value.length > 0){
             adressRef.current.style.border = "solid 1px red"
-        }else{
-            setValuesBoolean(prevValues=>({...prevValues, adress: true}))
+            setValuesBoolean(prevValues=>({...prevValues, adress: false}))
         }
-        
-        console.log(valuesBoolean);
+
+        if(valuesBoolean.fisrtName === true &&
+           valuesBoolean.lastName  === true &&
+           valuesBoolean.idNumber  === true &&
+           valuesBoolean.phoneNum  === true &&
+           valuesBoolean.email     === true &&
+           valuesBoolean.adress    === true &&
+           isChecked === true) {
+
+            alert('your request sent')
+
+            setValuesBoolean(prevValues=>({...prevValues, fisrtName: false}))
+            setValuesBoolean(prevValues=>({...prevValues, lastName: false}))
+            setValuesBoolean(prevValues=>({...prevValues, idNumber: false}))
+            setValuesBoolean(prevValues=>({...prevValues, phoneNum: false}))
+            setValuesBoolean(prevValues=>({...prevValues, email: false}))
+            setValuesBoolean(prevValues=>({...prevValues, adress: false}))
+
+            setValues(prevValues=>({...prevValues, name: ""}))
+            setValues(prevValues=>({...prevValues, surname: ""}))
+            setValues(prevValues=>({...prevValues, idnumber: ""}))
+            setValues(prevValues=>({...prevValues, phoneNumber: ""}))
+            setValues(prevValues=>({...prevValues, email: ""}))
+            setValues(prevValues=>({...prevValues, adress: ""}))
+            setIsChecked(false)
+        }else{
+            alert('გთხოვთ გაეცნოთ წესებს და დაეთანხმოთ')
+        }
     }
+
+    const [isChecked, setIsChecked] = useState(false);
+    const handleCheckboxChange = (event) => {
+        setIsChecked(event.target.checked);
+    };
 
     return (
         <>  
@@ -388,12 +421,12 @@ export default function OrderInputs() {
                         </div>
 
                         <div className="rulesAndBtn">
-                            <input type="checkbox" className="checkBox" />
+                            <input type="checkbox" className="checkBox" checked={isChecked} onChange={handleCheckboxChange}/>
                             <p className="rules">გავეცანი და ვეთანხმები <span onClick={rulesHandler}>პირობებს</span></p>
                         </div>
 
-                        <div className="btn" onClick={checkForms}>
-                            <div className="agreeBtn">
+                        <div className="btn">
+                            <div className="agreeBtn" onClick={checkForms}>
                                 <p>შეკვეთის გაფორმება</p>
                             </div>
                         </div>
