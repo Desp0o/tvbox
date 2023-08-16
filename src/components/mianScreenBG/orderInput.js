@@ -307,7 +307,11 @@ export default function OrderInputs() {
            valuesBoolean.adress    === true &&
            isChecked === true) {
 
-            alert('your request sent')
+            if(isChecked === false){
+                alert('გთხოვთ გაეცნოთ პირობებს და დაეთანხმოთ')
+            }
+
+            alert('თქვენი მოთხოვნა გაგზავნილია, ჩვენ მალე დაგიკავშირდებით')
 
             setValuesBoolean(prevValues=>({...prevValues, fisrtName: false}))
             setValuesBoolean(prevValues=>({...prevValues, lastName: false}))
@@ -323,9 +327,21 @@ export default function OrderInputs() {
             setValues(prevValues=>({...prevValues, email: ""}))
             setValues(prevValues=>({...prevValues, adress: ""}))
             setIsChecked(false)
-        }else{
-            alert('გთხოვთ გაეცნოთ წესებს და დაეთანხმოთ')
         }
+
+        if(valuesBoolean.fisrtName === true &&
+            valuesBoolean.lastName  === true &&
+            valuesBoolean.idNumber  === true &&
+            valuesBoolean.phoneNum  === true &&
+            valuesBoolean.email     === true &&
+            valuesBoolean.adress    === true) {
+ 
+             if(isChecked === false){
+                 alert('გთხოვთ გაეცნოთ პირობებს და დაეთანხმოთ')
+             }
+         }
+
+        
     }
 
     const [isChecked, setIsChecked] = useState(false);
