@@ -171,9 +171,9 @@ export default function FAQ(){
 
                 </div>
 
-                
+                <FooterBanner />
             </div>
-            <FooterBanner />
+            
         </>
     )
 }

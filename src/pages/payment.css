@@ -1,6 +1,9 @@
 .payment{
     width: 100%;
+    min-height: 100vh;
     background-color: #f3f3f3;
+    position: relative;
+    padding-bottom: 400px;
 }
 
 .payment_title_txt{

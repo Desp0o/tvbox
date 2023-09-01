@@ -18,10 +18,12 @@ export default function DevicePage(){
                     <div className="devicePage_cover" />
                     <Device class='device_first_txt_bg' />
                     <Ports />
-                    <Parameters />
-                    <FooterBanner />
+                    <Parameters />              
                 </div>
+
+                <FooterBanner />
             </div>
+            
         </>
     )
 }

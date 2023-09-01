@@ -10,12 +10,14 @@ import FooterBanner from "../../components/footerBanner/footerBanner";
 export default function Main(){
     return(
         <>
-        <FirstScreen />
-        <FiveReasons />
-        <Device />
-        <Ports />
-        <Parameters />
-        <FooterBanner />
+        <div className="homePage">
+            <FirstScreen />
+            <FiveReasons />
+            <Device />
+            <Ports />
+            <Parameters />
+            <FooterBanner />
+        </div>
         </>
     )
 }
