@@ -321,7 +321,7 @@
     .subscribe_prices{
         display: block;
         padding: 5px;
-        margin-top: 25px;
+        margin-top: 60px;
     }
 
     .choosePackage{
@@ -345,7 +345,7 @@
     }
 
     .channels_modal_opened{
-          
+            
             padding-top: 0px;
             padding-left: 10px;
             padding-right: 10px;

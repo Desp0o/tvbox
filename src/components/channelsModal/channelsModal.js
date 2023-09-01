@@ -10,7 +10,6 @@ import { useState } from "react"
 export default function ChannelsModal(){
 
         const {modalClass, setModalClass} = useContext(ModalContext)
-        const [subscribePrices, setSubscripePrices] = useState('subscribe_prices')
         const [mainPackages, setMainPackages] = useState('channelColumn')
 
         const modalHandler = ()=> {
@@ -26,7 +25,7 @@ export default function ChannelsModal(){
                 <img src={close} alt="close icon" className="close_icon" onClick={modalHandler}/>
 
 
-            <div  className={subscribePrices}>
+            <div  className='subscribe_prices'>
 
                 
                 {/* ქართული პაკეტი */}
