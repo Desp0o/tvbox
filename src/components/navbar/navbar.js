@@ -74,6 +74,11 @@ export default function Navbar(){
         setModalClass('channels_modal_opened')
     }
 
+    const closeModal = ()=>{
+        document.body.style.overflow='auto'
+        setModalClass('channels_modal_closed')
+    }
+
     return(
         <>
             <div className={navClass}>
@@ -86,17 +91,17 @@ export default function Navbar(){
 
                 <div className="navbar_Right">
                     <div className="navbar_menu">
-                        <Link to='/'><p>მთავარი</p></Link>
+                        <Link to='/' onClick={closeModal}><p>მთავარი</p></Link>
 
-                        <Link to='/pages/devicePage'><p>მოწყობილობა</p></Link>
+                        <Link to='/pages/devicePage' onClick={closeModal}><p>მოწყობილობა</p></Link>
 
                         <Link onClick={modalHandler}><p>არხები</p></Link>
 
-                        <Link to='/pages/payment'><p>გადახდის მეთოდები</p></Link>
+                        <Link to='/pages/payment' onClick={closeModal}><p>გადახდის მეთოდები</p></Link>
 
-                        <Link to='/pages/faq'><p>კითხვები</p></Link>
+                        <Link to='/pages/faq' onClick={closeModal}><p>კითხვები</p></Link>
 
-                        <Link to='/pages/application'><p>აპლიკაცია</p></Link>
+                        <Link to='/pages/application' onClick={closeModal}><p>აპლიკაცია</p></Link>
 
                         <div className="call_block" onClick={handleButtonClick}>
                             <img src={callIcon} alt="call icon" className="call_icon" />
@@ -105,7 +110,7 @@ export default function Navbar(){
                     </div>
                 </div>
 
-                <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" onClick={burgerHandler}/>
+                <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" onClick={() => {burgerHandler(); closeModal();}}/>
             </div>
 
             <div className={dashboard}>

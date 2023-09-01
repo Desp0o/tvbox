@@ -34,7 +34,7 @@ import gms from "../../components/images/channels/ChannelLogos/gms.png"
 import marao from "../../components/images/channels/ChannelLogos/marao.png"
 import stereo1 from "../../components/images/channels/ChannelLogos/1stereo.png"
 import comedy from "../../components/images/channels/ChannelLogos/comedy.png"
-import agro from "../../components/images/channels/ChannelLogos/agrotv.png"
+import agro from "../../components/images/channels/ChannelLogos/tv_argotv.png"
 import msuicbox from "../../components/images/channels/ChannelLogos/msuicbox.png"
 import starvision from "../../components/images/channels/ChannelLogos/starvision.png"
 import bbb from "../../components/images/channels/ChannelLogos/bbb.png"
@@ -76,7 +76,7 @@ import georgianTimes from "../../components/images/channels/ChannelLogos/georgia
 import altinfo from "../../components/images/channels/ChannelLogos/altinfo.png"
 import erimedia from "../../components/images/channels/ChannelLogos/erimedia.png"
 import mexute from "../../components/images/channels/ChannelLogos/tv5geo.png"
-import agrogaremo from "../../components/images/channels/ChannelLogos/agrogaremo.png"
+import agrogaremo from "../../components/images/channels/ChannelLogos/tv_agrogaremo.png"
 import samefoArxi from "../../components/images/channels/ChannelLogos/samefo-royal-tv.png"
 import abkhazia from "../../components/images/channels/ChannelLogos/voice_abkhazia.png"
 import tvmonitoring from "../../components/images/channels/ChannelLogos/tvmonitoringi.png"
@@ -87,12 +87,10 @@ import viasatExplorer from "../../components/images/channels/ChannelLogos/viasat
 import viasatHistory from "../../components/images/channels/ChannelLogos/viasatHist.png"
 import viasatNature from "../../components/images/channels/ChannelLogos/viasatNat.png"
 import kinomiks from "../../components/images/channels/ChannelLogos/kinomiks.png"
-import kinosvidanie from "../../components/images/channels/ChannelLogos/kinosvidanie.png"
 import kinoxit from "../../components/images/channels/ChannelLogos/kinohit.png"
 import kinosemya from "../../components/images/channels/ChannelLogos/kinosemya.png"
 import kinopremiera from "../../components/images/channels/ChannelLogos/kinopremyerahd.png"
 import kinokmedia from "../../components/images/channels/ChannelLogos/kinokomediya.png"
-import kinoseria from "../../components/images/channels/ChannelLogos/kinoserya.png"
 import mujskoeKino from "../../components/images/channels/ChannelLogos/mujskoekino.png"
 import nashaNovoeKino from "../../components/images/channels/ChannelLogos/nashanovoekino.png"
 import indiskikino from "../../components/images/channels/ChannelLogos/indiyskoekino.png"
@@ -124,7 +122,7 @@ import mezzo from "../../components/images/channels/ChannelLogos/mezzo.png"
 import espresso from "../../components/images/channels/ChannelLogos/espressotv.png"
 import arirang from "../../components/images/channels/ChannelLogos/arirangworldtv.png"
 import onePlusOne from "../../components/images/channels/ChannelLogos/1+1.png"
-import podnoe from "../../components/images/channels/ChannelLogos/radnoekino.png"
+import radnoe from "../../components/images/channels/ChannelLogos/radnoekino.png"
 import feniks from "../../components/images/channels/ChannelLogos/fenikspluskino.png"
 import vegetarian from "../../components/images/channels/ChannelLogos/pervi_vegetarianski.png"
 import piatnica from "../../components/images/channels/ChannelLogos/tv_friday.png"
@@ -165,8 +163,45 @@ import zagarodania from "../../components/images/channels/ChannelLogos/Zagorodna
 import stb from "../../components/images/channels/ChannelLogos/stb.png"
 import zeetv from "../../components/images/channels/ChannelLogos/zeetv.png"
 
-export const channelsDB = [
+import radioImedi from "../../components/images/channels/ChannelLogos/tv_radioimedi.png"
+import geoChannel from "../../components/images/channels/ChannelLogos/GeoCannel.png"
+import rugbyTv from "../../components/images/channels/ChannelLogos/rugby.png"
+import spero from "../../components/images/channels/ChannelLogos/spero.png"
+import foodtv from "../../components/images/channels/ChannelLogos/tv_foodtv.png"
+import marneuliTV from "../../components/images/channels/ChannelLogos/tv_marneulitv.png"
+import tvSport from "../../components/images/channels/ChannelLogos/tv_tvsport.png"
+import enkibenki from "../../components/images/channels/ChannelLogos/tv_enkibenki.png"
+import tv8 from "../../components/images/channels/ChannelLogos/tv_tv8channel.png"
+import vipTv from "../../components/images/channels/ChannelLogos/tv_viptv.png"
+import discoveryGeorgia from "../../components/images/channels/ChannelLogos/tv_discovergeorgia.png"
+import tvmax from "../../components/images/channels/ChannelLogos/tv_tvmax.png"
+import shoni from "../../components/images/channels/ChannelLogos/tv_shonitv.png"
+import mbc from "../../components/images/channels/ChannelLogos/tv_mbctv.png"
+import tv12 from "../../components/images/channels/ChannelLogos/tv_tv12.png"
+import hitv from "../../components/images/channels/ChannelLogos/tv_hitv.png"
+import mze from "../../components/images/channels/ChannelLogos/tv_tvmze.png"
+import sezonitv from "../../components/images/channels/ChannelLogos/sezonitv.png"
+import agtv from "../../components/images/channels/ChannelLogos/tv_agtv.png"
+import parvana from "../../components/images/channels/ChannelLogos/tv_parvanatv.png"
+import positive from "../../components/images/channels/ChannelLogos/tv_positivetv.png"
+import egrisi from "../../components/images/channels/ChannelLogos/tv_egrisi.png"
+import mzareulitv from "../../components/images/channels/ChannelLogos/tv_mzareulitv.png"
+import tavisupaliArxi from "../../components/images/channels/ChannelLogos/tv_tavisupali_iliontv.png"
+import kolxeti89 from "../../components/images/channels/ChannelLogos/kolkheti89.png"
+import mecxreTalga from "../../components/images/channels/ChannelLogos/tv_mecxretalga_nwbctv.png"
+import tv9 from "../../components/images/channels/ChannelLogos/tv_tv9.png"
+import ctv from "../../components/images/channels/ChannelLogos/tv_ctv.png"
+import axali from "../../components/images/channels/ChannelLogos/tv_axali.png"
+import primetv from "../../components/images/channels/ChannelLogos/tv_primetv.png"
+import tvPliusi from "../../components/images/channels/ChannelLogos/tv_tvplus.png"
+import borjomitv from "../../components/images/channels/ChannelLogos/tv_borjomi.png"
 
+
+
+
+
+
+export const channelsDB = [
     {
         icon: `${gpb}`,
         name: 'პირველი არხი',
@@ -186,6 +221,7 @@ export const channelsDB = [
         desktop: desktop,
         mobile: mobile
     },
+
 
     {
         icon: `${teleskola}`,
@@ -210,7 +246,7 @@ export const channelsDB = [
     {
         icon: `${rustavi2}`,
         name: 'რუსთავი 2',
-        isFaded: true,
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
@@ -228,94 +264,15 @@ export const channelsDB = [
     },
 
     {
-        icon: `${silkUniversal}`,
-        name: 'Silk უნივერსალი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkDocu}`,
-        name: 'Silk დოკუმენტური',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkholywood}`,
-        name: 'Silk კინო ჰოლივუდი',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkkids}`,
-        name: 'Silk ქიდს',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkcollection}`,
-        name: 'Silk კინო კოლექცია',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silk1}`,
-        name: 'Silk Sport HD 1',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    
-    {
-        icon: `${silk2}`,
-        name: 'Silk Sport HD 2',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silk3}`,
-        name: 'Silk Sport HD 3',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
         icon: `${posttv}`,
-        name: 'პოსTV',
+        name: 'POSTV',
         isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${formula}`,
@@ -327,6 +284,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${euroNews}`,
         name: 'Euronews Georgia',
@@ -337,20 +295,33 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${imedi}`,
         name: 'იმედი',
-        isFaded: true,
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${gds}`,
         name: 'GDS',
-        isFaded: true,
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+
+    {
+        icon: `${maestro}`,
+        name: 'მაესტრო',
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${''}`,
@@ -358,13 +329,13 @@ export const channelsDB = [
     },
 
     {
-        icon: `${maestro}`,
-        name: 'მაესტრო',
-        isFaded: true,
+        icon: `${marao}`,
+        name: 'მარაო',
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
-        desktop: `${''}`,
-        mobile: `${''}`
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
     },
 
 
@@ -402,7 +373,7 @@ export const channelsDB = [
 
 
     {
-        icon:  `${adjara}`,
+        icon: `${adjara}`,
         name: 'აჭარა',
         isFaded: false,
         isBasePack: true,
@@ -422,7 +393,7 @@ export const channelsDB = [
     },
 
     {
-        icon:`${bmg}`,
+        icon: `${bmg}`,
         name: 'BMG',
         isFaded: false,
         isBasePack: true,
@@ -430,18 +401,6 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
-
-
-    {
-        icon: `${gmc}`,
-        name: 'GMC',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
 
     {
         icon: `${gms}`,
@@ -454,10 +413,82 @@ export const channelsDB = [
     },
 
     {
-        icon: `${marao}`,
-        name: 'მარაო',
+        icon: `${silkUniversal}`,
+        name: 'Silk უნივერსალი',
         isFaded: true,
         isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silkDocu}`,
+        name: 'Silk დოკუმენტური',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silkholywood}`,
+        name: 'Silk კინო ჰოლივუდი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silkkids}`,
+        name: 'Silk ქიდს',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silkcollection}`,
+        name: 'Silk კინო კოლექცია',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silk1}`,
+        name: 'Silk Sport HD 1',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+    
+
+    {
+        icon: `${silk2}`,
+        name: 'Silk Sport HD 2',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${silk3}`,
+        name: 'Silk Sport HD 3',
+        isFaded: true,
+        isBasePack: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -630,6 +661,17 @@ export const channelsDB = [
     },
 
     {
+        icon: `${rioni}`,
+        name: 'რიონი 2',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
         icon: `${tv_sdasutv}`,
         name: 'სდასუ TV',
         isFaded: false,
@@ -638,6 +680,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${diatv}`,
@@ -649,6 +692,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${ltv}`,
         name: 'L-TV',
@@ -659,6 +703,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${mega}`,
         name: 'Mega TV',
@@ -668,6 +713,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${tv25}`,
@@ -680,6 +726,327 @@ export const channelsDB = [
     },
 
     {
+        icon: `${radioImedi}`,
+        name: 'რადიო იმედი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${geoChannel}`,
+        name: 'GeoChannel',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${rugbyTv}`,
+        name: 'რაგბი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvSport}`,
+        name: 'TV SPORT',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${enkibenki}`,
+        name: 'ენკიბენკი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${spero}`,
+        name: 'სფერო ნიუსი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${foodtv}`,
+        name: 'Food TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv8}`,
+        name: 'TV8',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${vipTv}`,
+        name: 'Vip TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${discoveryGeorgia}`,
+        name: 'Discover Georgia HD',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${marneuliTV}`,
+        name: 'მარნეული TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvmax}`,
+        name: 'TVMax',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${shoni}`,
+        name: 'SHONI TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mbc}`,
+        name: 'MBC TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv12}`,
+        name: 'TV 12',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${hitv}`,
+        name: 'HI TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mze}`,
+        name: 'TV მზე',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${sezonitv}`,
+        name: 'სეზონი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${agtv}`,
+        name: 'AG TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${parvana}`,
+        name: 'Parvana TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${positive}`,
+        name: 'Positive TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${egrisi}`,
+        name: 'ეგრისი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mzareulitv}`,
+        name: 'მზარეული TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tavisupaliArxi}`,
+        name: 'თავისუფალი არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${kolxeti89}`,
+        name: 'კოლხეთი 89',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${borjomitv}`,
+        name: 'ბორჯომი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mecxreTalga}`,
+        name: 'მეცხრე ტალღა',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv9}`,
+        name: 'TV 9',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${ctv}`,
+        name: 'CTV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${axali}`,
+        name: 'ახალი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${primetv}`,
+        name: 'Prime TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvPliusi}`,
+        name: 'TV პლიუსი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
         icon: `${imervizia}`,
         name: 'იმერვიზია',
         isFaded: false,
@@ -688,6 +1055,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${gurjaani}`,
@@ -699,6 +1067,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${tv4}`,
         name: 'TV 4',
@@ -708,6 +1077,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${o2}`,
@@ -719,6 +1089,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${saperavi}`,
         name: 'საფერავი TV',
@@ -728,6 +1099,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${pktv}`,
@@ -739,6 +1111,7 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${batumi}`,
         name: 'ბათუმი TV',
@@ -748,6 +1121,7 @@ export const channelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
 
     {
         icon: `${guria}`,
@@ -844,7 +1218,7 @@ export const channelsDB = [
         icon: `${meteo24}`,
         name: 'Meteo 24',
         isFaded: false,
-        isBasePack: false,
+        isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -890,15 +1264,15 @@ export const channelsDB = [
         mobile: `${mobile}`
     },
 
-    {
-        icon: `${erimedia}`,
-        name: 'ერი მედია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
+    // {
+    //     icon: './images/channels/tv_erimedia.png',
+    //     name: 'ერი მედია',
+    //     isFaded: false,
+    //     isBasePack: true,
+    //     tv: `${tv}`,
+    //     desktop: `${desktop}`,
+    //     mobile: `${mobile}`
+    // },
 
     {
         icon: `${mexute}`,
@@ -943,6 +1317,25 @@ export const channelsDB = [
     {
         icon: `${tvmonitoring}`,
         name: 'TV Monitoring',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+    {
+        icon: `${erimedia}`,
+        name: 'ერი მედია',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${gmc}`,
+        name: 'GMC',
         isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
@@ -1021,7 +1414,7 @@ export const channelsDB = [
     },
 
     {
-        icon: `${kinosvidanie}`,
+        icon: `${kinomiks}`,
         name: 'Киносвидание',
         isFaded: true,
         isBasePack: false,
@@ -1071,18 +1464,8 @@ export const channelsDB = [
     },
 
     {
-        icon: `${kinoseria}`,
+        icon: `${nashaNovoeKino}`,
         name: 'Киносерия',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${''}`,
-        mobile: `${''}`
-    },
-
-    {
-        icon: `${mujskoeKino}`,
-        name: 'Мужское кино',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1103,6 +1486,16 @@ export const channelsDB = [
     {
         icon: `${indiskikino}`,
         name: 'Индийское Кино',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${''}`,
+        mobile: `${''}`
+    },
+
+    {
+        icon: `${mujskoeKino}`,
+        name: 'Мужское кино',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1252,7 +1645,7 @@ export const channelsDB = [
 
     {
         icon: `${kvartal95}`,
-        name: 'Квартал 95',
+        name: 'КВАРТАЛ 95',
         isFaded: true,
         isBasePack: false,
         tv: `${tv}`,
@@ -1392,7 +1785,7 @@ export const channelsDB = [
     },
 
     {
-        icon: `${podnoe}`,
+        icon: `${radnoe}`,
         name: 'Родное Кино',
         isFaded: true,
         isBasePack: false,
@@ -1481,6 +1874,8 @@ export const channelsDB = [
         mobile: `${''}`
     },
 
+    
+
     {
         icon: `${uspex}`,
         name: 'У​с​п​е​х',
@@ -1541,6 +1936,7 @@ export const channelsDB = [
         mobile: `${''}`
     },
 
+
     {
         icon: `${nikiJR}`,
         name: 'NIKI Junior',
@@ -1580,6 +1976,7 @@ export const channelsDB = [
         desktop: `${''}`,
         mobile: `${''}`
     },
+
 
     {
         icon: `${oce}`,
@@ -1761,6 +2158,8 @@ export const channelsDB = [
         mobile: `${''}`
     },
     
+
+
     {
         icon: `${zagarodania}`,
         name: 'Загородная Жизнь',
@@ -1781,6 +2180,7 @@ export const channelsDB = [
         mobile: `${''}`
     },
     
+
     {
         icon: `${zeetv}`,
         name: 'Zee TV',
@@ -1789,7 +2189,7 @@ export const channelsDB = [
         tv: `${tv}`,
         desktop: `${''}`,
         mobile: `${''}`
-    }
+    },
 ]
 
 export const abroadChannelsDB = [
@@ -1802,6 +2202,7 @@ export const abroadChannelsDB = [
         desktop: desktop,
         mobile: mobile,
     },
+
     {
         icon: `${gpbhd}`,
         name: 'პირველი არხი HD',
@@ -1811,6 +2212,8 @@ export const abroadChannelsDB = [
         desktop: desktop,
         mobile: mobile
     },
+
+
     {
         icon: `${teleskola}`,
         name: 'ტელესკოლა',
@@ -1820,6 +2223,7 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
     {
         icon: `${tvpirveli}`,
         name: 'პირველი TV',
@@ -1829,6 +2233,7 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
     {
         icon: `${rustavi2}`,
         name: 'რუსთავი 2',
@@ -1838,6 +2243,7 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
     {
         icon: `${mtavariArkhi}`,
         name: 'მთავარი არხი',
@@ -1847,69 +2253,18 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
-    {
-        icon: `${silkUniversal}`,
-        name: 'Silk უნივერსალი',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${euroNews}`,
-        name: 'Euronews Georgia',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${stereoPlus}`,
-        name: 'სტერეო+',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${guria}`,
-        name: 'გურია TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${samefoArxi}`,
-        name: 'სამეფო არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tv_sdasutv}`,
-        name: 'სდასუ TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
+
     {
         icon: `${posttv}`,
-        name: 'პოსTV',
+        name: 'POSTV',
         isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
     {
         icon: `${formula}`,
         name: 'ფორმულა',
@@ -1919,33 +2274,62 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
     {
-        icon: `${imedi}`,
-        name: 'იმედი',
-        isFaded: true,
+        icon: `${euroNews}`,
+        name: 'Euronews Georgia',
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
+    {
+        icon: `${imedi}`,
+        name: 'იმედი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
     {
         icon: `${gds}`,
         name: 'GDS',
-        isFaded: true,
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${''}`,
         mobile: `${''}`
     },
+
+
     {
         icon: `${maestro}`,
         name: 'მაესტრო',
-        isFaded: true,
+        isFaded: false,
         isBasePack: true,
         tv: `${tv}`,
         desktop: `${''}`,
         mobile: `${''}`
     },
+
+    {
+        icon: `${marao}`,
+        name: 'მარაო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
     {
         icon: `${artarea}`,
         name: 'არტარეა',
@@ -1955,6 +2339,8 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
     {
         icon: `${palitra}`,
         name: 'Palitra News',
@@ -1964,6 +2350,8 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
     {
         icon: `${caucasus}`,
         name: 'კავკასია',
@@ -1973,6 +2361,8 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+
     {
         icon: `${adjara}`,
         name: 'აჭარა',
@@ -1982,6 +2372,7 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
     {
         icon: `${adjarahd}`,
         name: 'აჭარა HD',
@@ -1991,186 +2382,7 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
-    {
-        icon: `${gmc}`,
-        name: 'GMC',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${marao}`,
-        name: 'მარაო',
-        isFaded: true,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${stereo1}`,
-        name: '1 სტერეო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${comedy}`,
-        name: 'კომედი არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${agro}`,
-        name: 'აგრო TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${msuicbox}`,
-        name: 'MUSIC BOX',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${starvision}`,
-        name: 'სტარვიზია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${bbb}`,
-        name: 'ბასტი ბუბუ',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${ertsulovneba}`,
-        name: 'ერთსულოვნება',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${qartulitv}`,
-        name: 'ქართული TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${pulsi}`,
-        name: 'პულსი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${dardimandi}`,
-        name: 'დარდიმანდი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${malltv}`,
-        name: 'მოლი ტვ',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${obiektivi}`,
-        name: 'ობიექტივი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${trialeti}`,
-        name: 'თრიალეთი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tv24}`,
-        name: 'TV 24',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tv25}`,
-        name: 'TV 25',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tv4}`,
-        name: 'TV 4',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${altinfo}`,
-        name: 'ალტ-ინფო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${batumi}`,
-        name: 'ბათუმი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
+
     {
         icon: `${bmg}`,
         name: 'BMG',
@@ -2180,220 +2392,31 @@ export const abroadChannelsDB = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
-    {
-        icon: `${mexute}`,
-        name: 'მეხუთე არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${diatv}`,
-        name: 'დია TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${rioni}`,
-        name: 'რიონი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${saperavi}`,
-        name: 'საფერავი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tanamgzavri}`,
-        name: 'თანამგზავრი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${tvmonitoring}`,
-        name: 'TV Monitoring',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${agrogaremo}`,
-        name: 'აგროგარემო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${argo}`,
-        name: 'არგო TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${toktv}`,
-        name: 'TOK TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${abkhazia}`,
-        name: 'აფხაზეთის ხმა',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${pktv}`,
-        name: 'PK TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${odishi}`,
-        name: 'ოდიში TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${o2}`,
-        name: 'O2',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${mega}`,
-        name: 'Mega TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${ltv}`,
-        name: 'L-TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${gurjaani}`,
-        name: 'გურჯაანი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${imervizia}`,
-        name: 'იმერვიზია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${greentv}`,
-        name: 'Green TV - ჩხენკელი  ',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${gmtv}`,
-        name: 'GMTV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${girchi}`,
-        name: 'გირჩი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${georgianTimes}`,
-        name: 'ჯორჯიან თაიმსი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${chadraki}`,
-        name: 'ჭადრაკი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    {
-        icon: `${qartuliArxi}`,
-        name: 'ქართული არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-]
 
-export const silkDb = [
+    {
+        icon: `${gms}`,
+        name: 'GMS',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${silkUniversal}`,
+        name: 'Silk უნივერსალი',
+        isFaded: true,
+        isBasePack: false,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
     {
         icon: `${silkDocu}`,
         name: 'Silk დოკუმენტური',
-        isFaded: true,
+        isFaded: false,
         isBasePack: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
@@ -2440,6 +2463,7 @@ export const silkDb = [
         mobile: `${mobile}`
     },
     
+
     {
         icon: `${silk2}`,
         name: 'Silk Sport HD 2',
@@ -2450,6 +2474,7 @@ export const silkDb = [
         mobile: `${mobile}`
     },
 
+
     {
         icon: `${silk3}`,
         name: 'Silk Sport HD 3',
@@ -2459,6 +2484,837 @@ export const silkDb = [
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
+
+    {
+        icon: `${stereo1}`,
+        name: '1 სტერეო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${comedy}`,
+        name: 'კომედი არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${agro}`,
+        name: 'აგრო TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${msuicbox}`,
+        name: 'MUSIC BOX',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${starvision}`,
+        name: 'სტარვიზია',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${bbb}`,
+        name: 'ბასტი ბუბუ',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${ertsulovneba}`,
+        name: 'ერთსულოვნება',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${qartulitv}`,
+        name: 'ქართული TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+    
+    {
+        icon: `${tvc}`,
+        name: 'TVC',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${pulsi}`,
+        name: 'პულსი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${dardimandi}`,
+        name: 'დარდიმანდი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${malltv}`,
+        name: 'მოლი ტვ',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${obiektivi}`,
+        name: 'ობიექტივი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${trialeti}`,
+        name: 'თრიალეთი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv24}`,
+        name: 'TV 24',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${rioni}`,
+        name: 'რიონი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${rioni}`,
+        name: 'რიონი 2',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${tv_sdasutv}`,
+        name: 'სდასუ TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${diatv}`,
+        name: 'დია TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${ltv}`,
+        name: 'L-TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${mega}`,
+        name: 'Mega TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${tv25}`,
+        name: 'TV 25',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${radioImedi}`,
+        name: 'რადიო იმედი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${geoChannel}`,
+        name: 'GeoChannel',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${rugbyTv}`,
+        name: 'რაგბი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvSport}`,
+        name: 'TV SPORT',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${enkibenki}`,
+        name: 'ენკიბენკი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${spero}`,
+        name: 'სფერო ნიუსი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${foodtv}`,
+        name: 'Food TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv8}`,
+        name: 'TV8',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${vipTv}`,
+        name: 'Vip TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${discoveryGeorgia}`,
+        name: 'Discover Georgia HD',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${marneuliTV}`,
+        name: 'მარნეული TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvmax}`,
+        name: 'TVMax',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${shoni}`,
+        name: 'SHONI TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mbc}`,
+        name: 'MBC TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv12}`,
+        name: 'TV 12',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${hitv}`,
+        name: 'HI TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mze}`,
+        name: 'TV მზე',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${sezonitv}`,
+        name: 'სეზონი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${agtv}`,
+        name: 'AG TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${parvana}`,
+        name: 'Parvana TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${positive}`,
+        name: 'Positive TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${egrisi}`,
+        name: 'ეგრისი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mzareulitv}`,
+        name: 'მზარეული TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tavisupaliArxi}`,
+        name: 'თავისუფალი არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${kolxeti89}`,
+        name: 'კოლხეთი 89',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${borjomitv  }`,
+        name: 'ბორჯომი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${mecxreTalga}`,
+        name: 'მეცხრე ტალღა',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tv9}`,
+        name: 'TV 9',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${ctv}`,
+        name: 'CTV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${axali}`,
+        name: 'ახალი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${primetv}`,
+        name: 'Prime TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvPliusi}`,
+        name: 'TV პლიუსი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${imervizia}`,
+        name: 'იმერვიზია',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${gurjaani}`,
+        name: 'გურჯაანი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${tv4}`,
+        name: 'TV 4',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${o2}`,
+        name: 'O2',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${saperavi}`,
+        name: 'საფერავი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${pktv}`,
+        name: 'PK TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${batumi}`,
+        name: 'ბათუმი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${guria}`,
+        name: 'გურია TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+
+    {
+        icon: `${stereoPlus}`,
+        name: 'სტერეო+',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${toktv}`,
+        name: 'TOK TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${chadraki}`,
+        name: 'ჭადრაკი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${qartuliArxi}`,
+        name: 'ქართული არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${girchi}`,
+        name: 'გირჩი TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${argo}`,
+        name: 'არგო TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${gmtv}`,
+        name: 'GMTV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${greentv}`,
+        name: 'Green TV - ჩხენკელი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${meteo24}`,
+        name: 'Meteo 24',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${odishi}`,
+        name: 'ოდიში TV',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tanamgzavri}`,
+        name: 'თანამგზავრი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${georgianTimes}`,
+        name: 'ჯორჯიან თაიმსი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${altinfo}`,
+        name: 'ალტ-ინფო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    // {
+    //     icon: './images/channels/tv_erimedia.png',
+    //     name: 'ერი მედია',
+    //     isFaded: false,
+    //     isBasePack: true,
+    //     tv: `${tv}`,
+    //     desktop: `${desktop}`,
+    //     mobile: `${mobile}`
+    // },
+
+    {
+        icon: `${mexute}`,
+        name: 'მეხუთე არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${agrogaremo}`,
+        name: 'აგროგარემო',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${samefoArxi}`,
+        name: 'სამეფო არხი',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${abkhazia}`,
+        name: 'აფხაზეთის ხმა',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
+
+    {
+        icon: `${tvmonitoring}`,
+        name: 'TV Monitoring',
+        isFaded: false,
+        isBasePack: true,
+        tv: `${tv}`,
+        desktop: `${desktop}`,
+        mobile: `${mobile}`
+    },
 ]
+
 
 

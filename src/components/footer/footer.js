@@ -12,7 +12,7 @@ import tvpirveli from "../images/channels/tvpirveli.webp"
 import setanta from "../images/channels/setanta.webp"
 
 import { ModalContext } from "../modalContext"
-import { useContext, useEffect, useState } from "react"
+import { useContext } from "react"
 
 export default function Footer(){
 
