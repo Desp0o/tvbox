@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tvbox/static/css/main.16272201.css",
+    "main.css": "/tvbox/static/css/main.820c9566.css",
     "main.js": "/tvbox/static/js/main.d88aea4d.js",
     "static/media/tvbox_cover.jpeg": "/tvbox/static/media/tvbox_cover.6d6f4908d7ce65f10085.jpeg",
     "static/media/Zagorodnaya_Jizn.png": "/tvbox/static/media/Zagorodnaya_Jizn.b6d6695b763ef0570724.png",
@@ -162,11 +162,11 @@
     "static/media/finger.webp": "/tvbox/static/media/finger.968f518d316728266639.webp",
     "static/media/playIcon.webp": "/tvbox/static/media/playIcon.130ff9cf8970c7924aee.webp",
     "static/media/plus.webp": "/tvbox/static/media/plus.b5e817956eea9cc150c3.webp",
-    "main.16272201.css.map": "/tvbox/static/css/main.16272201.css.map",
+    "main.820c9566.css.map": "/tvbox/static/css/main.820c9566.css.map",
     "main.d88aea4d.js.map": "/tvbox/static/js/main.d88aea4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.16272201.css",
+    "static/css/main.820c9566.css",
     "static/js/main.d88aea4d.js"
   ]
 }
