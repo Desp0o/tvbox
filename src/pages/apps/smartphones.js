@@ -175,7 +175,7 @@ export default function SmartPhonesApp(){
 
                                     {
                                         isoDbItem.link2 !== '' ?
-                                            <a href={isoDbItem.link2} target="_blank" rel="noreferrero">
+                                            <a href={isoDbItem.link2} target="_blank" rel="noreferrer">
                                                 <div className="smartPhones_btn btn_second">
                                                     <p>გადმოწერე iPad-ისთვის</p>
                                                     <img src={isoDbItem.store} alt="store icon" className="storeImage"/>

@@ -8,7 +8,6 @@ import nexus from '../../components/images/nexus_icon.png'
 import nexusBox from '../../components/images/nexus_box.png'
 import otherBox from '../../components/images/other_tv.png'
 import playStore from '../../components/images/playstore_icon.png'
-import windowsStore from '../../components/images/windows_phone_store.png'
 
 const iosDB = [
 
@@ -39,6 +38,10 @@ const iosDB = [
 
 export default function OtherTvBoxes(){
 
+    const [block1, setBlock1] = useState('ios_block active_block')
+    const [block3, setBlock3] = useState('ios_block')
+    const [num, setNum] = useState(0)
+
     useEffect(()=>{
         document.body.style.overflow='auto'
     },[])
@@ -48,7 +51,6 @@ export default function OtherTvBoxes(){
     const scrollToRef1 = () => {
         appleRef.current?.scrollIntoView({behavior: 'smooth'});
         setBlock1('ios_block active_block')
-        setBlock2('ios_block')
         setBlock3('ios_block')
         setNum(0)
     };
@@ -56,28 +58,22 @@ export default function OtherTvBoxes(){
     const scrollToRef2 = () => {
         appleRef.current?.scrollIntoView({behavior: 'smooth'});
         setBlock1('ios_block')
-        setBlock2('ios_block active_block')
-        setBlock3('ios_block')
+        setBlock3('ios_block active_block')
         setNum(1)
     };
 
-    const [block1, setBlock1] = useState('ios_block active_block')
-    const [block2, setBlock2] = useState('ios_block')
-    const [block3, setBlock3] = useState('ios_block')
-    const [num, setNum] = useState(0)
+    
 
     const isoDbItem = iosDB[num]
 
     const block1Handler = ()=> {
         setBlock1('ios_block active_block')
-        setBlock2('ios_block')
         setBlock3('ios_block')
         setNum(0)
     }
 
     const block3Handler = ()=> {
         setBlock1('ios_block')
-        setBlock2('ios_block')
         setBlock3('ios_block active_block')
         setNum(1)
     }
@@ -141,7 +137,7 @@ export default function OtherTvBoxes(){
 
                                     {
                                         isoDbItem.link2 !== '' ?
-                                            <a href={isoDbItem.link2} target="_blank" rel="noreferrero">
+                                            <a href={isoDbItem.link2} target="_blank" rel="noreferrer">
                                                 <div className="smartPhones_btn btn_second">
                                                     <p>გადმოწერე iPad-ისთვის</p>
                                                     <img src={isoDbItem.store} alt="store icon" className="storeImage"/>

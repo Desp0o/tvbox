@@ -50,7 +50,7 @@ export default function Payment(){
                     <div className='payment_title_txt'>
                         <div className="device_title">გადახდა</div>
 
-                        <p className='payment_desc'>მომსახურების ღირებულების გადახდა შესაძლებელია myvideo.ge-ს <a className='paymentLink' href='https://www.myvideo.ge/c/balance' target='_blank'>ანგარიშის ბალანსიდან.</a></p>
+                        <p className='payment_desc'>მომსახურების ღირებულების გადახდა შესაძლებელია myvideo.ge-ს <a className='paymentLink' href='https://www.myvideo.ge/c/balance' target='_blank' rel="noreferrer">ანგარიშის ბალანსიდან.</a></p>
                         <p className='payment_desc'>ბალანსის შევსება შესაძლებელია სხვადასხვა კომფორტული მეთოდით.</p>
                     </div>
 
