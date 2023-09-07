@@ -2,21 +2,21 @@ import "./footer.css"
 
 import imedi from "../images/channels/imedi.webp"
 import rustavi from "../images/channels/rustavi2.webp"
-import ntv from "../images/channels/ntb.webp"
+import setanta from "../images/channels/setanta.webp"
 import pervi from "../images/channels/1tv.webp"
 import maestro from "../images/channels/maestro.webp"
 import gds from "../images/channels/gds.webp"
 import tabula from "../images/channels/tabula.webp"
 import tnt from "../images/channels/tnt.webp"
 import tvpirveli from "../images/channels/tvpirveli.webp"
-import setanta from "../images/channels/setanta.webp"
+import silkSport1 from "../images/channels/silk1.png"
 
 import { ModalContext } from "../modalContext"
 import { useContext } from "react"
 
 export default function Footer(){
 
-    const channelArray = [imedi, rustavi, ntv, pervi, maestro, gds, tabula, tnt, tvpirveli, setanta]
+    const channelArray = [imedi, rustavi, setanta, pervi, maestro, gds, tabula, tnt, tvpirveli]
 
     const {setModalClass} = useContext(ModalContext)
 
