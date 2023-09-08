@@ -43,14 +43,14 @@ export default function OrderInputs() {
     const [values, setValues] = useState({
         location: "",
         package: "",
-        city: "",
-        country: "",
-        name: "",
-        surname: "",
-        idnumber: "",
-        phoneNumber: "",
-        email: "",
-        adress: ""
+        City: "",
+        Country: "",
+        Firstname: "",
+        Lastname: "",
+        IDNumber: "",
+        Phone: "",
+        Email: "",
+        Address: ""
     })
 
     const [valuesBoolean, setValuesBoolean] = useState({
@@ -89,11 +89,11 @@ export default function OrderInputs() {
             setInputInner('inputsInner inputsInner_Extended')
             setFirstScreenClass('firstScreen firstScreen_FitContent')
             setSumClass('sumBlack')
-        } else if (values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== '') {
+        } else if (values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.City !== '') {
             setInputInner('inputsInner inputsInner_Extended')
             setFirstScreenClass('firstScreen firstScreen_FitContent')
             setSumClass('sumBlack')
-        } else if (values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== '') {
+        } else if (values.location === 'საზღვარგარეთ' && values.package !== '' && values.Country !== '') {
             setInputInner('inputsInner inputsInner_Extended')
             setFirstScreenClass('firstScreen firstScreen_FitContent')
             setSumClass('sumBlack')
@@ -154,16 +154,16 @@ export default function OrderInputs() {
         }
 
         if(values.location === "თბილისი"){
-            setValues(prevValues => ({ ...prevValues, city: 'თბილისი', country: 'საქართველო' }));
+            setValues(prevValues => ({ ...prevValues, City: 'თბილისი', Country: 'საქართველო' }));
         
         }
 
         if (values.location === 'საზღვარგარეთ'){
-            setValues(prevValues => ({ ...prevValues, city: '' }));
+            setValues(prevValues => ({ ...prevValues, City: '' }));
         }
 
         if (values.location === 'სხვაგან საქართველოში'){
-            setValues(prevValues => ({ ...prevValues, country: 'საქართველო' }));
+            setValues(prevValues => ({ ...prevValues, Country: 'საქართველო' }));
         }
 
     }, [values.location])
@@ -179,10 +179,10 @@ export default function OrderInputs() {
             if (values.location === 'თბილისი' && values.package !== '') {
                 setPriceTable('priceTable')
 
-            } else if (values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.city !== '') {
+            } else if (values.location === 'სხვაგან საქართველოში' && values.package !== '' && values.City !== '') {
                 setPriceTable('priceTable')
 
-            } else if (values.location === 'საზღვარგარეთ' && values.package !== '' && values.country !== '') {
+            } else if (values.location === 'საზღვარგარეთ' && values.package !== '' && values.Country !== '') {
                 setPriceTable('priceTable')
 
             } else {
@@ -196,9 +196,9 @@ export default function OrderInputs() {
         }
     }, [values])
 
-    // useEffect(() => {
-    //     console.log(values);
-    // }, [values])
+    useEffect(() => {
+        console.log(values);
+    }, [values])
 
     useEffect(()=>{
     
@@ -209,7 +209,7 @@ export default function OrderInputs() {
             nameRef.current.style.border = "unset"
         }
 
-    },[values.name])
+    },[values.Firstname])
 
     useEffect(()=>{
     
@@ -220,7 +220,7 @@ export default function OrderInputs() {
             lastNameRef.current.style.border = "unset"
         }
 
-    },[values.surname])
+    },[values.Lastname])
 
     useEffect(()=>{
         if(idNumRef.current.value.length > 0 && numberRegex.test(idNumRef.current.value)){
@@ -232,7 +232,7 @@ export default function OrderInputs() {
         }else if(idNumRef.current.value.length === 0){
             idNumRef.current.style.border = "unset"
         }
-    },[values.idnumber])
+    },[values.IDNumber])
 
     useEffect(()=>{
         if(phoneRef.current.value.length > 0 && numberRegex.test(phoneRef.current.value)){
@@ -245,7 +245,7 @@ export default function OrderInputs() {
         }else if(phoneRef.current.value.length === 0){
             phoneRef.current.style.border = "unset"
         }
-    },[values.phoneNumber])
+    },[values.Phone])
 
     useEffect(()=>{
         if(emailRef.current.value.length > 0 ){
@@ -255,7 +255,7 @@ export default function OrderInputs() {
         }else if(emailRef.current.value.length === 0){
             emailRef.current.style.border = "unset"
         }
-    },[values.email])
+    },[values.Email])
 
     useEffect(()=>{
         if(adressRef.current.value.length > 5){
@@ -264,7 +264,7 @@ export default function OrderInputs() {
         }else if(adressRef.current.value.length === 0){
             adressRef.current.style.border = "unset"
         }
-    },[values.adress])
+    },[values.Address])
 
 
     const checkForms = ()=> {
@@ -320,16 +320,19 @@ export default function OrderInputs() {
             setValuesBoolean(prevValues=>({...prevValues, email: false}))
             setValuesBoolean(prevValues=>({...prevValues, adress: false}))
 
-            setValues(prevValues=>({...prevValues, name: ""}))
-            setValues(prevValues=>({...prevValues, surname: ""}))
-            setValues(prevValues=>({...prevValues, idnumber: ""}))
-            setValues(prevValues=>({...prevValues, phoneNumber: ""}))
-            setValues(prevValues=>({...prevValues, email: ""}))
-            setValues(prevValues=>({...prevValues, adress: ""}))
+            setValues(prevValues=>({...prevValues, Firstname: ""}))
+            setValues(prevValues=>({...prevValues, Lastname: ""}))
+            setValues(prevValues=>({...prevValues, IDNumber: ""}))
+            setValues(prevValues=>({...prevValues, Phone: ""}))
+            setValues(prevValues=>({...prevValues, Email: ""}))
+            setValues(prevValues=>({...prevValues, Address: ""}))
+            setValues(prevValues=>({...prevValues, City: ""}))
+            setValues(prevValues=>({...prevValues, location: ""}))
+            setValues(prevValues=>({...prevValues, package: ""}))
             setIsChecked(false)
         }
 
-        if(valuesBoolean.fisrtName === true &&
+        if( valuesBoolean.fisrtName === true &&
             valuesBoolean.lastName  === true &&
             valuesBoolean.idNumber  === true &&
             valuesBoolean.phoneNum  === true &&
@@ -382,7 +385,7 @@ export default function OrderInputs() {
                             </select>
 
 
-                            <select value={values.city} name="city" onInput={handleValues} className={cityClass}>
+                            <select value={values.City} name="City" onInput={handleValues} className={cityClass}>
                                 <option value="" disabled hidden>აირჩიეთ ქალაქი</option>
                                 {cityArray.map((city, index) => {
                                     return (
@@ -401,7 +404,7 @@ export default function OrderInputs() {
                                 })}
                             </select>
 
-                            <select value={values.country} name="country" onChange={handleValues} className={countryClass}>
+                            <select value={values.Country} name="Country" onChange={handleValues} className={countryClass}>
                                 <option value="" disabled hidden>აირჩიეთ ქვეყანა</option>
                                 {
                                     countryArray.map((country, index) => {
@@ -423,15 +426,15 @@ export default function OrderInputs() {
 
                         <div className="secondForm">
                             <div className="secondForm_upper">
-                                <input ref={nameRef} type="text" name="name" value={values.name} placeholder="სახელი *" className="inputMainStyle" onChange={handleValues} />
-                                <input ref={lastNameRef} type="text" name="surname" value={values.surname} placeholder="გვარი *" className="inputMainStyle" onChange={handleValues} />
-                                <input ref={idNumRef} type="text" name="idnumber" value={values.idnumber} placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" onChange={handleValues} />
+                                <input ref={nameRef} type="text" name="Firstname" value={values.Firstname} placeholder="სახელი *" className="inputMainStyle" onChange={handleValues} />
+                                <input ref={lastNameRef} type="text" name="Lastname" value={values.Lastname} placeholder="გვარი *" className="inputMainStyle" onChange={handleValues} />
+                                <input ref={idNumRef} type="text" name="IDNumber" value={values.IDNumber} placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" onChange={handleValues} />
                             </div>
 
                             <div className="secondForm_below">
-                                <input ref={phoneRef} type="text" name="phoneNumber" value={values.phoneNumber} placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" onChange={handleValues} />
-                                <input ref={emailRef} type="email" name="email" value={values.email} placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" onChange={handleValues} />
-                                <input ref={adressRef} type="text" name="adress" value={values.adress} placeholder="მისამართ *" className="inputMainStyle adress" onChange={handleValues} />
+                                <input ref={phoneRef} type="text" name="Phone" value={values.Phone} placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" onChange={handleValues} />
+                                <input ref={emailRef} type="email" name="Email" value={values.Email} placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" onChange={handleValues} />
+                                <input ref={adressRef} type="text" name="Address" value={values.Address} placeholder="მისამართ *" className="inputMainStyle adress" onChange={handleValues} />
 
                             </div>
                         </div>
