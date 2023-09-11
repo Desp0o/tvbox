@@ -105,6 +105,7 @@ export default function SmartTvApp(){
         setBlock1('ios_block active_block')
         setBlock2('ios_block')
         setBlock3('ios_block')
+        setBlock4('ios_block')
         setNum(0)
     };
 
@@ -113,6 +114,7 @@ export default function SmartTvApp(){
         setBlock1('ios_block')
         setBlock2('ios_block active_block')
         setBlock3('ios_block')
+        setBlock4('ios_block')
         setNum(1)
     };
 
@@ -121,7 +123,17 @@ export default function SmartTvApp(){
         setBlock1('ios_block')
         setBlock2('ios_block')
         setBlock3('ios_block active_block')
+        setBlock4('ios_block')
         setNum(2)
+    };
+
+    const scrollToRef4 = () => {
+        appleRef.current?.scrollIntoView({behavior: 'smooth'});
+        setBlock1('ios_block')
+        setBlock2('ios_block')
+        setBlock3('ios_block')
+        setBlock4('ios_block active_block')
+        setNum(3)
     };
 
     const [block1, setBlock1] = useState('ios_block active_block')
@@ -186,7 +198,7 @@ export default function SmartTvApp(){
                             <img src={hisense} className="ios_item_img" alt="smartphone logo" />
                         </div>
 
-                        <div className="ios_item" onClick={scrollToRef3}>
+                        <div className="ios_item" onClick={scrollToRef4}>
                             <img src={philpis} className="ios_item_img" alt="smartphone logo" />
                         </div>
 

@@ -9,7 +9,6 @@ import gds from "../images/channels/gds.webp"
 import tabula from "../images/channels/tabula.webp"
 import tnt from "../images/channels/tnt.webp"
 import tvpirveli from "../images/channels/tvpirveli.webp"
-import silkSport1 from "../images/channels/silk1.png"
 
 import { ModalContext } from "../modalContext"
 import { useContext } from "react"
