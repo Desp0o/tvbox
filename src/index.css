@@ -65,7 +65,7 @@ a{
 }
 
 .displayNone{
-  display: none;
+  display: none !important;
 }
 
 .no-arrows::-webkit-inner-spin-button,

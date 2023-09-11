@@ -17,6 +17,7 @@ export default function OrderInputs() {
     const phoneRef    = useRef()
     const emailRef    = useRef()
     const adressRef   = useRef()
+    const orderInputsRef = useRef()
 
     const { setRulesBackGround} = useContext(ModalContext)
 
@@ -64,7 +65,9 @@ export default function OrderInputs() {
 
     const [cityClass, setCityClass] = useState('displayNone')
     const [countryClass, setCountryClass] = useState('displayNone')
+    const [orderInner, setOrderInner] = useState('orderInner')
     const [inputInner, setInputInner] = useState('inputsInner')
+    const [completedOrder, setCompletedOrder] = useState ('completedOrderHidden')
 
     const [deliveryPrice, setDeliveryPrice] = useState('--')
     const [boxPrice, setBoxPrice] = useState('--')
@@ -196,9 +199,9 @@ export default function OrderInputs() {
         }
     }, [values])
 
-    useEffect(() => {
-        console.log(values);
-    }, [values])
+    // useEffect(() => {
+    //     console.log(values);
+    // }, [values])
 
     useEffect(()=>{
     
@@ -311,7 +314,10 @@ export default function OrderInputs() {
                 alert('გთხოვთ გაეცნოთ პირობებს და დაეთანხმოთ')
             }
 
-            alert('თქვენი მოთხოვნა გაგზავნილია, ჩვენ მალე დაგიკავშირდებით')
+            
+            setOrderInner('displayNone')
+            setCompletedOrder('completedOrderHidden completedOrderActive')
+            orderInputsRef.current.scrollIntoView({behavior: 'smooth'});
 
             setValuesBoolean(prevValues=>({...prevValues, fisrtName: false}))
             setValuesBoolean(prevValues=>({...prevValues, lastName: false}))
@@ -330,6 +336,8 @@ export default function OrderInputs() {
             setValues(prevValues=>({...prevValues, location: ""}))
             setValues(prevValues=>({...prevValues, package: ""}))
             setIsChecked(false)
+
+            
         }
 
         if( valuesBoolean.fisrtName === true &&
@@ -355,8 +363,8 @@ export default function OrderInputs() {
     return (
         <>  
             <Rules />
-            <div className="orderInputs">
-                <div className="orderInner">
+            <div className="orderInputs" ref={orderInputsRef}>
+                <div className={orderInner}>
 
                     <div className={inputInner}>
 
@@ -452,6 +460,11 @@ export default function OrderInputs() {
 
                     </div>
 
+                </div>
+
+                <div className={completedOrder}>
+                    <p className="orderP1">თქვენი შეკვეთა წარმატებით განხორციელდა</p>
+                    <p className="orderP2">ჩვენი წარმომადგენელი დაგიკავშირდებათ უახლოეს სამუშაო საათებში</p>
                 </div>
             </div>
         </>
