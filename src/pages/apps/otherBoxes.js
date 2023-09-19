@@ -4,10 +4,10 @@ import "./smartphones.css"
 import './otherBoxes.css'
 import FooterBanner from '../../components/footerBanner/footerBanner'
 
-import nexus from '../../components/images/nexus_icon.png'
-import nexusBox from '../../components/images/nexus_box.png'
-import otherBox from '../../components/images/other_tv.png'
-import playStore from '../../components/images/playstore_icon.png'
+import nexus from '../../components/images/nexus_icon.webp'
+import nexusBox from '../../components/images/nexus_box.webp'
+import otherBox from '../../components/images/other_tv.webp'
+import playStore from '../../components/images/playstore_icon.webp'
 
 const iosDB = [
 

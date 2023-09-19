@@ -4,16 +4,16 @@ import "./smartphones.css"
 import "./smartTvApp.css"
 import FooterBanner from '../../components/footerBanner/footerBanner'
 
-import samsung from '../../components/images/samsung_logo.png'
-import samsungTV from '../../components/images/samsung_tv.png'
-import sony from '../../components/images/sony_logo.png'
-import sonyTv from '../../components/images/sony_tv.png'
-import hisense from '../../components/images/hisense_logo.png'
-import hisenseTv from '../../components/images/hisense_tv.png'
-import philpis from '../../components/images/philips_logo.png'
-import philipsTv from '../../components/images/philips_tv.png'
-import noMark from '../../components/images/no_icon.png'
-import yesMark from '../../components/images/yes_icon.png'
+import samsung from '../../components/images/samsung_logo.webp'
+import samsungTV from '../../components/images/samsung_tv.webp'
+import sony from '../../components/images/sony_logo.webp'
+import sonyTv from '../../components/images/sony_tv.webp'
+import hisense from '../../components/images/hisense_logo.webp'
+import hisenseTv from '../../components/images/hisense_tv.webp'
+import philpis from '../../components/images/philips_logo.webp'
+import philipsTv from '../../components/images/philips_tv.webp'
+import noMark from '../../components/images/no_icon.webp'
+import yesMark from '../../components/images/yes_icon.webp'
 
 
 const iosDB = [

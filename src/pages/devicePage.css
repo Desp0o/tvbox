@@ -6,7 +6,7 @@
     width: 100%;
     height: 330px;
 
-    background-image: url('../components//images/box_devicePage.jpeg');
+    background-image: url('../components//images/box_devicePage.webp');
     background-size: cover;
     background-position: center;
 }

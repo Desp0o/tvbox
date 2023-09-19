@@ -1,6 +1,6 @@
 import './parameters.css'
 
-import sizes from "../../../components/images/zomebi.png"
+import sizes from "../../../components/images/zomebi.webp"
 
 const sysArr = [
     'CPU Armeabi-v7a', 'GPU Quad Core Mali-450MP', 'DDR3 1GB', 'NAND Flash 8G', 'OS Android 7.1.2', 'Wi-Fi IEEE 802.11 b/g/n'

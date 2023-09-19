@@ -1,8 +1,8 @@
 import "./footerBanner.css"
 import callIcon from '../../components/images/call_icon.webp'
-import fbIcon from '../../components/images/fb_icon.png'
-import mailIcon from '../../components/images/mail_icon.png'
-import fbLike from "../../components/images/fb_like.png"
+import fbIcon from '../../components/images/fb_icon.webp'
+import mailIcon from '../../components/images/mail_icon.webp'
+import fbLike from "../../components/images/fb_like.webp"
 
 
 export default function FooterBanner(){
@@ -11,16 +11,16 @@ export default function FooterBanner(){
             <div className="footerBanner">
                 
                 <div className="banner_block">
-                    <img src={callIcon} alt="banner block icon" className="banner_icons" />
+                    <img src={callIcon} alt="banner block icon" className="banner_icons" loading="lazy"/>
                     <p>322 422223</p>
                 </div>
 
                 <div className="banner_block">
-                    <img src={fbIcon} alt="banner block icon" className="banner_icons" />
+                    <img src={fbIcon} alt="banner block icon" className="banner_icons" loading="lazy"/>
 
                     <div className="banner_links">
                         <a href="https://www.facebook.com/tvmyvideo" className="banner_links_inner" target="_blank" rel="noreferrer">
-                            <img src={fbLike} alt="facebook group" />
+                            <img src={fbLike} alt="facebook group" loading="lazy"/>
                             <p>მოიწონეთ ჩვენი გვერდი</p>
                         </a>
                     </div>
@@ -28,7 +28,7 @@ export default function FooterBanner(){
                 </div>
 
                 <div className="banner_block">
-                    <img src={mailIcon} alt="banner block icon" className="banner_icons" />
+                    <img src={mailIcon} alt="banner block icon" className="banner_icons" loading="lazy"/>
                     <a href="mailto:tvbox@myvideo.ge" >TVBOX@MYVIDEO.GE</a>
                 </div>
             </div>

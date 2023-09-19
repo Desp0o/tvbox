@@ -121,7 +121,7 @@ select {
   outline: none;
   border: none;
   /* Add a transparent background image to show a custom arrow icon */
-  background-image: url('./components/images/arrow-down.png');
+  background-image: url('./components/images/arrow-down.webp');
   background-position: 97% center;
   background-repeat: no-repeat;
   background-size: 12px;

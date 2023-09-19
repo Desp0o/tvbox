@@ -1,9 +1,9 @@
 import "./device.css"
 
-import box from "../../../components/images/box.png"
-import remote from "../../../components/images/remote.png"
-import hdmi from '../../../components/images/hdmi.png'
-import power from '../../../components/images/power.png'
+import box from "../../../components/images/box.webp"
+import remote from "../../../components/images/remote.webp"
+import hdmi from '../../../components/images/hdmi.webp'
+import power from '../../../components/images/power.webp'
 
 const hardwareArr = [
     {

@@ -1,6 +1,6 @@
-import tv from '../images/tv.png'
-import desktop from '../images/desktop.png'
-import mobile from '../images/mobile.png'
+import tv from '../images/tv.webp'
+import desktop from '../images/desktop.webp'
+import mobile from '../images/mobile.webp'
 
 
 import gpb from "../../components/images/channels/ChannelLogos/pirveliarkhi.webp"

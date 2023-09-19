@@ -369,7 +369,8 @@ export default function OrderInputs() {
                     <div className={inputInner}>
 
                         <div className="firstForm">
-                            <select value={values.location} name="location" onInput={handleValues} className="inputMainStyle">
+                            <label htmlFor="location"/>
+                            <select value={values.location} name="location" id="location" onInput={handleValues} className="inputMainStyle">
 
                                 <option value="" disabled hidden>სად გსურთ გამოყენება</option>
                                 <option>თბილისი</option>
@@ -377,7 +378,8 @@ export default function OrderInputs() {
                                 <option>საზღვარგარეთ</option>
                             </select>
 
-                            <select value={values.package} name="package" onChange={handleValues} className="inputMainStyle">
+                            <label htmlFor="Package"/>
+                            <select value={values.package} name="package" id="Package" onChange={handleValues} className="inputMainStyle">
                                 <option value="" disabled hidden>აირჩიეთ არხების პაკეტი</option>
                                 {values.location === "საზღვარგარეთ" ? (
                                     <>
@@ -426,10 +428,10 @@ export default function OrderInputs() {
 
                         <div className={priceTable}>
                             <PriceTableComponent classColor={sumClass} price={deliveryPrice} title="მიტანა" />
-                            <img src={plusIcon} alt="sum plus icon" className="sumPlus" />
+                            <img src={plusIcon} alt="sum plus icon" className="sumPlus" loading="lazy"/>
                             <PriceTableComponent classColor={sumClass} price={boxPrice} title="ღირებულება" />
                             <img src={plusIcon} alt="sum plus icon" className="sumPlus" />
-                            <PriceTableComponent classColor={sumClass} price={montlyPrice} title="თვეში" />
+                            <PriceTableComponent classColor={sumClass} price={montlyPrice} title="თვეში" loading="lazy"/>
                         </div>
 
                         <div className="secondForm">
@@ -448,7 +450,8 @@ export default function OrderInputs() {
                         </div>
 
                         <div className="rulesAndBtn">
-                            <input type="checkbox" className="checkBox" checked={isChecked} onChange={handleCheckboxChange}/>
+                            <label htmlFor="checkbox"/> 
+                            <input type="checkbox" id="checkbox" className="checkBox" checked={isChecked} onChange={handleCheckboxChange}/>
                             <p className="rules">გავეცანი და ვეთანხმები <span onClick={rulesHandler}>პირობებს</span></p>
                         </div>
 

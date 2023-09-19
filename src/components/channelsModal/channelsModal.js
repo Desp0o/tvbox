@@ -45,7 +45,7 @@ export default function ChannelsModal(){
                                     <div className={channel.isBasePack === true ? 'channel_list_item' : 'channel_list_item_faded'}>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="channelLogo" />
+                                            <img src={channel.icon} alt='' className="channelLogo" loading="lazy"/>
                                             <p>{channel.name}</p>
                                         </div>
 
@@ -89,7 +89,7 @@ export default function ChannelsModal(){
                                     <div className='channel_list_item'>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="channelLogo" />
+                                            <img src={channel.icon} alt='' className="channelLogo" loading="lazy"/>
                                             <p>{channel.name}</p>
                                         </div>
 
@@ -133,7 +133,7 @@ export default function ChannelsModal(){
                                     <div className={channel.isBasePack === true ? 'channel_list_item' : 'channel_list_item_faded'}>
                                         {/* არხის სახელი და იქონი */}
                                         <div className="channel_item_name_cover">
-                                            <img src={channel.icon} alt='' className="channelLogo" />
+                                            <img src={channel.icon} alt='' className="channelLogo" loading="lazy"/>
                                             <p>{channel.name}</p>
                                         </div>
 

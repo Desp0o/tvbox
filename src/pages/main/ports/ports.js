@@ -1,6 +1,6 @@
 import "./ports.css"
 
-import mowyobiloba from '../../../components/images/mowyobiloba.png'
+import mowyobiloba from '../../../components/images/mowyobiloba.webp'
 
 export default function Ports() {
     return(

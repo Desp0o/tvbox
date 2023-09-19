@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 import './payment.css'
 
 import FooterBanner from '../components/footerBanner/footerBanner'
-import cards from '../components/images/plastic_card.png'
-import paypal from '../components/images/paypal.png'
-import paybox from '../components/images/terminal.png'
-import eMoney from '../components/images/emoney.png'
-import bank from '../components/images/bank.png'
+import cards from '../components/images/plastic_card.webp'
+import paypal from '../components/images/paypal.webp'
+import paybox from '../components/images/terminal.webp'
+import eMoney from '../components/images/emoney.webp'
+import bank from '../components/images/bank.webp'
 
 const paymentArr = [
     {

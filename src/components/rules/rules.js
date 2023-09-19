@@ -21,7 +21,7 @@ export default function Rules(){
         <>
             <div className={rulesBackGround} onClick={rulesHandler}>
 
-            <img className="rulesCloseX" src={closeX} alt="rules close button" onClick={rulesHandler} />
+            <img className="rulesCloseX" src={closeX} alt="rules close button" onClick={rulesHandler} loading="lazy"/>
             
             <div className="rulesPopUp">
                 <p className="rules_title">მომსახურების პირობები</p>

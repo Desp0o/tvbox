@@ -3,15 +3,15 @@ import { useRef, useState, useEffect } from "react"
 import "./smartphones.css"
 import FooterBanner from '../../components/footerBanner/footerBanner'
 
-import android from '../../components/images/android.png'
-import apple from '../../components/images/ios_icon.png'
-import windows from '../../components/images/Windows_icon.png'
-import androidPhone from '../../components/images/android_phone.png'
-import iphone from '../../components/images/iphone.png'
-import windowsPhone from '../../components/images/windows.png'
-import playStore from '../../components/images/playstore_icon.png'
-import appStore from '../../components/images/appstore.png'
-import windowsStore from '../../components/images/windows_phone_store.png'
+import android from '../../components/images/android.webp'
+import apple from '../../components/images/ios_icon.webp'
+import windows from '../../components/images/Windows_icon.webp'
+import androidPhone from '../../components/images/android_phone.webp'
+import iphone from '../../components/images/iphone.webp'
+import windowsPhone from '../../components/images/windows.webp'
+import playStore from '../../components/images/playstore_icon.webp'
+import appStore from '../../components/images/appstore.webp'
+import windowsStore from '../../components/images/windows_phone_store.webp'
 
 const iosDB = [
 

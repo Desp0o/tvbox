@@ -85,7 +85,7 @@ export default function Navbar(){
 
                 <div className="navbar_Left">
                     <Link to="/">
-                        <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo"/>
+                        <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo" loading="lazy"/>
                     </Link>
                 </div>
 
@@ -104,13 +104,13 @@ export default function Navbar(){
                         <Link to='/pages/application' onClick={closeModal}><p>აპლიკაცია</p></Link>
 
                         <div className="call_block" onClick={handleButtonClick}>
-                            <img src={callIcon} alt="call icon" className="call_icon" />
+                            <img src={callIcon} alt="call icon" className="call_icon" loading="lazy"/>
                             <p>322 490049</p>
                         </div>
                     </div>
                 </div>
 
-                <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" onClick={() => {burgerHandler(); closeModal();}}/>
+                <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" loading="lazy" onClick={() => {burgerHandler(); closeModal();}}/>
             </div>
 
             <div className={dashboard}>
@@ -128,13 +128,13 @@ export default function Navbar(){
                         <Link to='/pages/application' onClick={closeDashboard}><p>აპლიკაცია</p></Link>
 
                         <div className="call_block" onClick={handleButtonClick}>
-                            <img src={callIcon} alt="call icon" className="call_icon" />
+                            <img src={callIcon} alt="call icon" className="call_icon" loading="lazy"/>
                             <p>322 490049</p>
                         </div>
                 </div>
 
                 <div className="dashboard_footer">
-                    <img src={myVideoLogo} alt="dashboard footer" />
+                    <img src={myVideoLogo} alt="dashboard footer" loading="lazy"/>
                     <p>MyVideo</p>
                 </div>
             </div>

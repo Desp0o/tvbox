@@ -2,7 +2,7 @@ import { useState } from "react"
 import FooterBanner from '../components/footerBanner/footerBanner'
 import "./faq.css"
 
-import dropDownArrow from '../components/images/dropdown_arrow.png'
+import dropDownArrow from '../components/images/dropdown_arrow.webp'
 
 export default function FAQ(){
 

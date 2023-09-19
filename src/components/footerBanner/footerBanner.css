@@ -8,7 +8,7 @@
     left: 0;
 
     box-sizing: border-box;
-    background-image: url('../../components/images/tvbox_cover.jpeg');
+    background-image: url('../../components/images/tvbox_cover.webp');
     background-size: cover;
     background-position: center;
     background-color: #000;
