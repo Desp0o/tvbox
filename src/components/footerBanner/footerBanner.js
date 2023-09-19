@@ -2,8 +2,8 @@ import "./footerBanner.css"
 import callIcon from '../../components/images/call_icon.webp'
 import fbIcon from '../../components/images/fb_icon.png'
 import mailIcon from '../../components/images/mail_icon.png'
-// import fbLike from "../../components/images/fb_like.png"
-import fbGroup from '../../components/images/fb_group_icon.png'
+import fbLike from "../../components/images/fb_like.png"
+
 
 export default function FooterBanner(){
     return(
@@ -19,9 +19,9 @@ export default function FooterBanner(){
                     <img src={fbIcon} alt="banner block icon" className="banner_icons" />
 
                     <div className="banner_links">
-                        <a href="https://www.facebook.com/groups/MYVIDEOTVBOX/" className="banner_links_inner" target="_blank" rel="noreferrer">
-                            <img src={fbGroup} alt="facebook group" />
-                            <p>შემოგვიერთდი FB ჯგუფში</p>
+                        <a href="https://www.facebook.com/tvmyvideo" className="banner_links_inner" target="_blank" rel="noreferrer">
+                            <img src={fbLike} alt="facebook group" />
+                            <p>მოიწონეთ ჩვენი გვერდი</p>
                         </a>
                     </div>
                     

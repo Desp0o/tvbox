@@ -276,6 +276,7 @@
 
 .channelLogo{
     width: 20px ;
+    height: auto;
 }
 
 .channel_item_devices{

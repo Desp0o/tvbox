@@ -37,3 +37,9 @@
 .noBottomBorder{
     border-bottom: none !important;
 }
+
+@media (max-width:768px) {
+    .firstSection_smartTvApp{
+        padding-top: 50px;
+    }
+}

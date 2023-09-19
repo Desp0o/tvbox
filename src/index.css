@@ -10,16 +10,19 @@ html{
 @font-face {
   font-family: "bebas";
   src: url('./components/fonts/bebas.ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BPG Arial";
   src: url("./components/fonts/BPG\ Arial.ttf");
+  font-display: swap;
 }
 
 @font-face {
   font-family: "BPG Square Banner Caps";
   src: url("./components/fonts/bpg\ square\ banner\ caps.ttf");
+  font-display: swap;
 }
 
 body {

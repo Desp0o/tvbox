@@ -140,15 +140,15 @@ export default function FAQ(){
 
                         <div className={faq3} >
                             <p className="faq3_titles noMarginTop">მოწყობილობა შეგიძლიათ შეიძინოთ:</p>
-                            <p className="features1_item faq3feature">შეძენის ფასია 150 ლარი.</p>
+                            <p className="features1_item faq3feature">შეძენის ფასია 159 ლარი.</p>
                             <p className="features1_item faq3feature">ფასში შედის ადგილზე მიტანა და მონრაჟი (თბილისის მაშტაბით)</p>
                             <p className="faq3_titles">უფასოდ მოგეწოდებათ საბაზო პაკეტი:</p>
-                            <p className="features1_item faq3feature">74 ქართული არხი (გადახვევა დაპაუზება)</p>
+                            <p className="features1_item faq3feature">102 ქართული არხი (გადახვევა დაპაუზება)</p>
                             <p className="features1_item faq3feature">YouTube აპლიკაცია</p>
                             <p className="faq3_titles">ძირითადი პაკეტები:</p>
-                            <p className="features1_item faq3feature">ქართული არხები (79 არხი) - 3 ლარი</p>
-                            <p className="features1_item faq3feature">ულტრა პაკეტი (161 არხი) - 20 ლარი</p>
-                            <p className="features1_item faq3feature">საზღვარგარეთის პაკეტი (66 არხი) - 20 ლარი</p>
+                            <p className="features1_item faq3feature">ქართული არხები (107 არხი) - 3 ლარი</p>
+                            <p className="features1_item faq3feature">ულტრა პაკეტი (194 არხი) - 20 ლარი</p>
+                            <p className="features1_item faq3feature">საზღვარგარეთის პაკეტი (100 არხი) - 20 ლარი</p>
 
                             <p className="faq3_titles">დამატებითი პაკეტები:</p>
                             <p className="features1_item faq3feature">Silk პაკეტი (7 არხი) - 5 ლარი</p>
