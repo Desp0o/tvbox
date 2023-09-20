@@ -11,10 +11,12 @@ import SmartPhonesApp from "./pages/apps/smartphones";
 import OtherTvBoxes from "./pages/apps/otherBoxes";
 import SmartTvApp from "./pages/apps/smartTvApp";
 import FAQ from "./pages/faq";
+import FacebookChat from "./components/facebook";
 
 function App() {
   return (
     <>
+      <FacebookChat />
       <Navbar />
       <Routes>
         <Route exact path="*" element={<Main/>} />
