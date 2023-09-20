@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tvbox/static/css/main.59586fc4.css",
+    "main.css": "/tvbox/static/css/main.4a3a1a17.css",
     "main.js": "/tvbox/static/js/main.d7579679.js",
     "static/media/box_devicePage.webp": "/tvbox/static/media/box_devicePage.347906dcd3f41b82cfb4.webp",
     "static/media/BPG Arial.ttf": "/tvbox/static/media/BPG Arial.cc074fcb5a0f5d5acf4b.ttf",
@@ -260,11 +260,11 @@
     "static/media/fb_like.webp": "/tvbox/static/media/fb_like.acbd8cbc8c3ea80a8a0e.webp",
     "static/media/plus.webp": "/tvbox/static/media/plus.24d9211d258707995255.webp",
     "static/media/arrow-down.webp": "/tvbox/static/media/arrow-down.f56e4275828f8811a4eb.webp",
-    "main.59586fc4.css.map": "/tvbox/static/css/main.59586fc4.css.map",
+    "main.4a3a1a17.css.map": "/tvbox/static/css/main.4a3a1a17.css.map",
     "main.d7579679.js.map": "/tvbox/static/js/main.d7579679.js.map"
   },
   "entrypoints": [
-    "static/css/main.59586fc4.css",
+    "static/css/main.4a3a1a17.css",
     "static/js/main.d7579679.js"
   ]
 }
