@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/tvbox/static/css/main.59586fc4.css",
-    "main.js": "/tvbox/static/js/main.7e064d3e.js",
+    "main.js": "/tvbox/static/js/main.d7579679.js",
     "static/media/box_devicePage.webp": "/tvbox/static/media/box_devicePage.347906dcd3f41b82cfb4.webp",
     "static/media/BPG Arial.ttf": "/tvbox/static/media/BPG Arial.cc074fcb5a0f5d5acf4b.ttf",
     "static/media/tvbox_back.jpg": "/tvbox/static/media/tvbox_back.7170df84fadd558d3661.jpg",
@@ -159,12 +159,12 @@
     "static/media/bollywoodhd.webp": "/tvbox/static/media/bollywoodhd.2d0bb0f8159599414ec0.webp",
     "static/media/gms.webp": "/tvbox/static/media/gms.73f48170862aa051add5.webp",
     "static/media/oce_tv.webp": "/tvbox/static/media/oce_tv.f1ed02ada1891df3956f.webp",
+    "index.html": "/tvbox/index.html",
     "static/media/rugby.webp": "/tvbox/static/media/rugby.8920de9c1d521ba98d04.webp",
     "static/media/tv5geo.webp": "/tvbox/static/media/tv5geo.fa18cc14b630df9b443e.webp",
     "static/media/amediapremium.webp": "/tvbox/static/media/amediapremium.f1bbee7c58ae666f14fb.webp",
     "static/media/tv_primetv.webp": "/tvbox/static/media/tv_primetv.cc037c0d3b471e12efa6.webp",
     "static/media/tv_borjomi.webp": "/tvbox/static/media/tv_borjomi.87fbdb5b39d71a7514dc.webp",
-    "index.html": "/tvbox/index.html",
     "static/media/windows_phone_store.webp": "/tvbox/static/media/windows_phone_store.d4e9832da2abc99d695a.webp",
     "static/media/zeetv.webp": "/tvbox/static/media/zeetv.0b82129d6d1e126c3619.webp",
     "static/media/pirveliarkhi.webp": "/tvbox/static/media/pirveliarkhi.08a47f00264935141399.webp",
@@ -261,10 +261,10 @@
     "static/media/plus.webp": "/tvbox/static/media/plus.24d9211d258707995255.webp",
     "static/media/arrow-down.webp": "/tvbox/static/media/arrow-down.f56e4275828f8811a4eb.webp",
     "main.59586fc4.css.map": "/tvbox/static/css/main.59586fc4.css.map",
-    "main.7e064d3e.js.map": "/tvbox/static/js/main.7e064d3e.js.map"
+    "main.d7579679.js.map": "/tvbox/static/js/main.d7579679.js.map"
   },
   "entrypoints": [
     "static/css/main.59586fc4.css",
-    "static/js/main.7e064d3e.js"
+    "static/js/main.d7579679.js"
   ]
 }
