@@ -82,35 +82,36 @@ export default function Navbar(){
     return(
         <>
             <div className={navClass}>
+                <div className="navbar_inner">
+                    <div className="navbar_Left">
+                        <Link to="/">
+                            <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo" loading="lazy"/>
+                        </Link>
+                    </div>
 
-                <div className="navbar_Left">
-                    <Link to="/">
-                        <img src={myVideoLogo} alt="myvideo Logo" className="myvideo_logo" loading="lazy"/>
-                    </Link>
-                </div>
+                    <div className="navbar_Right">
+                        <div className="navbar_menu">
+                            <Link to='/' onClick={closeModal}><p>მთავარი</p></Link>
 
-                <div className="navbar_Right">
-                    <div className="navbar_menu">
-                        <Link to='/' onClick={closeModal}><p>მთავარი</p></Link>
+                            <Link to='/pages/devicePage' onClick={closeModal}><p>მოწყობილობა</p></Link>
 
-                        <Link to='/pages/devicePage' onClick={closeModal}><p>მოწყობილობა</p></Link>
+                            <Link onClick={modalHandler}><p>არხები</p></Link>
 
-                        <Link onClick={modalHandler}><p>არხები</p></Link>
+                            <Link to='/pages/payment' onClick={closeModal}><p>გადახდის მეთოდები</p></Link>
 
-                        <Link to='/pages/payment' onClick={closeModal}><p>გადახდის მეთოდები</p></Link>
+                            <Link to='/pages/faq' onClick={closeModal}><p>კითხვები</p></Link>
 
-                        <Link to='/pages/faq' onClick={closeModal}><p>კითხვები</p></Link>
+                            <Link to='/pages/application' onClick={closeModal}><p>აპლიკაცია</p></Link>
 
-                        <Link to='/pages/application' onClick={closeModal}><p>აპლიკაცია</p></Link>
-
-                        <div className="call_block" onClick={handleButtonClick}>
-                            <img src={callIcon} alt="call icon" className="call_icon" loading="lazy"/>
-                            <p>322 490049</p>
+                            <div className="call_block" onClick={handleButtonClick}>
+                                <img src={callIcon} alt="call icon" className="call_icon" loading="lazy"/>
+                                <p>322 490049</p>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" loading="lazy" onClick={() => {burgerHandler(); closeModal();}}/>
+                    <img src={hamburgerMenu} alt="burger menu icon" className="hamburgerMenu" loading="lazy" onClick={() => {burgerHandler(); closeModal();}}/>
+                </div>
             </div>
 
             <div className={dashboard}>

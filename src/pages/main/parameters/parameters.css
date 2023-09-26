@@ -1,6 +1,11 @@
 .parameters{
     margin-top: 40px;
-    padding: 0 190px 0 190px;
+}
+
+.parameters_inner{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
 }
 
 .system{
