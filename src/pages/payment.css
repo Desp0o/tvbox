@@ -73,6 +73,9 @@
 }
 
 @media (max-width:800px) {
+    .payment{
+        padding-bottom: 250px;
+    }
     .payment_title_txt{
         padding-top: 45px;
         padding-left: 20px;

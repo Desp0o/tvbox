@@ -55,7 +55,6 @@
 }
 
 .call_block{
-
     display: flex;
     align-items: center;
     gap: 10px;
@@ -99,13 +98,13 @@
 
 .dashboard_opened{
     height: 100%;
-    width: 60%;
+    width: 80%;
     background-color: #191918;
 
     position: fixed;
     z-index: 4;
     right: 0;
-    top: o;
+    top: 0;
 
     transition: all 0.3s ease;
 
@@ -126,7 +125,42 @@
     color: #fff;
 }
 
-@media (max-width:800px) {
+@media (max-width:1200px) {
+    .navbar_menu{
+        height: 100%;
+    
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    
+        font-family: "BPG Square Banner Caps";
+        color: #fff;
+        font-size: 15px;
+    } 
+
+    .call_block{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    
+        background-color: #191918;
+        padding: 10px;
+    
+        cursor: pointer;
+    }
+    
+    .call_block p{
+        font-size: 15px;
+        text-decoration: none;
+        list-style: none;
+    }
+
+    .call_icon{
+        width: 20px;
+    }
+}
+
+@media (max-width:1000px) {
     .navbar{
         height: 70px;
     }

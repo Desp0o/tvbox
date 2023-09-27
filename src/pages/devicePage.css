@@ -10,3 +10,9 @@
     background-size: cover;
     background-position: center;
 }
+
+@media (max-width:800px) {
+    .devicePage{
+        padding-bottom: 250px;
+    }
+}

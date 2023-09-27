@@ -32,8 +32,10 @@
 }
 
 .channel_logos{
+    margin: 0 auto;
     height: 100%;
-    width: calc(100% - 90px);
+    width: 90%;
+    max-width: 1200px;
 
     display: flex;
     align-items: center;

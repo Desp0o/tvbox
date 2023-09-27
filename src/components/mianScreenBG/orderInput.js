@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext, useRef } from "react"
+import { useState, useEffect, useContext, useRef, useMemo } from "react"
 import { ModalContext } from "../modalContext"
 import "./orderInputs.css"
 import PriceTableComponent from "./priceTableBlock"
@@ -7,9 +7,18 @@ import Rules from "../rules/rules"
 
 export default function OrderInputs() {
 
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    const regex = /[0-9!@#$%^&*()_+{}\[\]:;<>,./?~]/;
-    const numberRegex = /^\s*[0-9]+\s*$/
+    const emailRegex = useMemo(() => {
+        return new RegExp(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/);
+      }, [])
+
+      const regex = useMemo(() => {
+        return new RegExp(/[0-9!@#$%^&*()_+{}[\]:;<>,./?~]/);
+      }, [])
+
+      const numberRegex = useMemo(() => {
+        return new RegExp(/^\s*[0-9]+\s*$/);
+      }, [])
+
 
     const nameRef     = useRef()
     const lastNameRef = useRef()
@@ -137,7 +146,7 @@ export default function OrderInputs() {
         } else {
             setMonthlyPrice('--')
         }
-
+        // eslint-disable-next-line
     }, [values])
 
     useEffect(() => {
@@ -199,10 +208,6 @@ export default function OrderInputs() {
         }
     }, [values])
 
-    // useEffect(() => {
-    //     console.log(values);
-    // }, [values])
-
     useEffect(()=>{
     
         if(nameRef.current.value.length > 0 && !regex.test(nameRef.current.value)){
@@ -212,7 +217,7 @@ export default function OrderInputs() {
             nameRef.current.style.border = "unset"
         }
 
-    },[values.Firstname])
+    },[values.Firstname, regex])
 
     useEffect(()=>{
     
@@ -223,7 +228,7 @@ export default function OrderInputs() {
             lastNameRef.current.style.border = "unset"
         }
 
-    },[values.Lastname])
+    },[values.Lastname, regex])
 
     useEffect(()=>{
         if(idNumRef.current.value.length > 0 && numberRegex.test(idNumRef.current.value)){
@@ -235,7 +240,7 @@ export default function OrderInputs() {
         }else if(idNumRef.current.value.length === 0){
             idNumRef.current.style.border = "unset"
         }
-    },[values.IDNumber])
+    },[values.IDNumber, numberRegex])
 
     useEffect(()=>{
         if(phoneRef.current.value.length > 0 && numberRegex.test(phoneRef.current.value)){
@@ -248,7 +253,7 @@ export default function OrderInputs() {
         }else if(phoneRef.current.value.length === 0){
             phoneRef.current.style.border = "unset"
         }
-    },[values.Phone])
+    },[values.Phone, numberRegex])
 
     useEffect(()=>{
         if(emailRef.current.value.length > 0 ){

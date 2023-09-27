@@ -127,8 +127,11 @@
 
 
 @media (max-width:800px) {
+    .faq{
+        padding-bottom: 250px;
+    }
+    
     .question5title{
         padding-right: 50px;
     }
-    
 }

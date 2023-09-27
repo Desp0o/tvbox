@@ -5,12 +5,10 @@ import { useContext } from "react"
 import close from "../images/closeX.webp"
 import ChannelsModalComponent from "./channelsModalComponent"
 import { channelsDB, abroadChannelsDB } from "./channelDB"
-import { useState } from "react"
 
 export default function ChannelsModal(){
 
         const {modalClass, setModalClass} = useContext(ModalContext)
-        const [mainPackages, setMainPackages] = useState('channelColumn')
 
         const modalHandler = ()=> {
             document.body.style.overflow='auto'
@@ -29,7 +27,7 @@ export default function ChannelsModal(){
 
                 
                 {/* ქართული პაკეტი */}
-                <div className={mainPackages}>
+                <div className='channelColumn'>
                     <ChannelsModalComponent 
                         channelNumber="107"
                         channelName="არხი"
@@ -73,7 +71,7 @@ export default function ChannelsModal(){
                 </div>
 
                 {/* ულტრა */}
-                <div className={mainPackages}>
+                <div className='channelColumn'>
                     <ChannelsModalComponent 
                         channelNumber={channelsDB.length}
                         channelName="არხი"
@@ -117,7 +115,7 @@ export default function ChannelsModal(){
                 </div>
 
                 {/* უცხოეთი */}
-                <div className={mainPackages}>
+                <div className='channelColumn'>
                     <ChannelsModalComponent 
                         channelNumber={abroadChannelsDB.length - 8}
                         channelName="არხი"

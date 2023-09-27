@@ -7,6 +7,7 @@ import play from "../../../components/images/playIcon.webp"
 import roadmap from "../../../components/images/roadmap.webp"
 import hdmonitor from "../../../components/images/hdMonitor.webp"
 import finger from "../../../components/images/finger.webp"
+import FeatureBlock from "../../../components/featureBlock/featureBlock"
 
 const featureArr = [
     {
@@ -55,30 +56,17 @@ export default function FiveReasons(){
                 </div>
 
                 <div className="features">
-
                     {featureArr.map((block, index) => {
                         return(
-                                <div className="featureBlock" key={index}>
-                                    <div className="featureBlock_inner">
-                                        
-
-                                        <div className="block_upper">
-                                           <p className="feat_number">{block.num}</p>
-                                            <div className="featureBlock_circle">
-                                                <img src={block.img} alt="fetures" />
-                                            </div>
-
-                                            <p>{block.title}</p>
-                                        </div>
-
-                                        <p>{block.desc}</p>
-                                    </div>
-                                </div>
+                            <FeatureBlock 
+                                key={index}
+                                number={block.num}
+                                image={block.img}
+                                title={block.title}
+                                desc={block.desc}
+                            />
                         )
                     })}
-
-                    
-                    
                 </div>
             </div>
         </>

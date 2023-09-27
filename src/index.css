@@ -1,6 +1,6 @@
 *{
   margin: 0;
-  padding: 0;
+  padding: 0px;
 }
 
 html{
@@ -64,6 +64,7 @@ a{
 
 
 .homePage{
+  min-height: 100vh;
   padding-bottom: 400px;
 }
 
@@ -148,8 +149,11 @@ input{
 
 
 @media (max-width:800px) {
-  
-html{
-  scroll-padding-top: 100px !important;
-}
+  html{
+    scroll-padding-top: 100px !important;
+  }
+  .homePage{
+    min-height: 100vh;
+    padding-bottom: 250px;
+  }
 }
