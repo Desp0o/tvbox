@@ -1,9 +1,7 @@
 .firstScreen{
     width: 100%;
     height: 100vh;
-
     position: relative;
-
     background-image: url("../images/tvbox_back.jpg");
     background-size: cover;
     background-position: center;
@@ -21,8 +19,7 @@
 
 .firsrScreen_inner{
     margin: 0 auto;
-    width: 90%;
-    max-width: 1400px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,6 +27,7 @@
 }
 
 .main_title{
+    width: 90%;
     max-width: 935px;
     font-family: "BPG Square Banner Caps";
     color: #fff;
@@ -47,7 +45,7 @@
     margin-top: 30px;
 }
 
-@media (max-width:800px) {
+@media (max-width:900px) {
     .firsrScreen_inner{
         padding-top: 50px;
     }
@@ -66,7 +64,7 @@
         background-position: center;
     
         padding-top: 40px;
-        padding-bottom: 100px;
+        padding-bottom: 140px;
     
         transition: all 0.3s ease;
     }

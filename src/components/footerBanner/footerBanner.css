@@ -52,6 +52,16 @@
     gap: 5px;
 }
 
+.banner_icons{
+    width: 60px;
+    height: 60px;
+}
+
+.fblike_icon{
+    width: 20px;
+    height: 18px;
+}
+
 @media (max-width:800px) {
     .footerBanner{
         height: 170px;

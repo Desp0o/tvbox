@@ -20,7 +20,7 @@ export default function FooterBanner(){
 
                         <div className="banner_links">
                             <a href="https://www.facebook.com/tvmyvideo" className="banner_links_inner" target="_blank" rel="noreferrer">
-                                <img src={fbLike} alt="facebook group" loading="lazy"/>
+                                <img src={fbLike} alt="facebook group" className="fblike_icon" loading="lazy"/>
                                 <p>მოიწონეთ ჩვენი გვერდი</p>
                             </a>
                         </div>

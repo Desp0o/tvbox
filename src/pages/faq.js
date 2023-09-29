@@ -95,12 +95,7 @@ export default function FAQ(){
                 <p className="faq_title">ხშირად დასმული კითხვები</p>
 
                 <div className="faq_questions">
-
-                    {/* კითხვები */}
-
-                    {/* პირველი კითხვა */}
                     <div className="question_title">
-
                         <div className="question" onClick={faqHandler1}>
                             <img src={dropDownArrow} alt="faq arrow" className={arrow1} />
                             <p>რა არის MYVIDEO TVBOX?</p>
@@ -118,7 +113,6 @@ export default function FAQ(){
 
                     {/* მეორე კითხვა */}
                     <div className="question_title">
-
                         <div className="question" onClick={faqHandler2}>
                             <img src={dropDownArrow} alt="faq arrow" className={arrow2} />
                             <p>სად შეიძება მისი დაყენება?</p>
@@ -126,7 +120,6 @@ export default function FAQ(){
 
                         <div className={faq2} >
                             <p>მოწყობილობა მუშაობს ინტერნეტის საშუალებით. სერვისით სარგებლობა შესაძლებელია როგორც საქართველოში, ასევე საზღვარგარეთ. ყველგან სადაც ინტერნეტია.</p>
-
                         </div>
                     </div>
 
@@ -149,10 +142,8 @@ export default function FAQ(){
                             <p className="features1_item faq3feature">ქართული არხები (107 არხი) - 3 ლარი</p>
                             <p className="features1_item faq3feature">ულტრა პაკეტი (194 არხი) - 20 ლარი</p>
                             <p className="features1_item faq3feature">საზღვარგარეთის პაკეტი (100 არხი) - 20 ლარი</p>
-
                             <p className="faq3_titles">დამატებითი პაკეტები:</p>
                             <p className="features1_item faq3feature">Silk პაკეტი (7 არხი) - 5 ლარი</p>
-
                         </div>
                     </div>
 
@@ -165,15 +156,11 @@ export default function FAQ(){
 
                         <div className={faq4} >
                             <p>MYVIDEO TV BOX ის გამოყენება შესაძლებელია როგორც ანალოგურ, ასევე ციფრულ ტელევიზორებზე. ციფრულ ტელევიზორზე მიერთება ხდება HDMI კაბელით, ხოლო ანალოგურზე - Audio Video კაბელით.</p>
-
                         </div>
                     </div>
-
                 </div>
-
                 <FooterBanner />
             </div>
-            
         </>
     )
 }

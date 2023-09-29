@@ -22,8 +22,12 @@
 }
 
 .iosType{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 130px;
 }
@@ -62,6 +66,9 @@
 }
 
 .secondSection_smartPhones{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +114,9 @@
 }
 
 .sectionThird_smartPhones_inner{
-    background-color: rgb(238, 238, 238);
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1400px;
     padding-top: 50px;
     padding-bottom: 50px;
     display: flex;
@@ -117,7 +126,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 200px;
+    flex-wrap: wrap-reverse;
+    gap: 80px;
 }
 
 .rowReverse{
@@ -180,7 +190,7 @@
 
 @media (max-width:800px) {
     .sectionThird_smartPhones_inner{
-        flex-direction: column;
+        flex-direction: column-reverse;
         scroll-padding-top: 290px;
     }
 

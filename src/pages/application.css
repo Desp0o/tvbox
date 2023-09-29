@@ -1,15 +1,12 @@
 .application{
     width: 100%;
     min-height: 100vh;
-
     background-image: url('../components/images/tvbox_back.jpg');
     background-position: center;
     background-size: cover;
-
     display: flex;
     align-items: center;
     flex-direction: column;
-
     overflow-x: hidden;
 }
 

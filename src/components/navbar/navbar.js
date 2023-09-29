@@ -135,7 +135,7 @@ export default function Navbar(){
                 </div>
 
                 <div className="dashboard_footer">
-                    <img src={myVideoLogo} alt="dashboard footer" loading="lazy"/>
+                    <img src={myVideoLogo} alt="dashboard footer" className="myvideo_logo" loading="lazy"/>
                     <p>MyVideo</p>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-.close_icon{
+.close_icon {
     position: absolute;
     z-index: 2;
     right: 20px;
@@ -10,32 +10,32 @@
     cursor: pointer;
 }
 
-.channels_modal_opened{
+.channels_modal_opened {
     height: calc(100vh - 100px);
     width: 100%;
-  
+
     -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box !important;
-  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
+
     position: fixed;
     bottom: 0;
     z-index: 6;
-  
+
     overflow: hidden;
-  
-  
+
+
     background-color: #191918;
-  
+
     padding-top: 20px;
     padding-left: 85px;
     padding-right: 85px;
-  
-    transition: all 0.4s ease;
+
+    transition: all 0.2s ease;
 }
 
-.channels_modal_closed{
-    height: 0px;
+.channels_modal_closed {
+    height: calc(100vh - 100px);
     width: 100%;
 
     -webkit-box-sizing: border-box;
@@ -45,27 +45,53 @@
     background-color: #191918;
 
     position: fixed;
-    bottom: 0;
+    bottom: -100%;
     z-index: 6;
 
     overflow: hidden;
 
+    padding-top: 20px;
     padding-left: 85px;
     padding-right: 85px;
 
-    transition: all 0.4s ease;
+    transition: all 0.2s ease;
 
 }
 
-.subscribe_prices{
-    position: relative;
-    box-sizing: border-box;
+.packages{
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.packageNameClass_Passive{
+    color: #fff;
+    font-size: 20px;
+    font-family: "BPG Square Banner Caps";
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.packageNameClass_Active{
+    color: rgb(237, 0, 0);
+    font-size: 20px;
+    font-family: "BPG Square Banner Caps";   
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subscribe_prices {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 
     width: 100%;
-    height: calc(100% - 48px);
+    margin: 0 auto;
+    max-width: 1400px;
+    height: 85%;
 
     padding-right: 10px;
     padding-left: 10px;
@@ -74,56 +100,31 @@
     overflow-x: hidden;
 }
 
-.subscribe_prices_addon{
+.subscribe_prices_flex_start{
     justify-content: flex-start;
 }
 
-.choosePackage{
-    font-family: "bpg square banner caps";
-    color: #fff;
-    text-align: center;
-    font-size: 24px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-
-    margin-bottom: 20px;
-}
-
-.packageName1,
-.packageName2{
-    cursor: pointer;
-    color: rgb(237, 0, 0);
-}
-
-.inactive{
-    opacity: 0.4;
-    color: #fff;
-}
-
-.subscribe_prices::-webkit-scrollbar{
+.subscribe_prices::-webkit-scrollbar {
     width: 5px;
     background-color: #A9A8A8;
 }
 
-.subscribe_prices::-webkit-scrollbar-thumb{
+.subscribe_prices::-webkit-scrollbar-thumb {
     width: 10px;
     height: 1px;
     border-radius: 10px;
     background-color: rgb(237, 0, 0);
 }
 
-.channelColumn{
+.channelColumn {
     position: relative;
     width: 290px;
     -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box !important;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
-.channel_list_inModal{
+.channel_list_inModal {
     margin-top: 115px;
     color: white;
     font-family: "BPG Square Banner Caps";
@@ -131,17 +132,17 @@
     position: relative;
 }
 
-.price_block{
+.price_block {
     width: 290px;
     position: fixed;
     z-index: 2;
     background-color: #373534;
     -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box !important;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box !important;
 }
 
-.price_block_upper{
+.price_block_upper {
     box-sizing: border-box;
     width: 100%;
     height: 45px;
@@ -156,7 +157,7 @@
     background-color: #373534;
 }
 
-.price_block_below{
+.price_block_below {
     box-sizing: border-box;
     font-family: 'BPG Arial';
     display: flex;
@@ -172,17 +173,17 @@
     background-color: #272523;
 }
 
-.gap{
-    gap:10px
+.gap {
+    gap: 10px
 }
 
-.channels_and_title{
+.channels_and_title {
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-.channel_number{
+.channel_number {
     font-family: "BPG Square Banner Caps";
     font-size: 28px;
 
@@ -190,177 +191,111 @@
 
 }
 
-.channels_name{
+.channels_name {
     font-family: "BPG Square Banner Caps";
     font-size: 16px;
 
     color: #fff;
 }
 
-.channels_function{
+.channels_function {
     font-family: "BPG Square Banner Caps";
     font-size: 11px;
 
     color: #8d8d8d;
 }
 
-.channels_price_perMonth{
+.channels_price_perMonth {
     display: flex;
     align-items: flex-end;
     gap: 8px;
 }
 
-.price_inGel{
+.price_inGel {
     display: flex;
     align-items: flex-end;
 }
 
-.gel{
+.gel {
     font-family: "BPG Square Banner Caps";
     font-size: 28px;
 
     color: #fff;
 }
 
-.gel_symbol{
+.gel_symbol {
     font-family: "BPG Square Banner Caps";
     font-size: 16px;
     margin-bottom: 3px;
     color: #fff;
 }
 
-.per_month{
+.per_month {
     font-family: "BPG Square Banner Caps";
     font-size: 18px;
     margin-bottom: 3px;
     color: #A9A8A8;
 }
 
-.item_outter{
-    border-bottom: 1px solid #a9a8a84b;
-    
-}
 
-.channel_list_item{
-
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-
-    padding: 0 10px 0 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.channel_list_item_faded{
-    width: 100%;
-    height: 40px;
-    box-sizing: border-box;
-
-    padding: 0 10px 0 10px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    opacity: 0.3;
-}
-
-.channel_item_name_cover{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.channelLogo{
-    width: 20px ;
-    height: auto;
-    max-height: 20px;
-}
-
-.channel_item_devices{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.device_little_block{
-    height: 100%;
-    width: 20px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-@media (min-width: 1500px) {
-
-    .addonColumn{
-        margin-left: 300px;
+@media (min-width:1441px) {
+    .subscribe_prices {
+        height: 90%;
     }
 }
 
-@media (max-width:1250px) {
-    
-    .subscribe_prices{
-        flex-wrap: wrap;
-        justify-content: unset;
-        gap: 20px;
-    }
-    .price_block{
+@media (max-width:1368px) {
+    .price_block {
         position: absolute;
-    }
-
-    .channelColumn{
-        margin: 0 auto 50px auto;
     }
 }
 
 @media (max-width:800px) {
-    .subscribe_prices{
+    .subscribe_prices {
+        box-sizing: border-box;
         display: block;
         padding: 5px;
-        margin-top: 60px;
+        margin-top: 20px;
     }
 
-    .choosePackage{
-        margin-bottom: 0px;
-        font-size: 18px;
-        margin-top: 25px;
-    }
-
-    .channelColumn{
+    .channelColumn {
+        margin: unset;
         position: relative;
-        width: 100%; 
+        width: 100%;
         box-sizing: border-box;
         padding: 0 10px 0 10px;
     }
 
-    .price_block{
+    .price_block {
         width: calc(100% - 20px);
         position: absolute;
         z-index: 2;
         background-color: #373534;
     }
 
-    .channels_modal_opened{
-            
-            padding-top: 0px;
-            padding-left: 10px;
-            padding-right: 10px;
-          
-            transition: all 0.2s ease;
+    .channels_modal_opened {
+
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    
-    .channel_list_inModal{
+
+    .channel_list_inModal {
         margin-top: 0px;
         padding-top: 115px;
     }
+
+    .packages{
+        margin-top: 50px;
+    }
+
+    .close_icon{
+        width: 17px;
+        height: 17px;
+    }
+
 }
 
-.displayNone{
+.displayNone {
     display: none;
 }

@@ -32,7 +32,7 @@ export default function Footer(){
                 <div className="channel_logos">
                     {channelArray.map( (channel, index) => {
                         return(
-                            <img src={channel} key={index} alt="channel footer logo" loading="lazy"/>
+                            <img className="footer_channel_icons" src={channel} key={index} alt="channel footer logo" loading="lazy"/>
                         )
                     } )}
                 </div>

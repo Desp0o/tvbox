@@ -9,6 +9,7 @@
     z-index: 5;
 
     transition: all 0.4s ease;
+    overflow-x: hidden;
 }
 
 .navbar_inner{
@@ -32,6 +33,11 @@
 
     display: flex;
     align-items: center;
+}
+
+.myvideo_logo{
+    height: 36px;
+    width: 35px;
 }
 
 .navbar_Right{
@@ -73,6 +79,7 @@
 
 .call_icon{
     width: 30px;
+    height: 30px;
 }
 
 .hamburgerMenu{
@@ -83,15 +90,15 @@
 
 .dashboard_closed{
     height: 100%;
-    width: 0;
+    width: 80%;
     background-color: #191918;
 
     position: fixed;
     z-index: 4;
-    right: 0;
+    right: -80%;
     top: 0;
 
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
     overflow: hidden;
 }
@@ -103,10 +110,10 @@
 
     position: fixed;
     z-index: 4;
-    right: 0;
+    right: 0%;
     top: 0;
 
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
     overflow: hidden;
 }
@@ -157,6 +164,7 @@
 
     .call_icon{
         width: 20px;
+        height: 20px;
     }
 }
 

@@ -115,7 +115,6 @@ export default function OrderInputs() {
             setFirstScreenClass('firstScreen')
         }
 
-
         // *****მიტანის ფასი ******
         if (values.location === 'თბილისი') {
             setDeliveryPrice(0)
@@ -167,7 +166,6 @@ export default function OrderInputs() {
 
         if(values.location === "თბილისი"){
             setValues(prevValues => ({ ...prevValues, City: 'თბილისი', Country: 'საქართველო' }));
-        
         }
 
         if (values.location === 'საზღვარგარეთ'){
@@ -187,7 +185,6 @@ export default function OrderInputs() {
                 setPriceTable('priceTableRes')
             }
 
-
             if (values.location === 'თბილისი' && values.package !== '') {
                 setPriceTable('priceTable')
 
@@ -196,9 +193,6 @@ export default function OrderInputs() {
 
             } else if (values.location === 'საზღვარგარეთ' && values.package !== '' && values.Country !== '') {
                 setPriceTable('priceTable')
-
-            } else {
-
 
             }
 
@@ -318,7 +312,6 @@ export default function OrderInputs() {
             if(isChecked === false){
                 alert('გთხოვთ გაეცნოთ პირობებს და დაეთანხმოთ')
             }
-
             
             setOrderInner('displayNone')
             setCompletedOrder('completedOrderHidden completedOrderActive')
@@ -341,8 +334,6 @@ export default function OrderInputs() {
             setValues(prevValues=>({...prevValues, location: ""}))
             setValues(prevValues=>({...prevValues, package: ""}))
             setIsChecked(false)
-
-            
         }
 
         if( valuesBoolean.fisrtName === true &&
@@ -356,8 +347,6 @@ export default function OrderInputs() {
                  alert('გთხოვთ გაეცნოთ პირობებს და დაეთანხმოთ')
              }
          }
-
-        
     }
 
     const [isChecked, setIsChecked] = useState(false);
@@ -399,8 +388,8 @@ export default function OrderInputs() {
                                 )}
                             </select>
 
-
-                            <select value={values.City} name="City" onInput={handleValues} className={cityClass}>
+                            <label htmlFor="City"/>
+                            <select value={values.City} name="City" id="City" onInput={handleValues} className={cityClass}>
                                 <option value="" disabled hidden>აირჩიეთ ქალაქი</option>
                                 {cityArray.map((city, index) => {
                                     return (
@@ -419,7 +408,8 @@ export default function OrderInputs() {
                                 })}
                             </select>
 
-                            <select value={values.Country} name="Country" onChange={handleValues} className={countryClass}>
+                            <label htmlFor="Country"/>
+                            <select value={values.Country} name="Country" id='Country' onChange={handleValues} className={countryClass}>
                                 <option value="" disabled hidden>აირჩიეთ ქვეყანა</option>
                                 {
                                     countryArray.map((country, index) => {
@@ -441,15 +431,15 @@ export default function OrderInputs() {
 
                         <div className="secondForm">
                             <div className="secondForm_upper">
-                                <input ref={nameRef} type="text" name="Firstname" value={values.Firstname} placeholder="სახელი *" className="inputMainStyle" onChange={handleValues} />
-                                <input ref={lastNameRef} type="text" name="Lastname" value={values.Lastname} placeholder="გვარი *" className="inputMainStyle" onChange={handleValues} />
-                                <input ref={idNumRef} type="text" name="IDNumber" value={values.IDNumber} placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" onChange={handleValues} />
+                                <input autoComplete="true" ref={nameRef} type="text" id='Firstname' name="Firstname" value={values.Firstname} placeholder="სახელი *" className="inputMainStyle" onChange={handleValues} />
+                                <input autoComplete="true" ref={lastNameRef} type="text" id='Lastname' name="Lastname" value={values.Lastname} placeholder="გვარი *" className="inputMainStyle" onChange={handleValues} />
+                                <input autoComplete="true" ref={idNumRef} type="text" id='IDNumber' name="IDNumber" value={values.IDNumber} placeholder="პირადი ნომერი *" className="inputMainStyle no-arrows" onChange={handleValues} />
                             </div>
 
                             <div className="secondForm_below">
-                                <input ref={phoneRef} type="text" name="Phone" value={values.Phone} placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" onChange={handleValues} />
-                                <input ref={emailRef} type="email" name="Email" value={values.Email} placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" onChange={handleValues} />
-                                <input ref={adressRef} type="text" name="Address" value={values.Address} placeholder="მისამართ *" className="inputMainStyle adress" onChange={handleValues} />
+                                <input autoComplete="true" ref={phoneRef} type="text" id='Phone' name="Phone" value={values.Phone} placeholder="ტელეფონი *" className="inputMainStyle phone_email no-arrows" onChange={handleValues} />
+                                <input autoComplete="true" ref={emailRef} type="email" id='Email' name="Email" value={values.Email} placeholder="ელ. ფოსტა *" className="inputMainStyle phone_email" onChange={handleValues} />
+                                <input autoComplete="true" ref={adressRef} type="text" id='Address' name="Address" value={values.Address} placeholder="მისამართ *" className="inputMainStyle adress" onChange={handleValues} />
 
                             </div>
                         </div>

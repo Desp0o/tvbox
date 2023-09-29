@@ -162,7 +162,6 @@ import zoopark from "../../components/images/channels/ChannelLogos/zoopark.webp"
 import zagarodania from "../../components/images/channels/ChannelLogos/Zagorodnaya_Jizn.webp"
 import stb from "../../components/images/channels/ChannelLogos/stb.webp"
 import zeetv from "../../components/images/channels/ChannelLogos/zeetv.webp"
-
 import radioImedi from "../../components/images/channels/ChannelLogos/tv_radioimedi.webp"
 import geoChannel from "../../components/images/channels/ChannelLogos/GeoCannel.webp"
 import rugbyTv from "../../components/images/channels/ChannelLogos/rugby.webp"
@@ -195,10 +194,9 @@ import axali from "../../components/images/channels/ChannelLogos/tv_axali.webp"
 import primetv from "../../components/images/channels/ChannelLogos/tv_primetv.webp"
 import tvPliusi from "../../components/images/channels/ChannelLogos/tv_tvplus.webp"
 import borjomitv from "../../components/images/channels/ChannelLogos/tv_borjomi.webp"
-
-
-
-
+import setanta1 from "../../components/images/channels/ChannelLogos/setanta1.webp"
+import setanta2 from "../../components/images/channels/ChannelLogos/setanta 2.webp"
+import setanta3 from "../../components/images/channels/ChannelLogos/setanta3.webp"
 
 
 export const channelsDB = [
@@ -207,6 +205,7 @@ export const channelsDB = [
         name: 'პირველი არხი',
         isBasePack: true,
         isFaded: false,
+        isAbroad: true,
         tv: tv,
         desktop: desktop,
         mobile: mobile,
@@ -217,6 +216,7 @@ export const channelsDB = [
         name: 'პირველი არხი HD',
         isBasePack: true,
         isFaded: false,
+        isAbroad: true,
         tv: tv,
         desktop: desktop,
         mobile: mobile
@@ -228,6 +228,7 @@ export const channelsDB = [
         name: 'ტელესკოლა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -238,6 +239,7 @@ export const channelsDB = [
         name: 'პირველი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -248,6 +250,7 @@ export const channelsDB = [
         name: 'რუსთავი 2',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -258,6 +261,7 @@ export const channelsDB = [
         name: 'მთავარი არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -268,6 +272,7 @@ export const channelsDB = [
         name: 'POSTV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -279,6 +284,7 @@ export const channelsDB = [
         name: 'ფორმულა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -290,6 +296,7 @@ export const channelsDB = [
         name: 'Euronews Georgia',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -301,6 +308,7 @@ export const channelsDB = [
         name: 'იმედი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -312,6 +320,7 @@ export const channelsDB = [
         name: 'GDS',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${''}`,
         mobile: `${''}`
@@ -323,6 +332,7 @@ export const channelsDB = [
         name: 'მაესტრო',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${''}`,
         mobile: `${''}`
@@ -333,6 +343,7 @@ export const channelsDB = [
         name: 'მარაო',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -344,6 +355,7 @@ export const channelsDB = [
         name: 'არტარეა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -355,6 +367,7 @@ export const channelsDB = [
         name: 'Palitra News',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -366,6 +379,7 @@ export const channelsDB = [
         name: 'კავკასია',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -377,6 +391,7 @@ export const channelsDB = [
         name: 'აჭარა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -387,6 +402,7 @@ export const channelsDB = [
         name: 'აჭარა HD',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -397,6 +413,7 @@ export const channelsDB = [
         name: 'BMG',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -407,6 +424,7 @@ export const channelsDB = [
         name: 'GMS',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -415,8 +433,9 @@ export const channelsDB = [
     {
         icon: `${silkUniversal}`,
         name: 'Silk უნივერსალი',
-        isFaded: true,
+        isFaded: false,
         isBasePack: true,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -427,6 +446,7 @@ export const channelsDB = [
         name: 'Silk დოკუმენტური',
         isFaded: false,
         isBasePack: true,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -437,6 +457,7 @@ export const channelsDB = [
         name: 'Silk კინო ჰოლივუდი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -447,6 +468,7 @@ export const channelsDB = [
         name: 'Silk ქიდს',
         isFaded: false,
         isBasePack: true,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -457,6 +479,7 @@ export const channelsDB = [
         name: 'Silk კინო კოლექცია',
         isFaded: false,
         isBasePack: true,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -467,6 +490,7 @@ export const channelsDB = [
         name: 'Silk Sport HD 1',
         isFaded: true,
         isBasePack: false,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -478,6 +502,7 @@ export const channelsDB = [
         name: 'Silk Sport HD 2',
         isFaded: true,
         isBasePack: false,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -489,6 +514,7 @@ export const channelsDB = [
         name: 'Silk Sport HD 3',
         isFaded: true,
         isBasePack: false,
+        isAbroad: false,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -499,6 +525,7 @@ export const channelsDB = [
         name: '1 სტერეო',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -509,6 +536,7 @@ export const channelsDB = [
         name: 'კომედი არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -520,6 +548,7 @@ export const channelsDB = [
         name: 'აგრო TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -530,6 +559,7 @@ export const channelsDB = [
         name: 'MUSIC BOX',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -541,6 +571,7 @@ export const channelsDB = [
         name: 'სტარვიზია',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -551,6 +582,7 @@ export const channelsDB = [
         name: 'ბასტი ბუბუ',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -561,6 +593,7 @@ export const channelsDB = [
         name: 'ერთსულოვნება',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -572,6 +605,7 @@ export const channelsDB = [
         name: 'ქართული TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -582,6 +616,7 @@ export const channelsDB = [
         name: 'TVC',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -593,6 +628,7 @@ export const channelsDB = [
         name: 'პულსი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -604,6 +640,7 @@ export const channelsDB = [
         name: 'დარდიმანდი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -615,6 +652,7 @@ export const channelsDB = [
         name: 'მოლი ტვ',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -625,6 +663,7 @@ export const channelsDB = [
         name: 'ობიექტივი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -635,6 +674,7 @@ export const channelsDB = [
         name: 'თრიალეთი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -645,6 +685,7 @@ export const channelsDB = [
         name: 'TV 24',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -655,6 +696,7 @@ export const channelsDB = [
         name: 'რიონი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -665,6 +707,7 @@ export const channelsDB = [
         name: 'რიონი 2',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -676,6 +719,7 @@ export const channelsDB = [
         name: 'სდასუ TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -687,6 +731,7 @@ export const channelsDB = [
         name: 'დია TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -698,6 +743,7 @@ export const channelsDB = [
         name: 'L-TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -709,6 +755,7 @@ export const channelsDB = [
         name: 'Mega TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -720,6 +767,7 @@ export const channelsDB = [
         name: 'TV 25',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -730,6 +778,7 @@ export const channelsDB = [
         name: 'რადიო იმედი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -740,6 +789,7 @@ export const channelsDB = [
         name: 'GeoChannel',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -750,6 +800,7 @@ export const channelsDB = [
         name: 'რაგბი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -760,6 +811,7 @@ export const channelsDB = [
         name: 'TV SPORT',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -770,6 +822,7 @@ export const channelsDB = [
         name: 'ენკიბენკი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -780,6 +833,7 @@ export const channelsDB = [
         name: 'სფერო ნიუსი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -790,6 +844,7 @@ export const channelsDB = [
         name: 'Food TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -800,6 +855,7 @@ export const channelsDB = [
         name: 'TV8',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -810,6 +866,7 @@ export const channelsDB = [
         name: 'Vip TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -820,6 +877,7 @@ export const channelsDB = [
         name: 'Discover Georgia HD',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -830,6 +888,7 @@ export const channelsDB = [
         name: 'მარნეული TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -840,6 +899,7 @@ export const channelsDB = [
         name: 'TVMax',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -850,6 +910,7 @@ export const channelsDB = [
         name: 'SHONI TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -860,6 +921,7 @@ export const channelsDB = [
         name: 'MBC TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -870,6 +932,7 @@ export const channelsDB = [
         name: 'TV 12',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -880,6 +943,7 @@ export const channelsDB = [
         name: 'HI TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -890,6 +954,7 @@ export const channelsDB = [
         name: 'TV მზე',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -900,6 +965,7 @@ export const channelsDB = [
         name: 'სეზონი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -910,6 +976,7 @@ export const channelsDB = [
         name: 'AG TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -920,6 +987,7 @@ export const channelsDB = [
         name: 'Parvana TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -930,6 +998,7 @@ export const channelsDB = [
         name: 'Positive TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -940,6 +1009,7 @@ export const channelsDB = [
         name: 'ეგრისი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -950,6 +1020,7 @@ export const channelsDB = [
         name: 'მზარეული TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -960,6 +1031,7 @@ export const channelsDB = [
         name: 'თავისუფალი არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -970,6 +1042,7 @@ export const channelsDB = [
         name: 'კოლხეთი 89',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -980,6 +1053,7 @@ export const channelsDB = [
         name: 'ბორჯომი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -990,6 +1064,7 @@ export const channelsDB = [
         name: 'მეცხრე ტალღა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1000,6 +1075,7 @@ export const channelsDB = [
         name: 'TV 9',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1010,6 +1086,7 @@ export const channelsDB = [
         name: 'CTV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1020,6 +1097,7 @@ export const channelsDB = [
         name: 'ახალი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1030,6 +1108,7 @@ export const channelsDB = [
         name: 'Prime TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1040,6 +1119,7 @@ export const channelsDB = [
         name: 'TV პლიუსი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1051,6 +1131,7 @@ export const channelsDB = [
         name: 'იმერვიზია',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1062,6 +1143,7 @@ export const channelsDB = [
         name: 'გურჯაანი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1073,6 +1155,7 @@ export const channelsDB = [
         name: 'TV 4',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1084,6 +1167,7 @@ export const channelsDB = [
         name: 'O2',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1095,6 +1179,7 @@ export const channelsDB = [
         name: 'საფერავი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1106,6 +1191,7 @@ export const channelsDB = [
         name: 'PK TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1117,6 +1203,7 @@ export const channelsDB = [
         name: 'ბათუმი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1128,6 +1215,7 @@ export const channelsDB = [
         name: 'გურია TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1139,6 +1227,7 @@ export const channelsDB = [
         name: 'სტერეო+',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1149,6 +1238,7 @@ export const channelsDB = [
         name: 'TOK TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1159,6 +1249,7 @@ export const channelsDB = [
         name: 'ჭადრაკი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1169,6 +1260,7 @@ export const channelsDB = [
         name: 'ქართული არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1179,6 +1271,7 @@ export const channelsDB = [
         name: 'გირჩი TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1189,6 +1282,7 @@ export const channelsDB = [
         name: 'არგო TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1199,6 +1293,7 @@ export const channelsDB = [
         name: 'GMTV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1209,6 +1304,7 @@ export const channelsDB = [
         name: 'Green TV - ჩხენკელი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1219,6 +1315,7 @@ export const channelsDB = [
         name: 'Meteo 24',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1229,6 +1326,7 @@ export const channelsDB = [
         name: 'ოდიში TV',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1239,6 +1337,7 @@ export const channelsDB = [
         name: 'თანამგზავრი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1249,6 +1348,7 @@ export const channelsDB = [
         name: 'ჯორჯიან თაიმსი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1259,26 +1359,18 @@ export const channelsDB = [
         name: 'ალტ-ინფო',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
     },
-
-    // {
-    //     icon: './images/channels/tv_erimedia.png',
-    //     name: 'ერი მედია',
-    //     isFaded: false,
-    //     isBasePack: true,
-    //     tv: `${tv}`,
-    //     desktop: `${desktop}`,
-    //     mobile: `${mobile}`
-    // },
 
     {
         icon: `${mexute}`,
         name: 'მეხუთე არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1289,6 +1381,7 @@ export const channelsDB = [
         name: 'აგროგარემო',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1299,6 +1392,7 @@ export const channelsDB = [
         name: 'სამეფო არხი',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1309,6 +1403,7 @@ export const channelsDB = [
         name: 'აფხაზეთის ხმა',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -1319,6 +1414,7 @@ export const channelsDB = [
         name: 'TV Monitoring',
         isFaded: false,
         isBasePack: true,
+        isAbroad: true,
         tv: `${tv}`,
         desktop: `${desktop}`,
         mobile: `${mobile}`
@@ -2192,1129 +2288,42 @@ export const channelsDB = [
     },
 ]
 
-export const abroadChannelsDB = [
+export const setantaDb = [
     {
-        icon: `${gpb}`,
-        name: 'პირველი არხი',
+        icon: `${setanta1}`,
+        name: 'Setanta Sports 1',
         isBasePack: true,
         isFaded: false,
+        isAbroad: true,
         tv: tv,
         desktop: desktop,
         mobile: mobile,
     },
 
     {
-        icon: `${gpbhd}`,
-        name: 'პირველი არხი HD',
+        icon: `${setanta2}`,
+        name: 'Setanta Sports 2',
         isBasePack: true,
         isFaded: false,
+        isAbroad: false,
         tv: tv,
         desktop: desktop,
-        mobile: mobile
+        mobile: mobile,
     },
 
-
-    {
-        icon: `${teleskola}`,
-        name: 'ტელესკოლა',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tvpirveli}`,
-        name: 'პირველი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${rustavi2}`,
-        name: 'რუსთავი 2',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${mtavariArkhi}`,
-        name: 'მთავარი არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${posttv}`,
-        name: 'POSTV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${formula}`,
-        name: 'ფორმულა',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${euroNews}`,
-        name: 'Euronews Georgia',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${imedi}`,
-        name: 'იმედი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${gds}`,
-        name: 'GDS',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${''}`,
-        mobile: `${''}`
-    },
-
-
-    {
-        icon: `${maestro}`,
-        name: 'მაესტრო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${''}`,
-        mobile: `${''}`
-    },
-
-    {
-        icon: `${marao}`,
-        name: 'მარაო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${artarea}`,
-        name: 'არტარეა',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${palitra}`,
-        name: 'Palitra News',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${caucasus}`,
-        name: 'კავკასია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${adjara}`,
-        name: 'აჭარა',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${adjarahd}`,
-        name: 'აჭარა HD',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${bmg}`,
-        name: 'BMG',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${gms}`,
-        name: 'GMS',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkUniversal}`,
-        name: 'Silk უნივერსალი',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkDocu}`,
-        name: 'Silk დოკუმენტური',
-        isFaded: false,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkholywood}`,
-        name: 'Silk კინო ჰოლივუდი',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkkids}`,
-        name: 'Silk ქიდს',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silkcollection}`,
-        name: 'Silk კინო კოლექცია',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${silk1}`,
-        name: 'Silk Sport HD 1',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    
-
-    {
-        icon: `${silk2}`,
-        name: 'Silk Sport HD 2',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${silk3}`,
-        name: 'Silk Sport HD 3',
-        isFaded: true,
-        isBasePack: false,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${stereo1}`,
-        name: '1 სტერეო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${comedy}`,
-        name: 'კომედი არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${agro}`,
-        name: 'აგრო TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${msuicbox}`,
-        name: 'MUSIC BOX',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${starvision}`,
-        name: 'სტარვიზია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${bbb}`,
-        name: 'ბასტი ბუბუ',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${ertsulovneba}`,
-        name: 'ერთსულოვნება',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${qartulitv}`,
-        name: 'ქართული TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-    
-    {
-        icon: `${tvc}`,
-        name: 'TVC',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${pulsi}`,
-        name: 'პულსი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${dardimandi}`,
-        name: 'დარდიმანდი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${malltv}`,
-        name: 'მოლი ტვ',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${obiektivi}`,
-        name: 'ობიექტივი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${trialeti}`,
-        name: 'თრიალეთი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tv24}`,
-        name: 'TV 24',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${rioni}`,
-        name: 'რიონი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${rioni}`,
-        name: 'რიონი 2',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${tv_sdasutv}`,
-        name: 'სდასუ TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${diatv}`,
-        name: 'დია TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${ltv}`,
-        name: 'L-TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${mega}`,
-        name: 'Mega TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${tv25}`,
-        name: 'TV 25',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${radioImedi}`,
-        name: 'რადიო იმედი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${geoChannel}`,
-        name: 'GeoChannel',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${rugbyTv}`,
-        name: 'რაგბი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tvSport}`,
-        name: 'TV SPORT',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${enkibenki}`,
-        name: 'ენკიბენკი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${spero}`,
-        name: 'სფერო ნიუსი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${foodtv}`,
-        name: 'Food TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tv8}`,
-        name: 'TV8',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${vipTv}`,
-        name: 'Vip TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${discoveryGeorgia}`,
-        name: 'Discover Georgia HD',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${marneuliTV}`,
-        name: 'მარნეული TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tvmax}`,
-        name: 'TVMax',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${shoni}`,
-        name: 'SHONI TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${mbc}`,
-        name: 'MBC TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tv12}`,
-        name: 'TV 12',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${hitv}`,
-        name: 'HI TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${mze}`,
-        name: 'TV მზე',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${sezonitv}`,
-        name: 'სეზონი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${agtv}`,
-        name: 'AG TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${parvana}`,
-        name: 'Parvana TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${positive}`,
-        name: 'Positive TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${egrisi}`,
-        name: 'ეგრისი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${mzareulitv}`,
-        name: 'მზარეული TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tavisupaliArxi}`,
-        name: 'თავისუფალი არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${kolxeti89}`,
-        name: 'კოლხეთი 89',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${borjomitv  }`,
-        name: 'ბორჯომი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${mecxreTalga}`,
-        name: 'მეცხრე ტალღა',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tv9}`,
-        name: 'TV 9',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${ctv}`,
-        name: 'CTV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${axali}`,
-        name: 'ახალი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${primetv}`,
-        name: 'Prime TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tvPliusi}`,
-        name: 'TV პლიუსი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${imervizia}`,
-        name: 'იმერვიზია',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${gurjaani}`,
-        name: 'გურჯაანი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${tv4}`,
-        name: 'TV 4',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${o2}`,
-        name: 'O2',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${saperavi}`,
-        name: 'საფერავი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${pktv}`,
-        name: 'PK TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${batumi}`,
-        name: 'ბათუმი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${guria}`,
-        name: 'გურია TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-
-    {
-        icon: `${stereoPlus}`,
-        name: 'სტერეო+',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${toktv}`,
-        name: 'TOK TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${chadraki}`,
-        name: 'ჭადრაკი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${qartuliArxi}`,
-        name: 'ქართული არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${girchi}`,
-        name: 'გირჩი TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${argo}`,
-        name: 'არგო TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${gmtv}`,
-        name: 'GMTV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${greentv}`,
-        name: 'Green TV - ჩხენკელი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${meteo24}`,
-        name: 'Meteo 24',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${odishi}`,
-        name: 'ოდიში TV',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tanamgzavri}`,
-        name: 'თანამგზავრი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${georgianTimes}`,
-        name: 'ჯორჯიან თაიმსი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${altinfo}`,
-        name: 'ალტ-ინფო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    // {
-    //     icon: './images/channels/tv_erimedia.png',
-    //     name: 'ერი მედია',
-    //     isFaded: false,
-    //     isBasePack: true,
-    //     tv: `${tv}`,
-    //     desktop: `${desktop}`,
-    //     mobile: `${mobile}`
-    // },
-
-    {
-        icon: `${mexute}`,
-        name: 'მეხუთე არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${agrogaremo}`,
-        name: 'აგროგარემო',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${samefoArxi}`,
-        name: 'სამეფო არხი',
-        isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
     {
-        icon: `${abkhazia}`,
-        name: 'აფხაზეთის ხმა',
-        isFaded: false,
+        icon: `${setanta3}`,
+        name: 'Setanta Sports 3',
         isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
-    },
-
-    {
-        icon: `${tvmonitoring}`,
-        name: 'TV Monitoring',
         isFaded: false,
-        isBasePack: true,
-        tv: `${tv}`,
-        desktop: `${desktop}`,
-        mobile: `${mobile}`
+        isAbroad: false,
+        tv: tv,
+        desktop: desktop,
+        mobile: mobile,
     },
 ]
+
+
 
 
 
