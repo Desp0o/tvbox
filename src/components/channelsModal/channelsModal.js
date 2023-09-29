@@ -1,6 +1,6 @@
 import "./channelsModal.css"
 import { ModalContext } from "../modalContext"
-import { useContext, useMemo, useState } from "react"
+import { useContext, useMemo, useState, useEffect,useRef } from "react"
 
 import close from "../images/closeX.webp"
 import ChannelsModalComponent from "./channelsModalComponent"
@@ -16,6 +16,39 @@ export default function ChannelsModal(){
         const [packageNameClass2, setPackageNameClass2] = useState('packageNameClass_Passive')
         const [subscribePrices, setSubscribePrices] = useState('subscribe_prices')
 
+        const [visibleChannels, setVisibleChannels] = useState(50)
+        const [loading, setLoading] = useState(false)
+        const pageSize = 50
+        const subscribePricesRef = useRef(null);
+
+        //ლეიზი სქროლი
+        const handleScroll = () => {
+            const div = subscribePricesRef.current;
+            const scrollPosition = div.scrollTop;
+            const scrollHeight = div.scrollHeight;
+            const clientHeight = div.clientHeight;
+
+            if (scrollPosition + clientHeight >= scrollHeight - 200 && !loading) {
+            
+                setLoading(true);
+
+                setTimeout(() => {
+                setVisibleChannels((prevVisibleChannels) => prevVisibleChannels + pageSize);
+                setLoading(false);
+            }, 0); 
+            }
+        };
+
+        useEffect(() => {
+            const div = subscribePricesRef.current;
+            div.addEventListener("scroll", handleScroll);
+            return () => {
+            div.removeEventListener("scroll", handleScroll);
+            };
+            // eslint-disable-next-line
+        }, []);
+
+        
         const mainPackageHandler = () => {
             setMainPackages('channelColumn')
             setSportPackages('channelColumn displayNone')
@@ -107,7 +140,7 @@ export default function ChannelsModal(){
                     <p className={packageNameClass2} onClick={sportPackageHandler}>სპორტული</p>
                </div>   
 
-                <div  className={subscribePrices}>
+                <div  className={subscribePrices} ref={subscribePricesRef}>
                     {/* ქართული პაკეტი */}
                     <div className={mainPackages}>
                         <ChannelsModalComponent 
@@ -118,9 +151,10 @@ export default function ChannelsModal(){
                         />
 
                         <div className="channel_list_inModal">
-                            {mappedChannelsDB}
+                        {window.innerWidth > 1368 ? mappedChannelsDB.slice(0, visibleChannels) : mappedChannelsDB}
                         </div>
                     </div>
+
 
                     {/* ულტრა */}
                     <div className={mainPackages}>
@@ -132,7 +166,7 @@ export default function ChannelsModal(){
                         />
 
                         <div className="channel_list_inModal">
-                            {mappedChannelsUltra}
+                            {window.innerWidth > 1368 ? mappedChannelsUltra.slice(0, visibleChannels): mappedChannelsUltra}
                         </div>
                     </div>
 
@@ -146,7 +180,7 @@ export default function ChannelsModal(){
                         />
 
                         <div className="channel_list_inModal">
-                            {abroadChannels}
+                            {window.innerWidth > 1368 ? abroadChannels.slice(0, visibleChannels) : abroadChannels}
                         </div>
                     </div>
 

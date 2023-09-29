@@ -38,8 +38,8 @@
 
 .channelLogo{
     width: 20px ;
-    height: auto;
-    max-height: 20px;
+    height: 20px;
+    object-fit: contain;
 }
 
 .channel_item_devices{
