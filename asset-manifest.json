@@ -1,23 +1,7 @@
 {
   "files": {
-    "main.css": "/tvbox/static/css/main.163d6f4c.css",
-    "main.js": "/tvbox/static/js/main.5096a4fe.js",
-    "static/css/65.b7ebc129.chunk.css": "/tvbox/static/css/65.b7ebc129.chunk.css",
-    "static/js/65.17614fe7.chunk.js": "/tvbox/static/js/65.17614fe7.chunk.js",
-    "static/css/469.781f76b4.chunk.css": "/tvbox/static/css/469.781f76b4.chunk.css",
-    "static/js/469.bc5fa72f.chunk.js": "/tvbox/static/js/469.bc5fa72f.chunk.js",
-    "static/css/411.bc474692.chunk.css": "/tvbox/static/css/411.bc474692.chunk.css",
-    "static/js/411.4a30746e.chunk.js": "/tvbox/static/js/411.4a30746e.chunk.js",
-    "static/css/490.70a5ef82.chunk.css": "/tvbox/static/css/490.70a5ef82.chunk.css",
-    "static/js/490.409dfb83.chunk.js": "/tvbox/static/js/490.409dfb83.chunk.js",
-    "static/css/881.872ca5b8.chunk.css": "/tvbox/static/css/881.872ca5b8.chunk.css",
-    "static/js/881.4c05614e.chunk.js": "/tvbox/static/js/881.4c05614e.chunk.js",
-    "static/css/163.feb417a7.chunk.css": "/tvbox/static/css/163.feb417a7.chunk.css",
-    "static/js/163.5197d6e9.chunk.js": "/tvbox/static/js/163.5197d6e9.chunk.js",
-    "static/css/591.b0083d00.chunk.css": "/tvbox/static/css/591.b0083d00.chunk.css",
-    "static/js/591.e10e8315.chunk.js": "/tvbox/static/js/591.e10e8315.chunk.js",
-    "static/css/10.13c61483.chunk.css": "/tvbox/static/css/10.13c61483.chunk.css",
-    "static/js/10.310f9f1d.chunk.js": "/tvbox/static/js/10.310f9f1d.chunk.js",
+    "main.css": "/tvbox/static/css/main.6c9df8e0.css",
+    "main.js": "/tvbox/static/js/main.9ca81638.js",
     "static/media/box_devicePage.webp": "/tvbox/static/media/box_devicePage.347906dcd3f41b82cfb4.webp",
     "static/media/BPG Arial.ttf": "/tvbox/static/media/BPG Arial.cc074fcb5a0f5d5acf4b.ttf",
     "static/media/tvbox_back.jpg": "/tvbox/static/media/tvbox_back.7170df84fadd558d3661.jpg",
@@ -279,27 +263,11 @@
     "static/media/fb_like.webp": "/tvbox/static/media/fb_like.acbd8cbc8c3ea80a8a0e.webp",
     "static/media/arrow-down.webp": "/tvbox/static/media/arrow-down.f56e4275828f8811a4eb.webp",
     "static/media/plus.webp": "/tvbox/static/media/plus.b06a04f93c18ad2adf75.webp",
-    "main.163d6f4c.css.map": "/tvbox/static/css/main.163d6f4c.css.map",
-    "main.5096a4fe.js.map": "/tvbox/static/js/main.5096a4fe.js.map",
-    "65.b7ebc129.chunk.css.map": "/tvbox/static/css/65.b7ebc129.chunk.css.map",
-    "65.17614fe7.chunk.js.map": "/tvbox/static/js/65.17614fe7.chunk.js.map",
-    "469.781f76b4.chunk.css.map": "/tvbox/static/css/469.781f76b4.chunk.css.map",
-    "469.bc5fa72f.chunk.js.map": "/tvbox/static/js/469.bc5fa72f.chunk.js.map",
-    "411.bc474692.chunk.css.map": "/tvbox/static/css/411.bc474692.chunk.css.map",
-    "411.4a30746e.chunk.js.map": "/tvbox/static/js/411.4a30746e.chunk.js.map",
-    "490.70a5ef82.chunk.css.map": "/tvbox/static/css/490.70a5ef82.chunk.css.map",
-    "490.409dfb83.chunk.js.map": "/tvbox/static/js/490.409dfb83.chunk.js.map",
-    "881.872ca5b8.chunk.css.map": "/tvbox/static/css/881.872ca5b8.chunk.css.map",
-    "881.4c05614e.chunk.js.map": "/tvbox/static/js/881.4c05614e.chunk.js.map",
-    "163.feb417a7.chunk.css.map": "/tvbox/static/css/163.feb417a7.chunk.css.map",
-    "163.5197d6e9.chunk.js.map": "/tvbox/static/js/163.5197d6e9.chunk.js.map",
-    "591.b0083d00.chunk.css.map": "/tvbox/static/css/591.b0083d00.chunk.css.map",
-    "591.e10e8315.chunk.js.map": "/tvbox/static/js/591.e10e8315.chunk.js.map",
-    "10.13c61483.chunk.css.map": "/tvbox/static/css/10.13c61483.chunk.css.map",
-    "10.310f9f1d.chunk.js.map": "/tvbox/static/js/10.310f9f1d.chunk.js.map"
+    "main.6c9df8e0.css.map": "/tvbox/static/css/main.6c9df8e0.css.map",
+    "main.9ca81638.js.map": "/tvbox/static/js/main.9ca81638.js.map"
   },
   "entrypoints": [
-    "static/css/main.163d6f4c.css",
-    "static/js/main.5096a4fe.js"
+    "static/css/main.6c9df8e0.css",
+    "static/js/main.9ca81638.js"
   ]
 }
