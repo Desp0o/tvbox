@@ -8,7 +8,7 @@ export default function FeatureBlock({number, image, title, desc}) {
             <div className="block_upper">
                 <p className="feat_number">{number}</p>
                 <div className="featureBlock_circle">
-                    <img src={image} alt="fetures" />
+                    <img src={image} alt="fetures" className="feature_icon"/>
                 </div>
                 <p>{title}</p>
             </div>

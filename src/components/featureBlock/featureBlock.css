@@ -102,6 +102,13 @@
     transition: all 0.3s ease;
 }
 
+.feature_icon{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    object-position: center;
+
+}
 
 @media (max-width:800px) {
     .featureBlock{
