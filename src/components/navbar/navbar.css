@@ -130,6 +130,8 @@
     font-family: "bebas";
     font-size: 34px;
     color: #fff;
+    font-weight: 900;
+    letter-spacing: -3px;
 }
 
 @media (max-width:1200px) {

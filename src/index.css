@@ -9,19 +9,19 @@ html{
 
 @font-face {
   font-family: "bebas";
-  src: url('./components/fonts/bebas.ttf');
+  src: url('./components/fonts/bebas.otf');
   font-display: swap;
 }
 
 @font-face {
   font-family: "BPG Arial";
-  src: url("./components/fonts/BPG\ Arial.ttf");
+  src: url('./components/fonts/BPG_Arial.ttf');
   font-display: swap;
 }
 
 @font-face {
   font-family: "BPG Square Banner Caps";
-  src: url("./components/fonts/bpg\ square\ banner\ caps.ttf");
+  src: url("./components/fonts/bpg_square_banner_caps.ttf");
   font-display: swap;
 }
 
@@ -59,6 +59,8 @@ a{
     margin-top: 73px;
     width: 166px;
     height: 150px;
+    font-family: 'bebas';
+    letter-spacing: -1px;
   }
 
 

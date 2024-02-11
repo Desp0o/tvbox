@@ -21,7 +21,7 @@ export default function NavbarDashboard({closeDashboard, dashboard, handleButton
 
         <div className="dashboard_footer">
             <img src={myVideoLogo} alt="dashboard footer" className="myvideo_logo" loading="lazy"/>
-            <p>MyVideo</p>
+            <p>MYVIDEO</p>
         </div>
     </div>
   )

@@ -1,6 +1,5 @@
 import {Routes,Route} from "react-router-dom";
 
-import Main from "./pages/main/main";
 import DevicePage from "./pages/devicePage";
 import Navbar from "./components/navbar/navbar";
 import Footer from "./components/footer/footer";
@@ -11,13 +10,15 @@ import SmartPhonesApp from "./pages/apps/smartphones";
 import OtherTvBoxes from "./pages/apps/otherBoxes";
 import SmartTvApp from "./pages/apps/smartTvApp";
 import FAQ from "./pages/faq";
+import HomeScreen from "./pages/HomeScreen";
 
 function App() {
   return (
     <>
       <Navbar />
       <Routes>
-        <Route exact path="*" element={<Main/>} />
+        <Route exact path="*" element={<HomeScreen/>} />
+
         <Route exact path="/pages/devicePage" element={<DevicePage />} />
         <Route exact path="/pages/payment" element={<Payment />} />
         <Route exact path="/pages/application" element={<Application />} />
