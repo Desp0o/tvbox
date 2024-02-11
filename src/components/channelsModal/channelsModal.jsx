@@ -6,6 +6,7 @@ import close from "../images/closeX.webp"
 import ChannelsModalComponent from "./channelsModalComponent"
 import { channelsDB, setantaDb } from "./channelDB"
 import SingleChannelComponent from "../singleChannelComponent/singleChannelComponent"
+import ScrollToTop from "../ScrollToTop"
 
 export default function ChannelsModal(){
         const {modalClass, setModalClass} = useContext(ModalContext)
@@ -58,6 +59,7 @@ export default function ChannelsModal(){
         }
 
         const sportPackageHandler = () => {
+            <ScrollToTop />
             setMainPackages('channelColumn displayNone')
             setSportPackages('channelColumn')
             setPackageNameClass1('packageNameClass_Passive')
